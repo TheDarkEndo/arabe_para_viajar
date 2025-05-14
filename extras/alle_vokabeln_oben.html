@@ -1,0 +1,80 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../extras/oben.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+
+</HEAD>
+
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="992233"><img src=../grafik/suche01.jpg align=left vspace=0>
+<font size=1>
+<img src=../grafik/nichts.gif width=3 height=8><br>
+<script language="JavaScript" src="../vocabular/daten.js"></script>
+<script language="JavaScript" src="../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../programme/funktionen7.js"></script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript">
+var id=top.location.href;
+var sprache4=id.substr(id.indexOf("vokabeln",0)+8);
+sprache4=sprache4.substr(0,1);
+</script>
+
+<table align=center cellspacing=0 cellpadding=0 border=0 bgcolor=#F6E9A0><tr><td>
+<table width=100% cellspacing=1 cellpadding=3 border=0><tr>
+
+<script language="JavaScript">
+
+var sprachegross=sprache;
+if (sprache=="franzoesisch") sprachegross="französisch";
+if (sprache=="niederlaendisch") sprachegross="niederländisch";
+if (sprache=="rumaenisch") sprachegross="rumänisch";
+if (sprache=="tuerkisch") sprachegross="türkisch";
+if (sprache=="daenisch") sprachegross="dänisch";
+if (sprache=="hebraeisch") sprachegross="hebräisch";
+if (sprache=="islaendisch") sprachegross="isländisch";
+if (sprache=="deutsch") sprachegross="englisch";
+var sprachegross=sprachegross.substring(0,1).toUpperCase()+sprachegross.substring(1);
+</script>
+
+<td bgcolor="FAC832"><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachnummerliste(1)">Deutsch-<script language="JavaScript"> document.write(sprachegross);</script></a>
+</td><td bgcolor="FAC832"><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachnummerliste(2)"><script language="JavaScript"> document.write(sprachegross);</script>-Deutsch</a>
+</td><td bgcolor="FAC832"><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:lektionliste(1)">+/- Lektion</a>
+</td><td bgcolor="FAC832"><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachliste(1)">+/- Sprachausgabe</a>
+</td>
+</tr>
+<tr><td colspan=4 bgcolor="FAC832"><font face="verdana,arial,helvetica" size=2>
+
+<style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style>
+
+<form method="post" name="testit" action="javascript:die_grosse_liste();">
+<input type=text autocomplete=off size=50 name="testvokabel" onKeyup="umlaute()" style="font-family:verdana,tahoma,arial"><font size=2>
+<input type="button" value="Volltextsuche" onClick="die_grosse_liste();" style="font-family:verdana,tahoma,arial">
+
+<script language="JavaScript">
+sonderzeichen_hinschreiben();
+</script>
+
+
+
+
+</td></tr></table></td></tr></table><font size=1></form>
+
+
+<script language="JavaScript">
+die_grosse_liste();
+</script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+</BODY>
+</HTML>

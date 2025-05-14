@@ -1,0 +1,101 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=22;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+</HEAD>
+
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" 
+background="../../grafik/bg_a01.jpg"><font size=1><div align=center><table height=100% align=top 
+valign=top cellspacing=0 cellpadding=0 border=0><tr align=top valign=top>
+<td><img src=../../grafik/bg_h01.gif></td>
+<td><table width=100% height=100% align=top valign=top bgcolor="FAC832" background=../../grafik/bg_h02.gif cellspacing=1 cellpadding=0 border=0><tr align=top valign=top><td>
+<table width=100% cellspacing=1 cellpadding=2 border=0><tr><td>
+
+<table align=center cellspacing=0 cellpadding=0 border=0><tr><td>
+<table width=100% cellspacing=1 cellpadding=3 border=0>
+
+<tr><td width=100><font face="verdana,arial,helvetica" size=3><center>
+<script language="JavaScript">
+
+var menuezusatz="";
+if (eingabeart=="Texte")  menuezusatz="text_";
+if (eingabeart=="Vokabeln")  menuezusatz="vokabeln_";
+if (eingabeart=="Übungen")  menuezusatz="uebungen_";
+
+if (lektion>1) document.write ("<a href=anklicken"+((lektion-1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/"+"lektion"+((lektion-1)*1)+".html'\"><img src=../../grafik/pfeil_l4.jpg border=0></a>&nbsp;");
+if (lektion<maxlektion) document.write ("<a href=anklicken"+((lektion+1)*1)+".html target=rahmen1  onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/"+"lektion"+((lektion+1)*1)+".html'\"><img src=../../grafik/pfeil_r4.jpg border=0></a>");
+</script>
+
+
+</td>
+
+<td><font face="verdana,arial,helvetica" size=3>
+
+<script language="JavaScript">
+
+  var sprachegross=sprache;
+  if (sprache=="franzoesisch") sprachegross="französisch";
+  if (sprache=="niederlaendisch") sprachegross="niederländisch";
+  if (sprache=="rumaenisch") sprachegross="rumänisch";
+  if (sprache=="tuerkisch") sprachegross="türkisch";
+  if (sprache=="daenisch") sprachegross="dänisch";
+  if (sprache=="hebraeisch") sprachegross="hebräisch";
+  if (sprache=="islaendisch") sprachegross="isländisch";
+  if (sprache=="deutsch") sprachegross="englisch";
+  var sprachegross=sprachegross.substring(0,1).toUpperCase()+sprachegross.substring(1);
+
+document.write("<a href=anklicken_a"+lektion+".html target=unten><img src=../../grafik/versteck1.jpg border=1></a>");</script>
+
+</td><td><font face="verdana,arial,helvetica" size=3>
+
+<script language="JavaScript">document.write("<a href=anklicken_b"+lektion+".html target=unten><img src=../../grafik/versteck2.jpg border=1></a>");</script>
+
+</td><td><font face="verdana,arial,helvetica" size=3>
+
+<script language="JavaScript">document.write("<a href=anklicken_c"+lektion+".html target=unten><img src=../../grafik/versteck3.jpg border=1></a>");</script>
+
+
+<script language="JavaScript">
+<!--
+  if (unterrichtssprache =="deutsch") { document.write("<a href=\"../../content/de/info/versteckt.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>"); }
+-->
+</script>
+
+
+</script></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+</td><td><img src=../../grafik/bg_i01.gif></td></tr></table></td></tr></table></form>
+
+
+<script language="JavaScript">
+
+var id3=22;
+parent[1].location.href="anklicken_c"+id3+".html";
+</script>
+
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+

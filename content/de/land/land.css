@@ -1,0 +1,254 @@
+body{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-align: justify;
+	font-weight:normal;
+
+	background-color: #eeeeee;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+
+}
+
+
+a:link { font-weight:normal; color:#0000A0; text-decoration:underline; }
+a:visited { font-weight:normal; color:#0000A0; text-decoration:underline; }
+a:focus { font-weight:normal; color:#0000FF; text-decoration:underline; }
+a:hover { font-weight:normal; color:#0000FF; text-decoration:underline; }
+a:active { font-weight:normal; color:#0000FF; text-decoration:underline; }
+
+
+
+#container {
+	width: 80%;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:25px; 
+	padding-right:25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid #BEC0B8;
+	background:#FFFFFF;
+	text-align: left;
+}
+
+#container2 {
+	width: 540px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:25px; 
+	padding-right:25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid #BEC0B8;
+	text-align: left;
+	background: #FFFFFF url(../grafik/globelines2.jpg) no-repeat top center; 
+}
+
+
+#normaltext {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-align: justify;
+	font-weight:normal;
+}
+
+p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-align: justify;
+	font-weight:normal;
+}
+
+#hervorhebung {
+	background-color:#ffcc00;
+}
+
+#mittelgross{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	font-weight:normal;
+	letter-spacing:2px;
+}
+
+#prozent80 {
+	width: 490px;
+}
+
+
+#ueberschrift01{
+	padding-top:25px;
+	padding-bottom:5px;
+	padding-left:5px; 
+	padding-right:5px;
+	border-bottom: 2px dotted #000077;
+}
+
+#ueberschrift02{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px; 
+	padding-right:5px;
+	margin-top:20px;
+	margin-bottom:20px;
+	border-bottom: 2px dotted #fe8000;
+	border-top: 2px solid #fe8000;
+}
+
+
+#ueberschrift03{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px; 
+	padding-right:5px;
+
+}
+
+
+#blue1 {
+	color: #000077;
+	font-weight:bolder;
+}
+
+#graubox {
+	border-top:0px; border-bottom:0px; color:#000000;
+	align:top;
+	text-align: left;
+	background-color:#C8C8C8;
+	background-repeat:repeat-y;
+	width:100%;
+	padding:5px;padding-left:10px;
+}
+
+#bullet1 {
+	font-family: verdana, arial,sans-serif;
+	font-size:16px;
+	color:#992233;
+	margin-right:5px;
+}
+
+#bullet2 {
+	font-family: verdana, arial,sans-serif;
+	font-size:16px;
+	color: #000077;
+	margin-right:5px;
+}
+
+#li_absatz{
+	padding-bottom:25px;
+	color: #000000;
+}
+
+#linie {
+	width: 100%;
+	border-bottom: 1px dotted #000000;
+}
+
+#linie_topgelb {
+	width: 100%;
+	border-top: 2px solid #fe8000;
+	padding-top:10px;
+	margin-top:10px;
+	padding-bottom:10px; 
+}
+
+
+h1{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 22px;
+	color:#000077;
+	letter-spacing:1px;
+	font-weight:normal;
+	text-align: left;
+}
+
+h2{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	color:#000077;
+	letter-spacing:1px;
+	font-weight:normal;
+	text-align: left;
+}
+
+
+h3{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	color:#000077;
+	letter-spacing:1px;
+	font-weight:normal;
+	width:80%;
+	border-top:2px solid #000077;
+	border-bottom: 2px dotted #000077;
+	padding-top:7px;
+	padding-bottom:10px; 
+	padding-left:5px; 
+	padding-right:5px;width:100%;
+	text-align: left;
+}
+
+#bg_blue {
+	width:100%; 
+	color:#ffffff;
+	background-color:#000077;
+	padding-left:0px;
+	padding-top:1px;
+	padding-right:0px;
+	padding-bottom:1px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 22px;
+	color:#ffffff;
+	letter-spacing:3px;
+}
+
+
+#bg_gelb {
+	width:100%; 
+	color:#ffffff;
+	background-color:#fe8000;
+	padding-left:0px;
+	padding-top:1px;
+	padding-right:0px;
+	padding-bottom:1px;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid #fe8000;
+	text-align: left;
+}
+
+
+
+li{
+	padding-bottom:10px;
+	color: #000000;
+}
+
+ul{
+	list-style-type:disc;
+	color: #000077;
+}
+
+b{
+	font-weight:bold;
+}

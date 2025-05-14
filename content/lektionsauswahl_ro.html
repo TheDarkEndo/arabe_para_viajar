@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#0000A0 }
+a:visited { text-decoration:none; color:#0000A0; }
+a:hover { text-decoration:underline; color:#0000FF;  }
+a:active { text-decoration:underline; color:#0000FF}
+a:focus { text-decoration:underline; color:#0000FF;  }
+</style>
+<TITLE></TITLE>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../index.html"; }
+</script>
+</HEAD>
+<BODY TEXT="#000000" LINK="#992233" VLINK="#992233" ALINK="#992233" bgcolor="#EEEEEE" background="../grafik/omwraster2.gif">
+<font face="verdana,arial,helvetica" size=1>&nbsp;<br>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../menu/lektionen.js"></script>
+
+
+<center>&nbsp;<br>
+
+
+<!-- Tabelle rot -->
+<table bgcolor="#e4e4e4" cellspacing=0 border=0 cellpadding=1 width=90%><tr><td>
+<table bgcolor="#af7880" cellspacing=0 border=0 cellpadding=1 width=100%><tr><td>
+<table bgcolor="#a64654" cellspacing=0 border=0 cellpadding=1 width=100%><tr><td>
+<table bgcolor="#992233"  background=../grafik/omwraster1.gif valign=middle cellspacing=0 border=0 cellpadding=5 width=100%><tr><td>
+<font size=3 face="verdana,arial" color=white>
+<table border=0 valign=middle><tr><td><script language="JavaScript">
+document.write("<img src=../grafik/"+sprache+"_fahne100.gif height=50 width=70 style=\"border:1pt solid white\">");
+</script></td><td valign=middle>
+<font color="#FFFFFF" face="verdana,arial,helvetica" size="3"><b>&nbsp; Hauptauswahl</b>
+</td></tr></table>
+<table bgcolor="#a64654" cellspacing=0 border=0 cellpadding=1 width=100%><tr><td>
+<table bgcolor="#af7880" cellspacing=0 border=0 cellpadding=1 width=100%><tr><td>
+<table bgcolor="#e4e4e4" cellspacing=0 border=0 cellpadding=1 width=100%><tr><td>
+<table bgcolor="#FFFFFF" cellspacing=0 border=0 cellpadding=5 width=100%><tr><td>
+<font size=3 face="verdana,arial">
+
+<table width=100% cellspacing=0 border=0 cellpadding=5 valign=top><tr valign=top><td valign=top>
+
+
+
+<table cellspacing=0 border=0 cellpadding=0 align=left><tr><td>
+<table width=100% cellspacing=0 border=0 cellpadding=0><tr>
+<td width=49% bgcolor=FFFFFF><font color="#7B0000" face="verdana,arial,helvetica" size="2">
+
+
+
+
+
+
+
+<font color="#7B0000" face="verdana,arial,helvetica" size="3">
+<b>Bitte wählen Sie Ihre gewünschte Lektion aus:</b><p>
+
+
+<font size=2 face="verdana,arial,helvetica">
+<table cellspacing=0 cellpadding=0 border=0>
+<script language="JavaScript">
+
+
+
+
+var a=0;
+var c=0;
+
+while (a<21 || (sprachkuerzel.indexOf("2")<1 && a<42) )
+{
+  if (a % 7 ==0) document.write("<tr><td bgcolor=F9F9F0 valign=top><img src=../grafik/menuegrafik"+((a/7)+1)+".jpg width=70 height=70></td><td bgcolor=F9F9F0>&nbsp; &nbsp;</td><td bgcolor=F9F9F0><font size=2 face=\"verdana,arial,helvetica\">");
+  document.write("<a href=\"javascript:neue_lektion("+(a+1)+");\">"+spracheintrag_hinweis[14]+" "+(a+1)+": "+lektionennamen[c+1]+"</a><br>");
+
+  if (a % 7 ==6) document.write("</td></tr><tr><td colspan=3><img src=../grafik/hr.gif width=100% height=10></td></tr>");
+  c=c+2;
+  a+=1;
+}
+function neue_lektion(nr)
+{
+parent.frames[0].location.href="../menu/lektion"+(nr)+".html";
+self.location.href="../grafik/startseite"+(nr)+".html";
+
+}
+</script>
+
+</td></tr></table></td></tr></table>
+
+
+
+</td></tr></table>
+
+
+
+
+</td>
+
+</table></table></table></table></table></table></table></table>
+
+
+
+</table></table></table></table></table></table></table></table>
+</table></table></table></table></table></table></table></table>
+
+
+<font face="verdana,arial,helvetica" size=2>
+<br>&nbsp;
+
+
+
+
+</BODY></HTML>
+

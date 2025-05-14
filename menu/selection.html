@@ -1,0 +1,174 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+<style type="text/css">
+a:link { text-decoration:none; color:#0000A0 }
+a:visited { text-decoration:none; color:#0000A0; }
+a:hover { text-decoration:underline; color:#0000FF;  }
+a:active { text-decoration:underline; color:#0000FF}
+a:focus { text-decoration:underline; color:#0000FF;  }
+
+#verlinkung {
+	border-top:1px solid #FFFFFF;
+	border-bottom: 2px dotted #C8C8C8;
+	padding-top:1px;
+	padding-bottom:5px; 
+	padding-left:5px; 
+	padding-right:5px;width:90%;
+}
+
+</style>
+<script language="JavaScript">
+
+
+</script>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../menu/lektionen.js"></script>
+<script language="JavaScript" src="../grammatik/grammatik.js"></script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../programme/funktionen8.js"></script>
+<script language="JavaScript" src="../programme/grammatik.js"></script>
+<script language="javascript">
+
+var ie = false; 
+if (document.all) ie = true;
+var klappe=new Array();
+
+function browsername(x) { 
+  if (ie) {return document.all[x];} else {return document.getElementById(x);} 
+}
+
+function klappen(fenster) { 
+  if (klappe[fenster]) { browsername(fenster).style.display = 'block'; }
+  else { browsername(fenster).style.display = 'none'; } 
+  klappe[fenster]=1-klappe[fenster];
+}
+</script>
+
+</HEAD>
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#F6E9A0"  background="../grafik/bg_b01.jpg">
+<center><img src=../grafik/nichts.gif width=3 height=5><br>
+<font face="arial,helvetica" size=1>
+
+
+
+
+
+
+
+<!--Lektionsname-->
+<table width=180 cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td width=4><img src=../grafik/tab_r1.gif width=4 height=4></td>
+<td width=* background=../grafik/tab_r2.gif></td>
+<td width=4><img src=../grafik/tab_r3.gif width=4 height=4></td>
+</tr><tr>
+<td background=../grafik/tab_r4.gif></td>
+<td background=../grafik/tab_r5.gif><font size=2 face="verdana,arial,helvetica" color="#FFFFFF"><b><script language="JavaScript">
+
+  if (sprache2=="franzoesisch") sprache2="französisch";
+  if (sprache2=="niederlaendisch") sprache2="niederländisch";
+  if (sprache2=="rumaenisch") sprache2="rumänisch";
+  if (sprache2=="tuerkisch") sprache2="türkisch";
+  if (sprache2=="daenisch") sprache2="dänisch";
+  if (sprache2=="hebraeisch") sprache2="hebräisch";
+  if (sprache2=="islaendisch") sprache2="isländisch";
+  if (sprache2=="aegyptisch") sprache2="ägyptisch";
+  if (sprache2=="suedamerika") sprache2="Spanisch (Südamerika)";
+  if (sprache2=="weissrussisch") sprache2="weißrussisch";
+  
+  var titletext=sprache2+"#"+spracheintrag_menu[42];
+  if (sprachkuerzel.indexOf("2")>-1) var titletext=sprache2+"#"+spracheintrag_menu[43];
+  if (sprachkuerzel.indexOf("3")>-1) var titletext=sprache2+"#"+spracheintrag_menu[44];
+  var sprache3=sprache2.substring(0,1).toUpperCase()+sprache2.substring(1);
+  var titletext="<img src=../grafik3/"+sprache+"_fahne30.gif><br>"+sprache3;
+
+  titletext=titletext.substring(0,1).toUpperCase()+titletext.substring(1);
+  document.write("<center>"+titletext+"");
+</script></b></td>
+<td background=../grafik/tab_r6.gif></td>
+</tr><tr>
+<td width=4><img src=../grafik/tab_r7.gif width=4 height=4></td>
+<td width=* background=../grafik/tab_r8.gif></td>
+<td width=4><img src=../grafik/tab_r9.gif width=4 height=4></td>
+</tr></table><img src=../grafik/nichts.gif width=3 height=18><br>
+
+
+
+
+<!--Hauptmenü-->
+<script language="JavaScript">
+
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=100% cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif><font size=2 face=\"verdana,arial,helvetica\" color=000000>");
+ document.write("<center><b>"+spracheintrag_menu[1]+"</a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+ document.write("<table cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+</script>
+
+<script language="JavaScript">
+
+var menueintrag="";
+
+var c=0;
+while( c/2 < maxlektion)
+{
+ if (sprachkuerzel.indexOf("2")>0) { lektionennamen[c+1] = expresskurs_ueberschrift[c/2+1]; }
+ if (sprachkuerzel.indexOf("4a")>0) { lektionennamen[c+1] = spezial_ueberschrift_a[c/2+1]; }
+ if (sprachkuerzel.indexOf("4b")>0) { lektionennamen[c+1] = spezial_ueberschrift_b[c/2+1]; }
+ if (sprachkuerzel.indexOf("4c")>0) { lektionennamen[c+1] = spezial_ueberschrift_c[c/2+1]; }
+ if (sprachkuerzel.indexOf("4d")>0) { lektionennamen[c+1] = spezial_ueberschrift_d[c/2+1]; }
+ if (sprachkuerzel.indexOf("4e")>0) { lektionennamen[c+1] = spezial_ueberschrift_e[c/2+1]; }
+ if (sprachkuerzel.indexOf("4f")>0) { lektionennamen[c+1] = spezial_ueberschrift_f[c/2+1]; }
+ if (sprachkuerzel.indexOf("4g")>0) { lektionennamen[c+1] = spezial_ueberschrift_g[c/2+1]; }
+ if (sprachkuerzel.indexOf("4h")>0) { lektionennamen[c+1] = spezial_ueberschrift_h[c/2+1]; }
+ if (sprachkuerzel.indexOf("4i")>0) { lektionennamen[c+1] = spezial_ueberschrift_i[c/2+1]; }
+ if (sprachkuerzel.indexOf("4j")>0) { lektionennamen[c+1] = spezial_ueberschrift_j[c/2+1]; }
+ if (sprachkuerzel.indexOf("4k")>0) { lektionennamen[c+1] = spezial_ueberschrift_k[c/2+1]; }
+ if (sprachkuerzel.indexOf("5a")>0) { lektionennamen[c+1] = business_ueberschrift_a[c/2+1]; }
+ if (sprachkuerzel.indexOf("5b")>0) { lektionennamen[c+1] = business_ueberschrift_b[c/2+1]; }
+ if (sprachkuerzel.indexOf("5c")>0) { lektionennamen[c+1] = business_ueberschrift_c[c/2+1]; }
+
+ menueintrag=menueintrag+"<tr align=top valign=top><td bgcolor=#FFFFFF><font size=2 face=\"verdana,arial,helvetica\" color=\"#000000\">";
+ menueintrag=menueintrag+"<div id=verlinkung><a href=lektion"+(c/2+1)*1+".html>"+(c/2+1)+". "+lektionennamen[c+1]+"</a></div></td><td background=../grafik/tab_w6.gif></td></tr>\n";
+ c=c+2;
+}
+
+menueintrag=menueintrag+"<tr><td bgcolor=#FFFFFF><img src=../grafik/tab_w5.gif width=100 height=5></td><td background=../grafik/tab_w6.gif></td></tr></table></td><td background=../grafik/tab_w6.gif></td></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+</script>
+
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

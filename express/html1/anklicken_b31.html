@@ -1,0 +1,40 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<TITLE></TITLE>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<script language="JavaScript" src="../../programme/praktika.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+</HEAD>
+<BODY text="#111111" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#EEEEEE" background="../../grafik/bg_c01.jpg">
+<script language="JavaScript">
+
+var id3=31;
+
+if (eingabeart == "Übungen") {
+	tagesaufgabe_start();
+	id3=""+ gr_uebung_kap(ta_lerntagnr+ 31*1 -1)+"";
+}
+
+var lkname="Lektion";
+if (eingabeart=="Texte") { lkname=spracheintrag_menu[27]; start (lkname+" "+id3); }
+if (eingabeart=="Vokabeln") { lkname=spracheintrag_menu[29]; start (lkname+" "+id3); }
+if (eingabeart=="Übungen") { lkname=spracheintrag_menu[30]; start ("Grammatikübung des "+ta_lerntagnr+". Lerntages"); }
+if (eingabeart=="Express") { lkname=spracheintrag_menu[59]; start (lkname+" "+id3); }
+
+
+
+darstellen(0,id3,0,2);
+ende(1);
+</script>
+
+</BODY>
+</HTML>

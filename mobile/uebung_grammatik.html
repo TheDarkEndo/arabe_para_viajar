@@ -1,0 +1,91 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#333333 }
+a:visited { text-decoration:none; color:#333333; }
+a:hover { text-decoration:underline; color:#992233;  }
+a:active { text-decoration:none; color:#333333}
+a:focus { text-decoration:underline; color:#992233;  }
+</style>
+<TITLE>Tagesaufgabe: Grammatik-Übungen</TITLE>
+
+<script language="JavaScript">
+var lektion=1;
+</script>
+
+<script language="JavaScript" src="../vocabular/daten.js"></script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../programme/tagesaufgabe.js"></script>
+
+
+
+<script language="JavaScript">
+var i=0; var keks="";
+while(i < document.cookie.length)
+{
+	var cookiename1=sprache+"x"+sprachkuerzel+"x"+eingabeart;
+	var j = i + cookiename1.length;
+	if(document.cookie.substring(i, j) == cookiename1)
+	{
+		var endstr = document.cookie.indexOf(";", j);
+		if(endstr == -1) endstr = document.cookie.length;
+	keks=document.cookie.substring(j+1, endstr);
+	}
+	i = document.cookie.indexOf(" ", i) + 1;
+	if(!i) break;
+}
+keks=keks.substr(keks.indexOf(",")+1,3);
+keks=keks*1 - 99;
+var lerntagnr = keks;
+
+
+</script>
+
+<script language="JavaScript" src="../praktika/daten.js"></script>
+<script language="JavaScript" src="../programme/praktika.js"></script>
+
+<script language="JavaScript" src="../programme/funktionen2.js"></script>
+</HEAD>
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#FFFFFF">
+<font face="verdana,tahoma,arial unicode ms,arial,helvetica" size=2>
+
+
+
+<script language="JavaScript">
+
+var id3=gr_uebung_kap(lerntagnr);
+
+document.write("<div style=\"background: #DDDDDD;\"><b>Ihre heutige Grammatik-Übung<br>(Lerntag Nr. "+lerntagnr+"):</b></div><br>&nbsp;<br>");
+
+darstellen_mobil(id3);
+
+if (lerntagnr>2) {
+	var min_lerntag=lerntagnr-5; if (min_lerntag<1) { min_lerntag=0; }
+	for (var x=lerntagnr-1; x> min_lerntag; x=x-1) {
+		document.write("<br>&nbsp;<br><div style=\"background: #DDDDDD;\"><b>Wiederholung: <br>Ihre Grammatik-Übung von Lerntag Nr. "+x+":</b></div><br>&nbsp;<br>");
+		darstellen_mobil(gr_uebung_kap(x));
+	}
+}
+
+</script>
+
+<script language="JavaScript" src="../grammatik/grammatik.js"></script>
+<script language="JavaScript" src="../programme/grammatik.js"></script>
+<script language="JavaScript">
+if (grammatikversion<2006) {
+} 
+else { 
+	document.write("<br>&nbsp;<br><div style=\"background: #DDDDDD;\"><b>Zum Schluss können Sie hier noch ein Grammatik-Kapitel lesen:</b></div><br>&nbsp;<br><table border=0 cellspacing=2>");
+	grammatikfunktion(1); 
+	document.write("</table>");
+}
+</script>
+</BODY>
+</HTML>
+

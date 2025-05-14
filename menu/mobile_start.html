@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#0000A0 }
+a:visited { text-decoration:none; color:#0000A0; }
+a:hover { text-decoration:underline; color:#0000FF;  }
+a:active { text-decoration:underline; color:#0000FF}
+a:focus { text-decoration:underline; color:#0000FF;  }
+</style>
+<TITLE></TITLE>
+
+</HEAD>
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#13185c" background="../grafik/bg_b02.jpg">
+<font face="verdana,arial,helvetica" size=2>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+
+<script language="JavaScript" src="../menu/lektionen.js"></script>
+
+
+</font><script language="JavaScript">
+
+
+document.write("<center><img src=../grafik3/"+sprache+"150.jpg style=\"border:1pt solid white\"><p><table width=90% border=0 cellspacing=0 cellpadding=2>");
+
+var a=0;
+var c=0;
+
+while (a<21 || (sprachkuerzel.indexOf("2")<1 && a<42) )
+{
+  //document.write("<tr><td bgcolor=F9F9F0 background=\"../grafik/bg_sand01.jpg\" valign=top><img src=../grafik/menuegrafik"+((a/7)+1)+".jpg width=70 height=70></td><td bgcolor=F9F9F0 background=\"../grafik/bg_sand01.jpg\">&nbsp; &nbsp;</td><td bgcolor=F9F9F0 background=\"../grafik/bg_sand01.jpg\"><font size=2 face=\"verdana,arial,helvetica\">");
+  document.write("<tr><td bgcolor=FFFFFF><font face=\"verdana,arial,helvetica\" size=2><a href=\"mobile_unite"+((a+1)*1)+".html\">"+spracheintrag_hinweis[14]+" "+(a+1)+": "+lektionennamen[c+1]+"</a></td></tr>");
+
+  c=c+2;
+  a+=1;
+}
+document.write("</table><p><img src=../grafik3/"+sprache+"_fahne100.gif style=\"border:1pt solid white\">");
+
+
+</script>
+</table>
+
+
+
+</BODY></HTML>
+

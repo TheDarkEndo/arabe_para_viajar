@@ -1,0 +1,105 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=38;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+</HEAD>
+
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../../grafik/bg_a01.jpg">
+
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+
+<table align=center valign=top height=100% cellspacing=0 cellpadding=0 border=0><tr>
+<td><img src=../../grafik/bg_e01.gif></td><td bgcolor="FAC832" background=../../grafik/bg_e03.gif>
+<table width=100% height=100% valign=top cellspacing=1 cellpadding=0 border=0><tr valign=middle>
+
+<td align=center><font size=1><a href="javascript:neuevok(-1,0)"><img src=../../grafik/pfeil_l4.jpg border=0></a>
+<a href="javascript:neuevok(1,0)"><img src=../../grafik/pfeil_r4.jpg border=0></a> 
+</td><td><font size=1></form></td>
+
+<script language="JavaScript">
+if (unterrichtssprache =="deutsch" && lateinmachen>0) {
+	document.write("<td><font face=\"verdana,arial,helvetica\" size=2></form> <form method=\"post\" name=\"romanisierungform\">");
+	document.write("<select NAME=\"romanisierung\" onChange=\"anzahlaendern();\" style=\"font-size:12px; font-family:arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Mit Romanisierung</option>");
+	if (sprache=="russisch" || sprache=="weissrussisch" || sprache=="ukrainisch" || sprache=="serbisch" || sprache=="bulgarisch") {
+		document.write("<OPTION value=\"1\">Nur Kyrillisch</option>");
+	}
+	else {
+		document.write("<OPTION value=\"1\">Ohne Romanisierung</option>");
+	}
+	document.write("<OPTION value=\"2\">Nur Romanisierung</option>");
+	document.write("</select></form></td>");
+}
+
+blitzwiederholung=1;
+if (eingabeart=="Texte" || eingabeart=="Vokabeln" || eingabeart=="Express") {  
+	var menuezusatz="";
+	menuezusatz="<td align=center><font face=\"verdana,arial,helvetica\" size=2>"+
+	"<form method=post name=automatisch>"+
+	"<select NAME=automatischbox style=\"font-size:12px; font-family:arial,helvetica; \">"+
+	"<OPTION value=\"\" selected>"+spracheintrag_menu[49]+
+	"<OPTION value=\"1\">"+spracheintrag_menu[48]+
+	"</select><input type=hidden NAME=\"automatischmachen\" value=\"1\"> </td>";
+	document.write(menuezusatz);
+}
+else {  
+	var menuezusatz="";
+	menuezusatz="<form method=post name=automatisch>"+
+	"<input type=hidden name=automatischmachen value=\"\"><input type=hidden name=automatischbox value=\"\"></form>";
+	document.write(menuezusatz);
+}
+</script>
+
+<td width=70><font face="verdana,arial,helvetica" size=2><center>
+<a href="javascript:sprachwechseln()"><img src=../../grafik/tausch2.jpg border=0></a>&nbsp;<script language="JavaScript">
+<!--
+  if (unterrichtssprache =="deutsch") { document.write("<a href=\"../../content/de/info/blitzwiederholung.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>"); }
+-->
+</script>
+
+
+<br><font size=2>
+</td><td><font size=1></form></td></tr>
+<tr valign=top><td colspan=4><font size=1><style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style><form method="post" name="testit"><script language="JavaScript">
+document.write ("<input type=\"button\" id=\"bestellbutton\" accesskey=\"1\" value=\""+spracheintrag_menu[55]+"\" onClick=\"test_it(1,1,0,1);\" style=\"font-family:verdana,tahoma,arial\"><input type=\"button\" id=\"bestellbutton\" accesskey=\"2\" value=\""+spracheintrag_menu[56]+"\" onClick=\"unten_anzeigen(1,0,0,1,1);\" style=\"font-family:verdana,tahoma,arial\"><input type=\"button\" id=\"bestellbutton\" accesskey=\"3\" value=\""+spracheintrag_menu[57]+"\" onClick=\"test_it(1,2);\" style=\"font-family:verdana,tahoma,arial\">");
+</script>
+
+<div id="startbox" style="position:absolute; left:0px; top:0px; width:0%; height:0%; visibility: hidden;">
+<table id=nix2>
+<tr><td id="nix1">
+<input type=text autocomplete=off size=1" name="nix" style="font-size:1px; ">
+</td></tr></table>
+</div>
+
+
+</script><font size=1></td></tr></table>
+</td><td><img src=../../grafik/bg_f01.gif></td></tr></table></form>
+
+<script language="JavaScript">
+mischen(1);
+neuevok(1,0,2);
+</script>
+
+</BODY>
+</HTML>

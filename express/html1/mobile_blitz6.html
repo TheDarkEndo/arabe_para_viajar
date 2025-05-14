@@ -1,0 +1,78 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<style type="text/css">
+a:link { text-decoration:none; color:#333333 }
+a:visited { text-decoration:none; color:#333333; }
+a:hover { text-decoration:underline; color:#992233;  }
+a:active { text-decoration:none; color:#333333}
+a:focus { text-decoration:underline; color:#992233;  }
+
+textarea {
+    border: 1px gray solid;
+    font-size: 14px; 
+    font-family: arial unicode ms,Lucida Sans Unicode,arial,helvetica,sans-serif;
+}
+</style>
+
+<TITLE></TITLE>
+</font><script language="JavaScript">
+
+var lektion=6;
+
+</script>
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+</HEAD>
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../../grafik/bg_a02.jpg"><center>
+
+<table align=center bgcolor="FAC832" background=../../grafik/bg_h03.gif cellspacing=1 cellpadding=1 border=0><tr>
+<td><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:neuevok(1,0,0,0,0,1)"><img src=../../grafik/pfeil_r4.jpg border=0></a>
+</font><script language="JavaScript">
+if (eingabeart=="Texte" || eingabeart=="Vokabeln" || eingabeart=="Express") {
+  document.write("<a href=\"javascript:sonner();\"><img src=../../grafik/lautsprecher4.jpg border=0></a>");
+}
+</script>
+
+<a href="javascript:sprachwechseln(0,0,1)"><img src=../../grafik/tausch2.jpg border=0></a>
+<a href="../../mobile/mobile_start.html"><img src=../../grafik/p4.jpg border=0></a>
+</td></tr>
+<tr><td><table border=0 cellpadding=0 cellspacing=0><tr><td><font face="verdana,arial,helvetica" size=2>
+
+<font size=2>
+<form method="post" name="testit"></font><script language="JavaScript">
+document.write ("<input type=\"button\" id=\"bestellbutton\" accesskey=\"1\" value=\""+spracheintrag_menu[55]+"\" onClick=\"test_it(1,1,0,1,0,1);\" style=\"font-family:verdana,tahoma,arial\"><input type=\"button\" id=\"bestellbutton\" accesskey=\"2\" value=\""+spracheintrag_menu[56]+"\" onClick=\"unten_anzeigen(1,0,0,1,1,0,0,1);\" style=\"font-family:verdana,tahoma,arial\"><input type=\"button\" id=\"bestellbutton\" accesskey=\"3\" value=\""+spracheintrag_menu[57]+"\" onClick=\"test_it(1,2,0,0,0,1);\" style=\"font-family:verdana,tahoma,arial\">");
+</script>
+
+</td></tr></table></tr></table>
+
+<font size=1>
+</form><form method=post name=ausgabe>
+<textarea NAME="ausgabefeld" rows=10 cols=30 wrap=soft></textarea>
+</td></tr></table></form>
+
+
+
+
+</td></tr></table>
+
+</font><script language="JavaScript">
+mischen(1);
+neuevok(1,0,1,0,0,1);
+
+function sonner() {
+  window.open("../../audio/"+vton[mischung[anzeigevok]], "agb", "width=10,height=10,resizable=yes,location=no,directories=no,status=no,scrollbars=yes,scrolling=yes"); 
+
+}
+
+</script>
+
+</BODY>
+</HTML>

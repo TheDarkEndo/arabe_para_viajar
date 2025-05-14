@@ -1,0 +1,90 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../extras/oben.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+
+</HEAD>
+
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../grafik/bg_a01.jpg"><img src=../../grafik/suche01.jpg align=left vspace=0>
+<font size=1>
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../../programme/funktionen7.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+</font><script language="JavaScript">
+var id=top.location.href;
+var sprache4=id.substr(id.indexOf("vokabeln",0)+8);
+sprache4=sprache4.substr(0,1);
+</script>
+
+<table align=center height=100% cellspacing=0 cellpadding=0 border=0><tr>
+<td><img src=../../grafik/bg_e01.gif></td><td>
+<table width=100% height=100% bgcolor="FAC832" background=../../grafik/bg_e03.gif cellspacing=1 cellpadding=0 border=0><tr>
+
+</font><script language="JavaScript">
+
+var sprachegross=sprache;
+if (sprache=="franzoesisch") sprachegross="französisch";
+if (sprache=="niederlaendisch") sprachegross="niederländisch";
+if (sprache=="rumaenisch") sprachegross="rumänisch";
+if (sprache=="tuerkisch") sprachegross="türkisch";
+if (sprache=="daenisch") sprachegross="dänisch";
+if (sprache=="hebraeisch") sprachegross="hebräisch";
+if (sprache=="islaendisch") sprachegross="isländisch";
+if (sprache=="deutsch") sprachegross="englisch";
+var sprachegross=sprachegross.substring(0,1).toUpperCase()+sprachegross.substring(1);
+</script>
+
+<td><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachnummerliste(1)">ABC-...</a>
+</td><td><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachnummerliste(2)">...-ABC</a>
+</td><td>
+<script language="JavaScript">
+<!--
+  if (unterrichtssprache =="deutsch") { 
+    if (eingabeart=="Texte") { document.write("<a href=\"../../content/de/info/volltextsuche.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>");  }
+    else { document.write("<a href=\"../../content/de/info/woerterbuch.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>");  } 
+  }
+-->
+</script>
+</td>
+</tr>
+<tr><td colspan=4><font face="verdana,arial,helvetica" size=2>
+
+<style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style>
+
+<form method="post" name="testit" action="javascript:die_grosse_liste();">
+<input type=text autocomplete=off size=50 name="testvokabel" onKeyup="umlaute()" style="font-family:verdana,tahoma,arial"><font size=2>
+</font><script language="JavaScript">
+document.write("<input type=\"button\" id=\"bestellbutton\" value=\""+spracheintrag_hinweis[54]+"\" onClick=\"die_grosse_liste();\" style=\"font-family:verdana,tahoma,arial\">");
+</script>
+<br>
+</font><script language="JavaScript">
+sonderzeichen_hinschreiben();
+</script>
+
+
+</form></td></tr></table>
+</td><td><img src=../../grafik/bg_f01.gif></td></tr></table>
+
+
+</td></tr></table></td></tr></table><font size=1></form>
+
+
+</font><script language="JavaScript">
+//die_grosse_liste();
+</script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+</BODY>
+</HTML>

@@ -1,0 +1,101 @@
+
+var langzeit_text=" "+
+"<HTML> "+
+"<HEAD> "+
+"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-15\"> "+
+"<link rel=\"stylesheet\" type=\"text/css\" href=\""+grundverzeichnis+"content/langues.css\"> "+
+"<TITLE></TITLE> "+
+"<script language=\"JavaScript\"> "+
+" "+
+"</script> "+
+"</HEAD> "+
+"<BODY><center><div id=\"container2\">&nbsp;<br> "+
+" "+
+" "+
+" "+
+"<h1><div id=\"bg_gelb\"><div id=\"ueberschrift03\">Anleitung zum Ultra-Langzeitgedächtnis-Test</div></div></h1> "+
+" "+
+" "+
+" "+
+" "+
+"<div id=\"normaltext\">&nbsp;<br> "+
+" "+
+" "+
+"Der Ultra-Langzeitgedächtnis-Test funktioniert wie der "+
+"normale Langzeitgedächtnis-Test, allerdings mit einem bedeutsamen Unterschied:<br> "+
+"Sie wiederholen bereits gekonnte Vokabeln nicht gleich am nächsten Tag, sondern erst "+
+"nach einer längeren Pause.<p> "+
+" "+
+" "+
+"<table bgcolor=\"993344\" cellspacing=1 cellpadding=0 border=0><tr><td> "+
+"<table bgcolor=\"993344\" cellspacing=2 cellpadding=2 border=0> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> <b>Stufe</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> <b>Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> <b>Bedeutung</td> "+
+"</tr> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Stufe&nbsp;5</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> keine zusätzliche Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Nicht gewusste Vokabeln werden am nächsten Tag wiederholt</td> "+
+"</tr> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Stufe&nbsp;4</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> 1 Tag Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Vokabeln der Stufe 4 (=Sie haben diese Vokabel bereits einmal auf Anhieb gewusst) wiederholen Sie nicht beim nächsten Durchgang, sondern erst beim übernächsten.</td> "+
+"</tr> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Stufe&nbsp;3</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> 2 Tage Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Vokabeln der Stufe 3 (=Sie haben diese Vokabel bereits an zwei Tagen auf Anhieb gewusst) wiederholen Sie nicht beim nächsten Durchgang, sondern erst beim über-über-nächsten.</td> "+
+"</tr> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Stufe&nbsp;2</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> 4 Tage Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> </td> "+
+"</tr> "+
+"<tr> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Stufe&nbsp;1</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> 8 Tage Pause</td> "+
+"<td bgcolor=\"F9F9F9\"><div id=\"normaltext\"> Vokabeln der Stufe 1 befinden sich schon fast im Langzeitgedächnis. Meist werden Sie solche Vokabeln über einen sehr langen Zeitraum behalten können. Daher wird bei der  Ultra-Langzeitgedächnis-Lernenmethode vor der allerletzten Eingabe eine Pause von 8 Tagen eingelegt.</td> "+
+"</tr> "+
+"</table> "+
+"</td></tr></table> "+
+" "+
+" "+
+" "+
+" "+
+"<p><strong>Die Wissenschaft hinter der Ultra-Langzeitgedächnis-Lernenmethode:</strong><p> "+
+" "+
+"Je länger eine Pause zwischen den Wiederholungen, desto besser kann man sich eine Vokabel dauerhaft "+
+"merken. Die Pause sollte dabei von Wiederholung zu Wiederholung in etwa verdoppelt werden, was mit "+
+"dieser Methode erreicht wird. "+
+" "+
+" "+
+"<p> "+
+"<img src="+grundverzeichnis+"grafik/uhr01.jpg align=right vspace=5 hspace=5> "+
+" "+
+" "+
+"<strong>Empfehlung:</strong><p> "+
+" "+
+"Wenn Sie genügend Zeit (viele Wochen) zur Verfügung haben, um die Sprache zu lernen, so lernen Sie "+
+"am besten mit dieser Methode. Es dauert zwar länger, bis Sie eine Vokabel in Ihrem Langzeitgedächnis gespeichert haben "+
+"(inklusive Pausen durchschnittlich 20 Lerntage im Vergleich zu 7 Lerntagen), dafür lernen Sie diese Vokabeln noch gründlicher als "+
+"in der normalen Langzeitgedächnis-Lernenmethode. "+
+"<p> "+
+"Wenn Sie die Sprache in sehr kurzer Zeit lernen möchten, so lernen Sie lieber mit der normalen Langzeitgedächtnis-Lernmethode. "+
+"Wiederholen Sie die Langzeitgedächtnis-Lernmethode aber nochmal nach drei bis sechs Monaten. "+
+" "+
+"<p><strong>Hinweis:</strong><p> "+
+"Sie können mit Ihrem Code zwischen allen Langzeit-Lernmethoden jederzeit beliebig wechseln. "+
+" "+
+" "+
+" "+
+"<br>&nbsp;</table></table></table></table></table></table></table></table> "+
+"&nbsp; "+
+" "+
+" "+
+"</BODY></HTML>";
+
+parent[1].document.write(langzeit_text);
+parent[1].document.close();

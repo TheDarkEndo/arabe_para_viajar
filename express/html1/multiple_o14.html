@@ -1,0 +1,123 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=14;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/wortarten.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+</HEAD>
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../../grafik/bg_a01.jpg">
+
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+
+
+<table align=center height=100% cellspacing=0 cellpadding=0 border=0><tr>
+<td><img src=../../grafik/bg_e01.gif></td><td>
+<table width=100% height=100% valign=middle bgcolor="FAC832" background=../../grafik/bg_e03.gif cellspacing=1 cellpadding=2 border=0><tr valign=middle>
+
+
+<td><font face="verdana,arial,helvetica" size=2><a href="javascript:neuevok(1,0)"><img src=../../grafik/pfeil_r4.jpg border=0></a></td>
+
+<td><font face="verdana,arial,helvetica" size=2><a href="javascript:neuevok(0,1)"><img src=../../grafik/loesung3.jpg border=0></a></td>
+
+<td><font face="verdana,arial,helvetica" size=2><a href="javascript:test_it(0,0,0,0,1)"><img src=../../grafik/loeschen01.jpg border=0></a></td>
+
+
+<td colspan=1><font face="verdana,arial,helvetica" size=2>
+<form method="post" name="anzaend">
+<select NAME="anzahlauswahl" onChange="anzahlaendern();" style="font-size:12px; font-family:arial,helvetica; ">
+<OPTION value="5">Anzahl:
+<OPTION value="3">3
+<OPTION value="4">4
+<OPTION value="5" selected>5
+<OPTION value="6">6
+<OPTION value="7">7
+<OPTION value="8">8
+<OPTION value="9">9
+<OPTION value="10">10
+<OPTION value="12">12
+<OPTION value="15">15
+</select>
+</td>
+
+<script language="JavaScript">
+if (unterrichtssprache =="deutsch" && lateinmachen>0) {
+	document.write("<td><font face=\"verdana,arial,helvetica\" size=2></form> <form method=\"post\" name=\"romanisierungform\">");
+	document.write("<select NAME=\"romanisierung\" onChange=\"anzahlaendern();\" style=\"font-size:12px; font-family:arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Mit Romanisierung</option>");
+	if (sprache=="russisch" || sprache=="weissrussisch" || sprache=="ukrainisch" || sprache=="serbisch" || sprache=="bulgarisch") {
+		document.write("<OPTION value=\"1\">Nur Kyrillisch</option>");
+	}
+	else {
+		document.write("<OPTION value=\"1\">Ohne Romanisierung</option>");
+	}
+	document.write("<OPTION value=\"2\">Nur Romanisierung</option>");
+	document.write("</select></form></td>");
+}
+
+
+if (eingabeart=="Texte" || eingabeart=="Vokabeln" || eingabeart=="Express") {  
+	var menuezusatz="";
+	menuezusatz="<td><font face=\"verdana,arial,helvetica\" size=2>"+
+	"</form> <form method=post name=automatisch>"+
+	"<select NAME=automatischbox style=\"font-size:12px; font-family:arial,helvetica; \">"+
+	"<OPTION value=\"\" selected>"+spracheintrag_menu[49]+
+	"<OPTION value=\"1\">"+spracheintrag_menu[48]+
+	"</select><input type=hidden NAME=\"automatischmachen\" value=\"1\"> </td>";
+	document.write(menuezusatz);
+}
+else {
+	var menuezusatz="";
+	menuezusatz="</form><form method=post name=automatisch>"+
+	"<input type=hidden name=automatischmachen value=\"\"><input type=hidden name=automatischbox value=\"\"></form>";
+	document.write(menuezusatz);
+}
+</script>
+
+<td><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachwechseln()"><img src=../../grafik/tausch2.jpg border=0></a>&nbsp;<script language="JavaScript">
+<!--
+  if (unterrichtssprache =="deutsch") { document.write("<a href=\"../../content/de/info/choice.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>"); }
+-->
+</script>
+
+
+</td>
+
+
+</tr><tr>
+
+<td colspan=6><font face="verdana,arial,helvetica" size=2>
+</form><form method="post" name="testit">
+<select NAME="testvokabel" onChange="test_it()" style="font-size:12px; font-family:verdana,arial,helvetica; ">
+<OPTION value="">---------------
+<OPTION value="">---------------
+</select>
+</td>
+
+</script><font size=1></form></td></tr></table>
+</td><td><img src=../../grafik/bg_f01.gif></td></tr></table>
+
+
+<script language="JavaScript">
+var selectauswahl=1;
+mischen(1);
+neuevok(1,0);
+selectmachen();
+</script>
+
+</BODY>
+</HTML>

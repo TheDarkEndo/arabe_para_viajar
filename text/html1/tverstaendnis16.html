@@ -1,0 +1,168 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#333333 }
+a:visited { text-decoration:none; color:#333333; }
+a:hover { text-decoration:underline; color:#992233;  }
+a:active { text-decoration:none; color:#333333}
+a:focus { text-decoration:underline; color:#992233;  }
+</style>
+<TITLE></TITLE>
+
+<script language="JavaScript">
+
+var lektion=16;
+
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+
+<script language="JavaScript" src="../../programme/textverstaendnis.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+</HEAD>
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#FFFFFF">
+
+
+
+
+<script language="JavaScript">
+
+var ergeb=new Array();
+var lektion=16;
+ergeb[0]="Leider falsch - probieren Sie es nochmal!";
+ergeb[1]="Richtig! Weiter so!";
+
+var spr2=sprache.substr(0,1).toUpperCase()+sprache.substr(1);
+
+ start ("Übung zum Textverständnis, Lektion "+lektion,0,1);
+
+var x=""+
+"<b>1. Lesen Sie den Text NUR auf "+spr2+"</b><br>"+
+"&nbsp;<br>"+
+"Hier finden Sie den Text der ersten Lektion nur auf "+spr2+" abgedruckt. <br>"+
+"Lesen Sie sich den Text in Ruhe durch.  <br>"+
+"Nur wenn Sie wirklich wichtige Wörter noch nicht kennen bzw. verstehen,  <br>"+
+"können Sie auf der rechten Seite aufdecken, indem Sie mit der Maus darüber fahren. <br>"+
+"&nbsp;<br>"+
+"<b>2. Multiple-Choice-Übung auf Deutsch mit Fragen zum Inhalt des Textes</b> <br>"+
+"&nbsp;<br>"+
+"Scrollen Sie mit der Maus nach unten. Dort finden Sie  "+
+"einige Fragen zum Text. <br>"+
+"Haben Sie den Text verstanden?  <br>"+
+"Oder haben Sie vielleicht nur grob mitbekommen, worum es hier geht?  <br>"+
+"Oder haben Sie ihn problemlos - auch mit allen Details - verstanden?<hr noshade size=1>&nbsp; <br>";
+document.write(x);
+
+
+
+
+
+darstellen(2,lektion,0,2);
+
+ ende(0);
+
+
+tvfkt(0);
+
+function tvtest1(eing1) { document.dieseform.texteingabe1.value=ergeb[eing1]; }
+function tvtest2(eing1) { document.dieseform.texteingabe2.value=ergeb[eing1]; }
+function tvtest3(eing1) { document.dieseform.texteingabe3.value=ergeb[eing1]; }
+function tvtest4(eing1) { document.dieseform.texteingabe4.value=ergeb[eing1]; }
+function tvtest5(eing1) { document.dieseform.texteingabe5.value=ergeb[eing1]; }
+
+function tvfkt(alletemp){
+ 
+ start ("Textverständnis-Fragen Lektion "+lektion,0,1);
+
+var x=""+
+"Jetzt wollen wir Ihr Textverständnis testen!<br>"+
+"Haben Sie den Text verstanden? <br>"+
+"Oder haben Sie vielleicht nur grob mitbekommen, worum es hier geht? <br>"+
+"Oder haben Sie ihn problemlos - auch mit allen Details - verstanden?<hr noshade size=1>";
+document.write(x);
+
+
+ //start ("<table border=0 valign=middle><tr><td><img src=../../grafik3/"+sprache+"_fahne100.gif height=50 width=70 style=\"border:1pt solid white\"></td><td valign=middle><font color=FFFFFF face=\"verdana,arial,helvetica\" size=3><b>&nbsp; Fragen zum Textverständnis, Lektion "+lektion+"</td></tr></table>",2,1);  
+
+ var maxlektion=42; 
+
+ //if (alletemp==0) { darstellen(0,id3,1); }
+ //else { darstellen(0,0,1); }
+
+
+ //document.write("hallo");
+
+
+
+
+
+
+
+var a=0;
+var fragenr=0;
+while (tv1[a]>0) {
+
+if (tv1[a] == lektion) {
+var fname=tv1[a]*100+tv1[a+1]*1;
+document.write("<div id=prozent80><h2>Frage "+tv1[a+1]+":</h2><b>"+tv1[a+2]+"</b><br>&nbsp;<br><form name=dieseform method=\"post\"><table border=0 cellpadding=5>");
+var b=0, c=0, d1="", d2=""; 
+
+for (b=0;b<9;b+=2) {
+
+  if (tv1[a+3+b]<9) {
+    c=b/2+1;
+    //if (tv1[a+3+b]=="1") {d1="<b>"; d2="</b>"; } else {d1=""; d2=""; }
+    //var fname2=tv1[a]*10000+tv1[a+1]*100+b*1;
+
+    document.write("<tr align=top valign=top><td align=top valign=top><input type=radio name=\""+fname+"\" onClick=\"tvtest"+tv1[a+1]+"("+tv1[a+3+b]*1+");\"></td><td><div id=normaltext>"+d1+c+". "+tv1[a+4+b]+d2+"</td></tr>");
+    fragenr=0;
+  }
+
+}
+document.write("</table>&nbsp;<br><input type=text name=\"texteingabe"+tv1[a+1]+"\" value=\"\" size=50 style=\"background-color:#FFCC00\"><br>&nbsp;");
+document.write("</div><hr noshade size=1>");
+
+
+
+}
+a=a+13;
+}
+document.write ("</form>");
+
+//document.write("<input type=button value=\"Testen!\" onClick=\"tvtest(0,0,0,1)\"><br>")
+
+
+
+
+
+document.write ("<div align=center>");
+if (lektion>1) document.write ("<a href=tverstaendnis"+((lektion-1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/lektion"+((lektion-1)*1)+".html'\"><img src=../../grafik/pfeil_l4.jpg border=0></a> &nbsp;");
+
+if (lektion<maxlektion) document.write ("<a href=tverstaendnis"+((lektion+1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/lektion"+((lektion+1)*1)+".html'\"><img src=../../grafik/pfeil_r4.jpg border=0></a> &nbsp;");
+document.write ("</div>");
+
+ ende(0);
+
+
+}
+
+</script>
+
+
+
+
+</BODY>
+</HTML>
+
+
+

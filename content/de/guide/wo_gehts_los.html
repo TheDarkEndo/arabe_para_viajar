@@ -1,0 +1,944 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<link rel="stylesheet" type="text/css" href="../../langues.css">
+<TITLE></TITLE>
+<script language="JavaScript">
+
+</script>
+</HEAD>
+<BODY><center><div id="container2">
+
+<script language="JavaScript" src="../../../text/daten.js"></script>
+<script language="JavaScript" src="../../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../../menu/lektionen.js"></script>
+
+
+
+<script language="JavaScript" src="../../../omwid.js"></script>
+
+
+
+
+
+<script language="JavaScript">
+
+  if (sprache2=="franzoesisch") sprache2="französisch";
+  if (sprache2=="niederlaendisch") sprache2="niederländisch";
+  if (sprache2=="rumaenisch") sprache2="rumänisch";
+  if (sprache2=="tuerkisch") sprache2="türkisch";
+  if (sprache2=="daenisch") sprache2="dänisch";
+  if (sprache2=="hebraeisch") sprache2="hebräisch";
+  if (sprache2=="islaendisch") sprache2="isländisch";
+  if (sprache2=="aegyptisch") sprache2="ägyptisch";
+  if (sprache2=="suedamerika") sprache2="Spanisch (Südamerika)";
+  if (sprache2=="weissrussisch") sprache2="weißrussisch";
+  
+  var titletext=sprache2+spracheintrag_menu[42];
+  if (sprachkuerzel.indexOf("2")>-1) var titletext=sprache2+spracheintrag_menu[43];
+  if (sprachkuerzel.indexOf("3")>-1) var titletext=sprache2+spracheintrag_menu[44];
+  var sprache3=sprache2.substring(0,1).toUpperCase()+sprache2.substring(1);
+  //var titletext="<img src=../grafik3/"+sprache2+"_fahne30.gif><br>"+sprache3;
+
+  titletext=titletext.substring(0,1).toUpperCase()+titletext.substring(1);
+
+if (sprache == "latein") { self.location="wo_gehts_los_lat.html";}
+
+</script>
+
+<div id="prozent80"><div id="normaltext">
+
+<img src=../../../grafik/d0.gif width=2 height=10><br><table border=0 width=490 cellspacing=0 cellpadding=0><tr><td width=137><img src=../../../grafik/sprachenlernen24.gif></td><td width=409>&nbsp;</td><td width=44 align=right><script language="JavaScript">
+document.write("<img src=../../../grafik3/"+sprache+"_fahne100.gif align=left border=1 valign=top width=42 height=28>");
+
+</script></td></tr></table>
+
+
+<h1><div id="bg_gelb"><div id="ueberschrift03">Wo geht's los?</div></div></h1>
+| <a href=../../lektionsauswahl_de.html>&Uuml;bersicht</a> |
+<br>&nbsp;<br>
+
+
+
+<h2><div id=ueberschrift02>Wie starte ich meinen Sprachkurs?</div></h2>
+
+
+
+<script language="JavaScript"> 
+// Express
+if ( sprachkuerzel.indexOf("2") > 0 ) { 
+var x=" "+
+"Sie sehen jetzt auf der linken Seite des Browserfensters &ndash; in der Men&uuml;f&uuml;hrung &ndash; "+
+"unter dem Hauptmen&uuml; und der Tagesaufgabe den Punkt \"Expresskurs\". "+
+"<br>&nbsp;<br> "+
+"Wenn Sie diesen Men&uuml;punkt ausklappen, k&ouml;nnen Sie zur ersten \"Liste\" mit "+
+"den allerersten W&ouml;rtern des Expresskurses navigieren. "+
+"Von dort aus k&ouml;nnen Sie die Tests und &Uuml;bungen anklicken, "+
+"mit denen Sie die W&ouml;rter der Liste lernen wollen. "+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst sehen wollen, "+
+"hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+" "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Liste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+// Basis
+if ( sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1 && sprachkuerzel.indexOf("5") < 1 && sprachkuerzel.indexOf("6") < 1) { 
+var x=" "+
+"Sie sehen jetzt auf der linken Seite des Browserfensters "+
+"&ndash; in der Men&uuml;f&uuml;hrung &ndash; unter dem Hauptmen&uuml; und der Tagesaufgabe die Punkte "+
+"\"Vokabeln\", \"Dialogtext\", \"Grammatik\" und \"&Uuml;bungen\". "+
+"<br>&nbsp;<br> "+
+"Am besten beginnen Sie damit, die Vokabeln der ersten Lektion zu lernen, "+
+"ehe Sie sich auf den Text st&uuml;rzen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie den Men&uuml;punkt \"Vokabeln\" ausklappen, kommen Sie zur ersten "+
+"\"Vokabelliste\" mit den W&ouml;rtern der Lektion 1. "+
+"Weiter geht es dann mit Lesen, Lernen und Testen der Vokabeln. "+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst sehen wollen, "+
+"hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Aufbau
+if ( sprachkuerzel.indexOf("3") > 0 ) {
+var x=""+ 
+
+"Sie sehen jetzt auf der linken Seite des Browserfensters "+
+"&ndash; in der Men&uuml;f&uuml;hrung &ndash; unter dem Hauptmen&uuml; und der Tagesaufgabe die beiden Punkte "+
+"\"Vokabeln\" und \"Dialogtext\". "+
+"<br>&nbsp;<br> "+
+"Am besten beginnen Sie damit, die Vokabeln der ersten "+
+"Lektion zu lernen, ehe Sie sich auf den Dialogtext st&uuml;rzen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie den Men&uuml;punkt \"Vokabeln\" ausklappen, kommen Sie "+
+"zur ersten \"Vokabelliste\" mit den W&ouml;rtern der Lektion 1. "+
+"Weiter geht es dann mit Lesen, Lernen und Testen der Vokabeln. "+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst "+
+"sehen wollen, hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Fachwortschatz
+if ( sprachkuerzel.indexOf("4") > 0 ) {
+var x=""+ 
+
+"Sie sehen jetzt auf der linken Seite des Browserfensters "+
+"&ndash; in der Men&uuml;f&uuml;hrung &ndash; unter dem Hauptmen&uuml; und der Tagesaufgabe den Punkt "+
+"\"Vokabeln\". "+
+"<br>&nbsp;<br> "+
+"Wenn Sie den Men&uuml;punkt \"Vokabeln\" ausklappen, kommen Sie zur ersten \"Vokabelliste\" mit "+
+"der Wortschatzsammlung des ersten Themenbereichs. "+
+"<br>&nbsp;<br> "+
+"Weiter geht es dann man mit dem Lesen, Lernen und Testen der Vokabeln."+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst "+
+"sehen wollen, hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Businesskurse
+if ( sprachkuerzel.indexOf("5") > 0 ) {
+var x=""+ 
+
+"Sie sehen jetzt auf der linken Seite des Browserfensters "+
+"&ndash; in der Men&uuml;f&uuml;hrung &ndash; unter dem Hauptmen&uuml; und der Tagesaufgabe die beiden Punkte "+
+"\"Vokabeln\" und \"Phrasen\". "+
+"<br>&nbsp;<br> "+
+"Am besten beginnen Sie damit, die Vokabeln der ersten "+
+"Lektion zu lernen, ehe Sie sich mit der Sammlung von Phrasen zu dieser Lektion beschäftigen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie den Men&uuml;punkt \"Vokabeln\" (beim kleinen Pluszeichen) ausklappen, kommen Sie "+
+"zur ersten \"Vokabelliste\" mit der Wortschatzsammlung zur Lektion 1. "+
+"Weiter geht es dann mit Lesen, Lernen und Testen der Vokabeln. "+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst "+
+"sehen wollen, hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+// Grammatikkurs
+if ( sprachkuerzel.indexOf("6") > 0 ) { 
+var x=" "+
+"Sie sehen jetzt auf der linken Seite des Browserfensters &ndash; in der Men&uuml;f&uuml;hrung &ndash; "+
+"unter dem Hauptmen&uuml; und der Tagesaufgabe den Punkt \"Lehrwerk\". "+
+"<br>&nbsp;<br> "+
+"Wenn Sie diesen Men&uuml;punkt nun ausklappen, finden Sie dort das gesamte Lehrwerk Ihres Grammatikkurses."+
+"<br>&nbsp;<br> "+
+"Dieses Lehrwerk f&uuml;hrt Sie systematisch und Schritt f&uuml;r durch die gesamte Grammatik. "+
+"Es ist untergliedert in die folgenden Abschnitte: "+"<br>"+
+"<ul>"+
+"<li>Zur Sprache: Hier eignen Sie sich grundlegendes Wissen zur Sprachgeschichte, Aussprache und dem Alphabet an. </li>"+
+"<li>Substantive: Hier lernen Sie alles rund ums Substantiv - unter anderem, wie man die Mehrzahl (den Plural) bildet. </li>"+
+"<li> Adjektive & Adverbien: Steigerung von Adjektiven und Adverbien sind Themen dieses Abschnitts. </li>"+
+"<li> Verben: Das Verbsystem ist das Herzstück einer jeden Sprache. Hier lernen Sie zum Beispiel die Zeiten zu bilden und zu verwenden. </li>"+
+"<li> Pronomen: In diesem Abschnitt lernen Sie alle Arten von Pronomen kennen. </li>"+
+"<li> Satzbau: Hier geht es darum zu lernen, wie ein Satz in der Fremdsprache aufgebaut ist. </li>"+
+"<li> Nützliches: Hier finden Sie unter anderem die Zahlen und viel nützliches Konversationswissen. </li>"+
+"</ul>"+
+"F&uuml;r alle, die das nochmal kurz und knackig zusammengefasst sehen wollen, "+
+"hier die Auflistung der Befehle, die Sie anklicken m&uuml;ssen: "+
+" "+
+"<br>&nbsp;<br><img src=../../../grafik/pfeilsymbol.gif> Lehrwerk <img src=../../../grafik/pfeilsymbol.gif> 1. Zur Sprache <img src=../../../grafik/pfeilsymbol.gif> Einführung "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<h2><div id=ueberschrift02>Wo fange ich am besten mit dem Lernen an?</div></h2>
+
+
+<script language="JavaScript">
+//Express
+if ( sprachkuerzel.indexOf("2") > 0 ) { 
+var x=" "+
+"In Ihrem Expresskurs finden Sie Sammlungen mit wichtigen W&ouml;rtern und Redewendungen zu ganz unterschiedlichen Themen. In der ersten Lektion zum Beispiel geht es darum, zu lernen, wie man jemanden begr&uuml;&szlig;t oder sich verabschiedet. "+
+"<br>&nbsp;<br> "+
+"In der zweiten Lektion finden Sie Redewendungen dazu, wie Sie sich selbst vorstellen k&ouml;nnen. &ndash; In der Wahl dessen, was Sie interessiert, sind Sie ganz frei: Klicken Sie einfach in der Men&uuml;f&uuml;hrung links auf den Themenbereich, mit dem Sie sich beschäftigen wollen. "+
+"<br>&nbsp;<br> "+
+"Jetzt &ouml;ffnet sich die gew&auml;hlte Lektion. Wenn Sie unter dem Men&uuml;punkt \"Expresskurs\" auf die \"Liste\" klicken, kommen Sie zur &Uuml;bersicht &uuml;ber den Lernstoff der Lektion. Dort k&ouml;nnen Sie alle W&ouml;rter lesen, anh&ouml;ren, nachsprechen und lernen. "+
+"<br>&nbsp;<br> "+
+"Unter dem Punkt \"Lernen\" haben Sie die M&ouml;glichkeit, den Inhalt dieser Lektion einzu&uuml;ben. Dort finden Sie auch die Karteikarten zum Ausdrucken. Unter der Rubrik \"Testen\" k&ouml;nnen Sie das Gelernte &uuml;berpr&uuml;fen. Dabei stehen Ihnen verschiedene Arten von Tests zu Verf&uuml;gung. "+
+"<br>&nbsp;<br> "+
+"Durch Ausprobieren werden Sie schnell herausfinden, welche Art zu lernen Ihnen am meisten liegt.<br>&nbsp;<br> "+
+"Unter den anderen beiden Punkten (\"Langzeitmethode\" und \"Ultralangzeitmethode\") finden Sie Test- und Trainingsmethoden, wie Sie die W&ouml;rter des Kurses langfristig in Ihrem Ged&auml;chtnis speichern k&ouml;nnen. Eine detaillierte Anleitung finden Sie, wenn Sie das Programm starten. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Zum Lesen &amp; Anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Liste<br>&nbsp;<br> "+
+"<b>Zum Lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckter Text<br>&nbsp;<br> "+
+"<b>oder:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+"<b>Zum langfristigen Lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe<br>&nbsp;<br> "+
+"<b>oder:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Basis
+if ( sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1 && sprachkuerzel.indexOf("5") < 1 && sprachkuerzel.indexOf("6") < 1) { 
+var x=" "+
+"Mit Ihrem Basiskurs lernen Sie einen umfangreichen Grundwortschatz. Basierend auf diesem Grundwortschatz finden Sie 42 Dialogtexte, die Ihnen wichtige Situationen im Urlaub und Alltag n&auml;her bringen. "+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, sich immer zuerst mit den Vokabeln einer Lektion zu besch&auml;ftigen, ehe Sie sich einen neuen Dialogtext anschauen. Wie aber gehen Sie dabei am besten vor? "+
+"<br>&nbsp;<br> "+
+"Wir schlagen vor, sich als erstes die \"Vokabelliste\" anzuschauen. Bitte lesen, h&ouml;ren und sprechen Sie die Worte nach. Zum Ein&uuml;ben der W&ouml;rter empfehlen wir Ihnen, mit den versteckten Vokabeln zu arbeiten. Dort wird immer eine Seite des Vokabelblattes abgedeckt und Sie m&uuml;ssen die korrekte &Uuml;bersetzung wissen. Bitte drucken Sie sich auch die \"Karteikarten\" der Vokabeln aus. Die k&ouml;nnen Sie einpacken und immer und &uuml;berall wiederholen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie das Gef&uuml;hl haben, Sie k&ouml;nnen die Vokabeln einer Lektion: Testen Sie Ihr Wissen! Dabei haben Sie ganz unterschiedliche M&ouml;glichkeiten. "+
+"<br>&nbsp;<br> "+
+"Durch Ausprobieren werden Sie schnell herausfinden, welche Art von Test Ihnen am meisten liegt. Allen, die das Schreiben der Fremdsprache &uuml;ben und lernen wollen, empfehlen wir die Testmethode \"Test!\". Dort werden Sie aufgefordert, erst die Vokabeln zu &uuml;bersetzen und dann die richtige Schreibung in ein Fenster einzutragen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"<b>versteckte Vokabeln &uuml;ben:</b> "+
+"<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckte Vokabeln<br>&nbsp;<br> "+
+"<b>Vokabeln: Testen, was Sie schon k&ouml;nnen</b> "+
+"<br><img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test! "+
+"<br>&nbsp;<br> "+
+"Gehen Sie anschlie&szlig;end dazu &uuml;ber, mit dem Dialogtext der Lektion zu arbeiten. Klappen Sie den Men&uuml;punkt \"Dialogtext\" aus. Unter \"Dialogtext\" finden Sie die Geschichte der Lektion. "+
+"<br>&nbsp;<br> "+
+"Zum Lernen empfehlen wir Ihnen, mit L&uuml;ckentexten zu arbeiten. Sie finden im Men&uuml; des Dialogtextes unter dem Unterpunkt \"Lernen\" zwei verschiedene Arten von L&uuml;ckentexten: "+
+"<br>&nbsp;<br> "+
+"Der \"L&uuml;ckentext 1\" spart ganze W&ouml;rter aus. "+
+"<br>&nbsp;<br> "+
+"Im \"L&uuml;ckentext 2\" werden Bestandteile einzelner W&ouml;rter gel&ouml;scht und Sie m&uuml;ssen diese auff&uuml;llen. "+
+"<br>&nbsp;<br> "+
+"Wie auch bei den Vokabeln, kommt jetzt nach Lesen und Lernen der dritte Schritt: das Testen. Beginnen Sie doch mit einem \"Diktat\". Ein Muttersprachler wird Ihnen einen Satz aus der Lektion vorsprechen und Sie stehen nun vor der Aufgabe, diesen Satz richtig einzutippen. "+
+"<br>&nbsp;<br> "+
+"<b>Dialogtext lesen &amp; anh&ouml;ren</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Dialogtext <br>&nbsp;<br> "+
+"<b>Dialogtext: &Uuml;bersetzen &uuml;ben</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 1 "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 2<br>&nbsp;<br> "+
+"<b>Dialogtext: Test mit Diktat</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Diktat<br>&nbsp;<br> "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Aufbau
+if ( sprachkuerzel.indexOf("3") > 0 ) {
+var x=""+ 
+
+"Mit diesem Aufbaukurs k&ouml;nnen Sie schnell und erfolgreich Ihren Wortschatz erweitern: Sie finden in dieser Software &uuml;ber 1.800 Vokabeln. Basierend auf diesem Wortschatz finden Sie 42 Dialogtexte, die Ihnen Konversationswissen zu den Themen Alltag, zwischenmenschliche Beziehungen, Urlaub und Berufsleben vorstellen. "+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, sich immer zuerst mit den Vokabeln einer Lektion zu besch&auml;ftigen, ehe Sie sich einen neuen Dialogtext anschauen. Wie aber gehen Sie dabei am besten vor? "+
+"<br>&nbsp;<br> "+
+"Wir schlagen vor, sich als erstes die \"Vokabelliste\" anzuschauen. Bitte lesen, h&ouml;ren und sprechen Sie die Worte nach. Zum Ein&uuml;ben der W&ouml;rter empfehlen wir Ihnen, mit den versteckten Vokabeln zu arbeiten. "+
+"<br>&nbsp;<br> "+
+"Dort wird immer eine Seite des Vokabelblattes abgedeckt und Sie m&uuml;ssen die korrekte &Uuml;bersetzung wissen. Bitte drucken Sie sich auch die \"Karteikarten\" der Vokabeln aus. Die k&ouml;nnen Sie einpacken und immer und &uuml;berall wiederholen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie das Gef&uuml;hl haben, Sie k&ouml;nnen die Vokabeln einer Lektion: Testen Sie Ihr Wissen! Dabei haben Sie ganz unterschiedliche M&ouml;glichkeiten. Durch Ausprobieren werden Sie schnell herausfinden, welche Art von Test Ihnen am meisten liegt. "+
+"<br>&nbsp;<br>Allen, die das Schreiben der Fremdsprache &uuml;ben und lernen wollen, empfehlen wir die Testmethode \"Test!\". Dort werden Sie aufgefordert, erst die Vokabeln zu &uuml;bersetzen und dann die richtige Schreibung in ein Fenster einzutragen. "+
+"<br>&nbsp;<br> "+
+"<b>Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"<b>versteckte Vokabeln &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckte Vokabeln<br>&nbsp;<br> "+
+"<b>Vokabeln: Testen, was Sie schon k&ouml;nnen</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test! "+
+" "+
+"<br>&nbsp;<br> "+
+" "+
+"Gehen Sie anschlie&szlig;end dazu &uuml;ber, mit dem Dialogtext der Lektion zu arbeiten. Klappen Sie den Men&uuml;punkt \"Dialogtext\" aus. Unter \"Dialogtext\" finden Sie die Geschichte der Lektion. "+
+"<br>&nbsp;<br> "+
+"Zum Lernen empfehlen wir Ihnen, mit L&uuml;ckentexten zu arbeiten. Sie finden im Men&uuml; des Dialogtextes unter den Unterpunkt \"Lernen\" zwei verschiedene Arten von L&uuml;ckentexten: Der \"L&uuml;ckentext 1\" spart ganze W&ouml;rter aus. Im \"L&uuml;ckentext 2\" werden Bestandteile einzelner W&ouml;rter gel&ouml;scht und Sie m&uuml;ssen diese auff&uuml;llen. "+
+"<br>&nbsp;<br> "+
+"Wie auch bei den Vokabeln, kommt jetzt nach Lesen und Lernen der dritte Schritt: das Testen. Beginnen Sie doch mit einem \"Diktat\". Ein Muttersprachler wird Ihnen einen Satz aus der Lektion vorsprechen und Sie stehen nun vor der Aufgabe, diesen Satz richtig einzutippen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Dialogtext lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Dialogtext <br>&nbsp;<br> "+
+"<b>Dialogtext: &Uuml;bersetzen &uuml;ben</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 1 "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 2<br>&nbsp;<br> "+
+"<b>Dialogtext: Test mit Diktat:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Fachwortschatz
+if ( sprachkuerzel.indexOf("4") > 0 ) {
+var x=""+ 
+
+"Mit diesem Fachwortschatz-Vokabeltrainer k&ouml;nnen Sie schnell und erfolgreich Ihr Vokabel-Wissen erweitern: Sie finden in dieser Software &uuml;ber 2.100 Vokabeln. Dieser umfangreiche Wortschatz ist nach Themen und Fachgebieten sortiert und so ideal zum Lernen aufbereitet. "+
+"<br>&nbsp;<br> "+
+"In der ersten Lektion zum Beispiel geht es darum, Ihr Konversationswissen noch etwas aufzustocken. Hier finden Sie Wortschatz, den Sie im n&auml;chsten Gespr&auml;ch sicher brauchen k&ouml;nnen. Der zweite Themenbereich ist mit dem Schlagwort \"Sprachwissen\" &uuml;berschrieben und richtet sich an all jene, die sich gerne mit Grammatik besch&auml;ftigen oder sogar mit einsprachigen Grammatikwerken lernen. "+
+"<br>&nbsp;<br> "+
+"In der Wahl dessen, was Sie interessiert sind Sie ganz frei: Klicken Sie einfach in der Men&uuml;f&uuml;hrung links auf den Themenbereich, mit dem Sie sich besch&auml;ftigen wollen. Jetzt &ouml;ffnet sich die gew&auml;hlte Lektion. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie unter dem Men&uuml;punkt \"Vokabeln\" auf die \"Vokabelliste\" klicken, kommen Sie zur Liste aller W&ouml;rter, die Sie in dieser Lektion lernen werden. Dort k&ouml;nnen Sie alle Vokabeln lesen, anh&ouml;ren, nachsprechen und lernen. "+
+"<br>&nbsp;<br> "+
+"Zum Ein&uuml;ben der W&ouml;rter empfehlen wir Ihnen mit den \"versteckten Vokabeln\" zu arbeiten. Dort wird immer eine Seite des Vokabelblattes abgedeckt und Sie m&uuml;ssen die korrekte &Uuml;bersetzung wissen. "+
+"<br>&nbsp;<br> "+
+"Bitte drucken Sie sich auch die \"Karteikarten\" der Vokabeln aus. Die k&ouml;nnen Sie einpacken und Ihre W&ouml;rter immer und &uuml;berall wiederholen."+
+"<br>&nbsp;<br> "+
+"Wenn Sie das Gef&uuml;hl haben, Sie k&ouml;nnen die Vokabeln einer Lektion: Testen Sie Ihr Wissen! Dabei haben Sie ganz unterschiedliche M&ouml;glichkeiten. Durch Ausprobieren werden Sie schnell herausfinden, welche Art von Test Ihnen am meisten liegt. "+
+"<br>&nbsp;<br> "+
+"Allen, die das Schreiben der Fremdsprache &uuml;ben und lernen wollen, empfehlen wir die Testmethode \"Test!\". Dort werden Sie aufgefordert erst die Vokabeln zu &uuml;bersetzen und dann die richtige Schreibung in ein Fenster einzutragen. "+
+"<br>&nbsp;<br> "+
+"<b>Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"<b>versteckte Vokabeln &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckte Vokabeln<br>&nbsp;<br> "+
+"<b>Vokabeln: Testen, was Sie schon k&ouml;nnen</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test! "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Businesskurse
+if ( sprachkuerzel.indexOf("5") > 0 ) {
+var x=""+ 
+
+"In diesem Businesskurs finden Sie Wortschatz und Phrasensammlungen zu vielen verschiedenen Themen des Berufsalltags. "+
+"Beginnen Sie Ihre Arbeit an diesem Kurs, indem Sie zuerst das Thema auswählen, mit dem Sie sich beschäftigen möchten."+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, sich immer zuerst mit den Vokabeln einer Lektion zu besch&auml;ftigen, ehe Sie sich eine neue Phrasenliste anschauen. Wie aber gehen Sie dabei am besten vor? "+
+"<br>&nbsp;<br> "+
+"Wir schlagen vor, sich als erstes die \"Vokabelliste\" anzuschauen. Bitte lesen, h&ouml;ren und sprechen Sie die Worte dieser Liste nach. Zum Ein&uuml;ben der W&ouml;rter empfehlen wir Ihnen, mit den versteckten Vokabeln zu arbeiten. "+
+"<br>&nbsp;<br> "+
+"Dort wird immer eine Seite des Vokabelblattes abgedeckt und Sie m&uuml;ssen die korrekte &Uuml;bersetzung wissen. Bitte drucken Sie sich auch die \"Karteikarten\" der Vokabeln aus. Die k&ouml;nnen Sie einpacken und immer und &uuml;berall wiederholen. "+
+"<br>&nbsp;<br> "+
+"Wenn Sie das Gef&uuml;hl haben, Sie k&ouml;nnen die Vokabeln einer Lektion: Testen Sie Ihr Wissen! Dabei haben Sie ganz unterschiedliche M&ouml;glichkeiten. Durch Ausprobieren werden Sie schnell herausfinden, welche Art von Test Ihnen am meisten liegt. "+
+"<br>&nbsp;<br>Allen, die das Schreiben der Fremdsprache &uuml;ben und lernen wollen, empfehlen wir die Testmethode \"Test!\". Dort werden Sie aufgefordert, erst die Vokabeln zu &uuml;bersetzen und dann die richtige Schreibung in ein Fenster einzutragen. "+
+"<br>&nbsp;<br> "+
+"<b>Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"<b>versteckte Vokabeln &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckte Vokabeln<br>&nbsp;<br> "+
+"<b>Vokabeln: Testen, was Sie schon k&ouml;nnen</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test! "+
+" "+
+"<br>&nbsp;<br> "+
+" "+
+"Gehen Sie anschlie&szlig;end dazu &uuml;ber, mit den Phrasen der Lektion zu arbeiten. Klappen Sie den Men&uuml;punkt \"Phrasen\" aus. Unter \"Phrasen\" finden Sie eine Liste mit n&uuml;tzlichen Phrasen, die man passend zum Thema der Lektion beherrschen sollte. "+
+"<br>&nbsp;<br> "+
+"Zum Lernen empfehlen wir Ihnen, mit L&uuml;ckentexten zu arbeiten. Sie finden im Men&uuml; der Phrasen unter den Unterpunkt \"Lernen\" zwei verschiedene Arten von L&uuml;ckentexten: Der \"L&uuml;ckentext 1\" spart ganze W&ouml;rter aus. Im \"L&uuml;ckentext 2\" werden Bestandteile einzelner W&ouml;rter gel&ouml;scht und Sie m&uuml;ssen diese auff&uuml;llen. "+
+"<br>&nbsp;<br> "+
+"Wie auch bei den Vokabeln, kommt jetzt nach Lesen und Lernen der dritte Schritt: das Testen. Beginnen Sie doch mit einem \"Diktat\". Ein Muttersprachler wird Ihnen einen Satz zum Thema der Lektion vorsprechen und Sie stehen nun vor der Aufgabe, diesen Satz richtig einzutippen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Phrasensammlung lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Phrasen <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Phrasen <br>&nbsp;<br> "+
+"<b>Phrasensammlung: &Uuml;bersetzen &uuml;ben</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Phrasen <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 1 "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Phrasen <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> L&uuml;ckentext 2<br>&nbsp;<br> "+
+"<b>Phrasensammlung: Test mit Diktat:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Phrasen <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Grammatikkurs
+if ( sprachkuerzel.indexOf("6") > 0 ) {
+var x=""+ 
+
+"Wir emmpfehlen Ihnen immer in zwei Schritten vorzugehen: "+
+"<br>&nbsp;<br> "+
+"<b>Schritt 1: Arbeit mit dem Lehrwerk </b> "+
+"<br>"+
+"Beginnen Sie Ihre Arbeit an diesem Kurs, indem Sie zuerst ein Kapitel im Lehrwerk durchlesen. "+
+"Zum Beispiel: "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk <img src=../../../grafik/pfeilsymbol.gif> 1. Zur Sprache <img src=../../../grafik/pfeilsymbol.gif> Einf&uuml;hrung<br>&nbsp;<br> "+
+
+"<b>Schritt 2: Lehrwerk üben </b> "+
+"<br>"+
+"Nun klappen Sie das Men&uuml; \"Lehrwerk &uuml;ben\" aus. "+
+"<br>"+
+"Dort finden Sie eine Liste mit allen Beispielen, die Sie im Lehrwerk kennengelernt haben. "+
+"Alle Beispiele dieser Liste werden Ihnen von Muttersprachlern vorgesprochen und Sie können auf vielf&auml;ltige Weise &uuml;ben."+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk &uuml;ben <img src=../../../grafik/pfeilsymbol.gif> vertonte &Uuml;bungssätze "+
+"<br>&nbsp;<br> "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<h2><div id=ueberschrift02>Wo finde ich Lektion 1?</div></h2>
+
+
+
+
+<script language="JavaScript">
+//Express
+if ( sprachkuerzel.indexOf("2") > 0 ) { 
+var x=" "+
+"Die meisten von Ihnen wollen bestimmt gleich mit der ersten Lektion beginnen. Um die erste Lektion aufzurufen, klicken Sie bitte links in der Men&uuml;f&uuml;hrung auf den ersten Punkt \"Begr&uuml;&szlig;ung\": Jetzt betreten Sie Ihren Sprachkurs, das hei&szlig;t, Sie verlassen die &Uuml;ber-Ebene des Hauptmen&uuml;s. "+
+"<br>&nbsp;<br> "+
+"Die Men&uuml;f&uuml;hrung links ver&auml;ndert sich: Der Men&uuml;punkt \"Expresskurs\" &ouml;ffnet sich. Unter dem Men&uuml;punkt \"Lesen\" finden Sie jetzt die \"Liste\". In dieser Liste finden Sie alle W&ouml;rter und Redewendungen, die Sie zu diesem Thema lernen sollen. "+
+" "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Liste "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Basis
+if ( sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1 && sprachkuerzel.indexOf("5") < 1 && sprachkuerzel.indexOf("6") < 1) { 
+var x=" "+
+"Die meisten von Ihnen wollen bestimmt gleich mit der ersten Lektion beginnen. Um die erste Lektion aufzurufen, klicken Sie bitte links in der Men&uuml;f&uuml;hrung auf den ersten Punkt: "+
+"<br>&nbsp;<br> "+
+"Jetzt betreten Sie Ihren Sprachkurs, das hei&szlig;t, Sie verlassen die &Uuml;ber-Ebene des Hauptmen&uuml;s und erhalten Zugang zu den Vokabeln, dem Text, der Grammatik und den &Uuml;bungss&auml;tzen der Grammatik. Wenn Sie jetzt auf einen der genannten Men&uuml;punkte klicken, klappt eine Liste mit allen Inhalten dieses Punktes aus. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Vokabeln der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+" "+
+"<b>Dialogtext der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Dialogtext "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Aufbau
+if ( sprachkuerzel.indexOf("3") > 0 ) {
+var x=""+ 
+"Die meisten von Ihnen wollen bestimmt gleich mit der ersten Lektion beginnen. Um die erste Lektion aufzurufen, klicken Sie bitte links in der Men&uuml;f&uuml;hrung auf den ersten Punkt: <br>Jetzt betreten Sie Ihren Sprachkurs, das hei&szlig;t, Sie verlassen die &Uuml;ber-Ebene des Hauptmen&uuml;s und erhalten Zugang zu den Vokabeln und dem Text der ersten Lektion. Wenn Sie jetzt auf einen der genannten Men&uuml;punkte klicken, klappt eine Liste mit allen Inhalten dieses Punktes aus. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Vokabeln der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+" "+
+"<b>Dialogtext der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Dialogtext <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Dialogtext "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Fachwortschatz
+if ( sprachkuerzel.indexOf("4") > 0 ) {
+var x=""+ 
+"Die meisten von Ihnen wollen bestimmt gleich mit der ersten Lektion beginnen. Um die erste Lektion aufzurufen, klicken Sie bitte links in der Men&uuml;f&uuml;hrung auf den Punkt \"Vokabeln\": <br>Jetzt betreten Sie Ihren Sprachkurs, das hei&szlig;t, Sie verlassen die &Uuml;ber-Ebene des Hauptmen&uuml;s. "+
+"<br>&nbsp;<br> "+
+"Die Men&uuml;f&uuml;hrung ver&auml;ndert sich. Der Men&uuml;punkt \"Vokabeln\" klappt aus. "+
+"<br>&nbsp;<br> "+
+"Unter dem Men&uuml;punkt \"Lesen\" finden Sie jetzt die \"Vokabelliste\". In dieser Liste finden Sie alle W&ouml;rter und Redewendungen, die Sie zu diesem Thema lernen sollen. "+
+"<br>&nbsp;<br> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Businesskurse
+if ( sprachkuerzel.indexOf("5") > 0 ) {
+var x=""+ 
+"Die meisten von Ihnen wollen bestimmt gleich mit der ersten Lektion beginnen. Um die erste Lektion aufzurufen, klicken Sie bitte links in der Men&uuml;f&uuml;hrung auf den ersten Punkt: <br>Jetzt betreten Sie Ihren Sprachkurs, das hei&szlig;t, Sie verlassen die &Uuml;ber-Ebene des Hauptmen&uuml;s und erhalten Zugang zu den Vokabeln und Phrasen der ersten Lektion. Wenn Sie jetzt auf einen der genannten Men&uuml;punkte klicken, klappt eine Liste mit allen Inhalten dieses Punktes aus. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Vokabeln der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+" "+
+"<b>Phrasen der Lektion 1 lesen, h&ouml;ren &amp; lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Phrasen <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Phrasen "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Grammatikkurs
+if ( sprachkuerzel.indexOf("6") > 0 ) {
+var x=""+ 
+"Sie steigen in diesen Grammatikkurs ein, indem Sie sich zuerst mit dem Lehrwerk besch&auml;ftigen. "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk <img src=../../../grafik/pfeilsymbol.gif> 1. Zur Sprache <img src=../../../grafik/pfeilsymbol.gif> Einf&uuml;hrung <br>&nbsp;<br> "+
+" "+
+"Lesen und lernen Sie anschließend mit den vertonten &Uuml;bungen. Diese finden Sie hier: "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk &uuml;ben <img src=../../../grafik/pfeilsymbol.gif> Vertonte &Uuml;bungen <br>&nbsp;<br> "+
+" "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2><div id=ueberschrift02>In welcher Reihenfolge lerne ich am besten mit meinem Sprachkurs?</div></h2>
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+//Express
+if ( sprachkuerzel.indexOf("2") > 0 ) { 
+var x=" "+
+"Ihr Expresskurs ist in verschiedene Stufen unterteilt: Es ist so gedacht, dass Sie zuerst die neuen W&ouml;rter und Redewendungen einer Lektion lesen. Beim Lesen haben Sie mehrere M&ouml;glichkeiten: Sie k&ouml;nnen die Liste mit den W&ouml;rtern lesen und anh&ouml;ren. Sie k&ouml;nnen sich alle W&ouml;rter und Redewendungen einer Lektion in der Quick-Show auf die Schnelle noch mal anschauen oder Sie k&ouml;nnen gezielt nach einzelnen W&ouml;rtern und Wendungen suchen. <br>&nbsp;<br> "+
+" "+
+"<b>W&ouml;rter &amp; Redewendungen: lesen &amp; h&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Liste <br>&nbsp;<br> "+
+" "+
+"<b>Wiederholung auf die Schnelle:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Quick-Show<br>&nbsp;<br> "+
+" "+
+"<b>Gezielte Suche:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Volltextsuche<br>&nbsp;<br> "+
+" "+
+"Anschlie&szlig;end sollten Sie das Gelesene wiederholen und lernen. Auch hier finden Sie wieder unterschiedliche Wege und Vorschl&auml;ge, wie Sie sich das Neue am besten einpr&auml;gen. F&uuml;r alle, die fr&uuml;her gerne mit einem Vokabelheft gearbeitet haben, ist die &Uuml;bung \"Versteckter Text\" gedacht. Hier k&ouml;nnen Sie immer eine Seite (entweder Deutsch oder die Fremdsprache) verdecken und so testen, ob Sie die &Uuml;bersetzung schon k&ouml;nnen. "+
+"<br>&nbsp;<br> "+
+"Als zweite M&ouml;glichkeit bietet Ihnen unsere Software an, die W&ouml;rter und Wendungen einzeln nacheinander zu &uuml;bersetzen und zu wiederholen. Wenn Sie ein bisschen vom reinen Lernen am Computer wegkommen wollen, haben Sie auch die M&ouml;glichkeit, sich alle W&ouml;rter und Ihre &Uuml;bersetzungen auf Karteikarten auszudrucken. "+
+" "+
+"<br>&nbsp;<br> "+
+"<b>Lernen wie mit dem Vokabelheft:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckter Text<br>&nbsp;<br> "+
+" "+
+"<b>W&ouml;rter &amp; Wendungen einzeln lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Einzeln Lernen<br>&nbsp;<br> "+
+" "+
+"<b>Karteikarten drucken:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+" "+
+"Nachdem Sie den Inhalt einer Lektion gelernt haben, wollen Sie Ihr Wissen jetzt bestimmt auf die Probe stellen und sich testen. Auch hier finden Sie wieder ganz unterschiedliche Testarten. Probieren Sie doch alle einmal aus. Sie werden schnell herausfinden, mit welchem Test Sie Ihr Wissen schnell, effektiv und mit Spa&szlig; am Arbeiten &uuml;berpr&uuml;fen k&ouml;nnen. "+
+" "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Kann ich dieses Wort &uuml;bersetzen und aufschreiben? &ndash; Der Test!</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test!<br>&nbsp;<br> "+
+" "+
+"<b>Die richtige &Uuml;bersetzung aus verschiedenen L&ouml;sungen ausw&auml;hlen: der Multiple-Choice-Test</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Multiple Choice<br>&nbsp;<br> "+
+" "+
+"<b>Alles schnell nochmal durchgehen: die Blitzwiederholung</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Blitzwiederholung<br>&nbsp;<br> "+
+" "+
+"<b>Die Fremdsprache Schreiben lernen mit einem Diktat:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Diktat<br>&nbsp;<br> "+
+" "+
+"<b>Spielerisch lernen: die Wortendung fehlt</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Wortendung "+
+" "+
+"<br>&nbsp;<br> "+
+"Sie haben auch die M&ouml;glichkeit, das Gelernte in Ihrem Langzeitged&auml;chtnis zu speichern und Ihr Wissen mit unserer Software st&auml;ndig zu &uuml;berpr&uuml;fen und aufzustocken. Mit den beiden Lernmethoden \"Langzeitmethode\" und \"Ultralangzeitmethode\" lernen Sie alle Vokabeln dieses Sprachkurses. Jeden Tag wird dabei eine (w&auml;hlbare) Anzahl an Vokabeln abgefragt. "+
+"<br>&nbsp;<br> "+
+"Sie k&ouml;nnen auch frei entscheiden, auf welche Art die W&ouml;rter und Redewendungen abgefragt werden: als Texteingabe, als Multiple-Choice-Test, als Diktat oder als Blitzwiederholung. Am Ende der &Uuml;bung erhalten Sie einen Weiterlern-Code, mit dem Sie beim n&auml;chsten Lernen wieder an der Stelle einsteigen k&ouml;nnen, an der Sie diese &Uuml;bung verlassen haben. "+
+" "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen l&auml;ngeren Zeitraum W&ouml;rter &uuml;bersetzen &amp; schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"<br>&nbsp;<br> "+
+"oder "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen langen Zeitraum W&ouml;rter und Wendungen schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Expresskurs <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Basis
+if ( sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1 && sprachkuerzel.indexOf("5") < 1 && sprachkuerzel.indexOf("6") < 1) { 
+var x=" "+
+"Unsere Software ist so aufgebaut, dass Sie den Lernstoff in drei aufeinanderfolgenden logischen Schritten durcharbeiten: Sie beginnen zuerst mit dem Lesen, anschlie&szlig;end lernen Sie den Stoff und schlie&szlig;lich testen Sie Ihr Wissen. "+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, beim Lernen mit Ihrem Basiskurs folgenderma&szlig;en vorzugehen: Besch&auml;ftigen Sie sich zuerst mit der Vokabelliste einer Lektion. Gehen Sie diese Liste den drei Schritten folgend (Lesen &ndash; Lernen &ndash; Testen) durch. Innerhalb eines jeden Lernschrittes finden Sie immer unterschiedliche M&ouml;glichkeiten, sich mit dem Lernstoff auseinanderzusetzen. "+
+"<br>&nbsp;<br> "+
+"Bitte probieren Sie zu Beginn alle M&ouml;glichkeiten einmal aus. Sie werden schnell herausfinden, wie Sie schnell, effektiv und mit Spa&szlig; am Arbeiten lernen k&ouml;nnen. Hier haben wir einen Vorschlag ausgearbeitet, wie Sie sich die Vokabeln einer Lektion schnell merken k&ouml;nnen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Die Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+"<b>Karteikarten ausdrucken &amp; unterwegs lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+"<b>&Uuml;bersetzen &uuml;ben &amp; die Fremdsprache schreiben lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test!<br>&nbsp;<br> "+
+"<b>Zum Schluss alles nochmal schnell durchgehen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Blitzwiederholung "+
+" "+
+"<br>&nbsp;<br> "+
+"Sie haben auch die M&ouml;glichkeit, das Gelernte in Ihrem Langzeitged&auml;chtnis zu speichern und Ihr Wissen mit unserer Software st&auml;ndig zu &uuml;berpr&uuml;fen und aufzustocken. Mit den beiden Lernmethoden \"Langzeitmethode\" und \"Ultralangzeitmethode\" lernen Sie alle Vokabeln dieses Sprachkurses. "+
+"<br>&nbsp;<br> "+
+"Jeden Tag wird dabei eine (w&auml;hlbare) Anzahl an Vokabeln abgefragt. Sie k&ouml;nnen auch frei entscheiden, auf welche Art die W&ouml;rter abgefragt werden: als Texteingabe, als Multiple-Choice-Test, als Diktat oder als Blitzwiederholung. Am Ende der &Uuml;bung erhalten Sie einen Weiterlern-Code, mit dem Sie beim n&auml;chsten Lernen wieder an der Stelle einsteigen k&ouml;nnen, an der Sie diese &Uuml;bung verlassen haben. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>&Uuml;ber einen l&auml;ngeren Zeitraum Vokabeln &uuml;bersetzen &amp; schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"<br>&nbsp;<br> "+
+"oder "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen langen Zeitraum W&ouml;rter schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+" "+
+"<br>&nbsp;<br> "+
+"Wenn Sie die Vokabeln beherrschen, gehen Sie weiter zum Dialogtext einer Lektion. Auch hier arbeiten Sie die Geschichte wieder in drei Schritten durch: zuerst lesen und h&ouml;ren Sie den Dialog, danach lernen Sie am Text. Zum Schluss pr&uuml;fen Sie Ihr Wissen und &uuml;ben das &Uuml;bersetzen mit den verschiedenen Testm&ouml;glichkeiten. "+
+"<br>&nbsp;<br> "+
+"Die Grammatik Ihres Sprachkurses ist ganz systematisch aufgearbeitet und Sie k&ouml;nnen damit &ndash; unabh&auml;ngig von den Geschichten des Sprachkurses &ndash; den Aufbau und die Systematik der neuen Sprache verstehen und lernen. Wenn Sie den Teil zur Grammatik ausklappen, finden Sie dort die Schlagw&ouml;rter und Themen der Grammatik. "+
+"<br>&nbsp;<br> "+
+"Alle &Uuml;bungss&auml;tze der Grammatik werden unter dem Men&uuml;punkt \"&Uuml;bungen\" abgefragt. Dort haben Sie mit der \"Langzeitmethode\" oder der \"Ultralangzeitmethode\" unterschiedliche M&ouml;glichkeiten, ganz neue S&auml;tze, die nicht in den Geschichten der Lektionen vorkommen, zu &uuml;bersetzen und so zu testen, ob Sie die Grammatik verstanden haben. "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Aufbau
+if ( sprachkuerzel.indexOf("3") > 0 ) {
+var x=""+ 
+"Unsere Software ist so aufgebaut, dass Sie den Lernstoff in drei aufeinanderfolgenden logischen Schritten durcharbeiten: Sie beginnen zuerst mit dem Lesen, anschlie&szlig;end lernen Sie den Stoff und schlie&szlig;lich testen Sie Ihr Wissen. "+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, beim Lernen mit Ihrem Aufbaukurs folgenderma&szlig;en vorzugehen: Besch&auml;ftigen Sie sich zuerst mit der Vokabelliste einer Lektion. Gehen Sie diese Liste bitte den drei Schritten folgend (Lesen &ndash; Lernen &ndash; Testen) durch. Innerhalb eines jeden Lernschrittes finden Sie immer unterschiedliche M&ouml;glichkeiten, sich mit dem Lernstoff auseinanderzusetzen. "+
+"<br>&nbsp;<br> "+
+"Bitte probieren Sie zu Beginn alle M&ouml;glichkeiten einmal aus. Sie werden schnell herausfinden, wie Sie schnell, effektiv und mit Spa&szlig; am Arbeiten lernen k&ouml;nnen. Hier haben wir einen Vorschlag ausgearbeitet, wie Sie sich die Vokabeln einer Lektion schnell merken k&ouml;nnen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Die Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+" "+
+"<b>Karteikarten ausdrucken &amp; unterwegs lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+" "+
+"<b>&Uuml;bersetzen &uuml;ben &amp; die Fremdsprache schreiben lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test!<br>&nbsp;<br> "+
+"<b> "+
+"Zum Schluss alles nochmal schnell durchgehen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Blitzwiederholung "+
+" "+
+"<br>&nbsp;<br> "+
+"Sie haben auch die M&ouml;glichkeit, das Gelernte in Ihrem Langzeitged&auml;chtnis zu speichern und Ihr Wissen mit unserer Software st&auml;ndig zu &uuml;berpr&uuml;fen und aufzustocken. Mit den beiden Lernmethoden \"Langzeitmethode\" und \"Ultralangzeitmethode\" lernen Sie alle Vokabeln dieses Sprachkurses. Jeden Tag wird dabei eine (w&auml;hlbare) Anzahl an Vokabeln abgefragt. "+
+"<br>&nbsp;<br> "+
+"Sie k&ouml;nnen auch frei entscheiden, auf welche Art die W&ouml;rter abgefragt werden: als Texteingabe, als Multiple-Choice-Test, als Diktat oder als Blitzwiederholung. Am Ende der &Uuml;bung erhalten Sie einen Weiterlern-Code, mit dem Sie beim n&auml;chsten Lernen wieder an der Stelle einsteigen k&ouml;nnen, an der Sie diese &Uuml;bung verlassen haben. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>&Uuml;ber einen l&auml;ngeren Zeitraum Vokabeln &uuml;bersetzen &amp; schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"<br>&nbsp;<br> "+
+"oder "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen langen Zeitraum W&ouml;rter schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"<br>&nbsp;<br> "+
+"Wenn Sie die Vokabeln beherrschen, gehen Sie weiter zum Dialogtext einer Lektion. Auch hier arbeiten Sie die Geschichte wieder in drei Schritten durch: zuerst lesen und h&ouml;ren Sie den Dialog, danach lernen Sie am Text. Zum Schluss pr&uuml;fen Sie Ihr Wissen und &uuml;ben das &Uuml;bersetzen mit den verschiedenen Testm&ouml;glichkeiten. "+
+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+<script language="JavaScript">
+//Fachwortschatz
+if ( sprachkuerzel.indexOf("4") > 0 ) { 
+var x=" "+
+"Ihr Vokabeltrainer ist in verschiedene Stufen unterteilt: Es ist so gedacht, dass Sie zuerst die neuen W&ouml;rter und Redewendungen einer Lektion lesen. "+
+"<br>&nbsp;<br> "+
+"Beim Lesen haben Sie mehrere M&ouml;glichkeiten: Sie k&ouml;nnen die Vokabelliste mit dem gesammelten Wortschatz lesen und anh&ouml;ren. Sie k&ouml;nnen sich alle W&ouml;rter und Redewendungen einer Lektion in der Quick-Show auf die Schnelle noch mal anschauen oder Sie k&ouml;nnen gezielt nach einzelnen W&ouml;rtern und Wendungen suchen. <br>&nbsp;<br> "+
+" "+
+"<b>W&ouml;rter &amp; Redewendungen: lesen &amp; h&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste <br>&nbsp;<br> "+
+" "+
+"<b>Wiederholung auf die Schnelle:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Quick-Show<br>&nbsp;<br> "+
+" "+
+"<b>Gezielte Suche, Nachschlagen im W&ouml;terbuch:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> W&ouml;rterbuch + Suche<br>&nbsp;<br> "+
+" "+
+"Anschlie&szlig;end sollten Sie das Gelesene wiederholen und lernen. Auch hier finden Sie wieder unterschiedliche Wege und Vorschl&auml;ge, wie Sie sich das Neue am besten einpr&auml;gen. "+
+"<br>&nbsp;<br> "+
+"F&uuml;r alle, die fr&uuml;her gerne mit einem Vokabelheft gearbeitet haben, ist die &Uuml;bung \"Versteckte Vokabeln\" gedacht. Hier k&ouml;nnen Sie immer eine Seite (entweder Deutsch oder die Fremdsprache) verdecken und so testen, ob Sie die &Uuml;bersetzung schon k&ouml;nnen. "+
+"<br>&nbsp;<br> "+
+"Als zweite M&ouml;glichkeit bietet Ihnen unsere Software an, die W&ouml;rter und Wendungen einzeln nacheinander zu &uuml;bersetzen und zu wiederholen. Wenn Sie ein bisschen wegkommen wollen vom reinen Lernen am Computer, haben Sie auch die M&ouml;glichkeit, sich alle W&ouml;rter und Ihre &Uuml;bersetzungen auf Karteikarten auszudrucken. "+
+" "+
+"<br>&nbsp;<br> "+
+"<b>Lernen wie mit dem Vokabelheft:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Versteckte Vokabeln<br>&nbsp;<br> "+
+" "+
+"<b>W&ouml;rter &amp; Wendungen nacheinander lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Einzeln Lernen<br>&nbsp;<br> "+
+" "+
+"<b>Karteikarten drucken:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+" "+
+"Nachdem Sie den Inhalt einer Lektion gelernt haben, wollen Sie Ihr Wissen jetzt bestimmt auf die Probe stellen und sich testen. Auch hier finden Sie wieder ganz unterschiedliche Testarten. "+
+"<br>&nbsp;<br> "+
+"Probieren Sie doch alle einmal aus. Sie werden schnell herausfinden, mit welchem Test Sie Ihr Wissen schnell, effektiv und mit Spa&szlig; am Arbeiten &uuml;berpr&uuml;fen k&ouml;nnen. "+
+" "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Kann ich dieses Wort &uuml;bersetzen und aufschreiben? &ndash; Der Test!</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test!<br>&nbsp;<br> "+
+" "+
+"<b>Die richtige &Uuml;bersetzung aus verschiedenen L&ouml;sungen ausw&auml;hlen: Der Multiple-Choice-Test</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Multiple Choice<br>&nbsp;<br> "+
+" "+
+"<b>Alles schnell nochmal durchgehen: Die Blitzwiederholung</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Blitzwiederholung<br>&nbsp;<br> "+
+" "+
+"<b>Die Fremdsprache Schreiben lernen mit einem Diktat:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Diktat<br>&nbsp;<br> "+
+" "+
+"<b>Spielerisch lernen: Die Wortendung fehlt</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Voakbeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Wortendung "+
+" "+
+"<br>&nbsp;<br> "+
+"Sie haben auch die M&ouml;glichkeit das Gelernte in Ihrem Langzeitged&auml;chtnis zu speichern und Ihr Wissen mit unserer Software st&auml;ndig zu &uuml;berpr&uuml;fen und aufzustocken. "+
+"<br>&nbsp;<br> "+
+"Mit den beiden Lernmethoden \"Langzeitmethode\" und \"Ultralangzeitmethode\" lernen Sie alle Vokabeln dieses Sprachkurses. Jeden Tag wird dabei eine (w&auml;hlbare) Anzahl an Vokabeln abgefragt. "+
+"<br>&nbsp;<br> "+
+"Sie k&ouml;nnen auch frei entscheiden, auf welche Art die W&ouml;rter und Redewendungen abgefragt werden: als Texteingabe, als Multiple-Choice-Test, als Diktat oder als Blitzwiederholung. Am Ende der &Uuml;bung erhalten Sie einen Weiterlern-Code, mit dem Sie beim n&auml;chsten Lernen wieder an der Stelle einsteigen k&ouml;nnen, an der Sie diese &Uuml;bung verlassen haben. "+
+" "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen l&auml;ngeren Zeitraum W&ouml;rter &uuml;bersetzen &amp; schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"<br>&nbsp;<br> "+
+"oder "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen langen Zeitraum W&ouml;rter und Wendungen schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+
+<script language="JavaScript">
+//Businesskurse
+if ( sprachkuerzel.indexOf("5") > 0 ) {
+var x=""+ 
+"Unsere Software ist so aufgebaut, dass Sie den Lernstoff in drei aufeinanderfolgenden logischen Schritten durcharbeiten: Sie beginnen zuerst mit dem Lesen, anschlie&szlig;end lernen Sie den Stoff und schlie&szlig;lich testen Sie Ihr Wissen. "+
+"<br>&nbsp;<br> "+
+"Wir empfehlen Ihnen, beim Lernen mit Ihrem Businesskurs folgenderma&szlig;en vorzugehen: Besch&auml;ftigen Sie sich zuerst mit der Vokabelliste einer Lektion. Gehen Sie diese Liste bitte den drei Schritten folgend (Lesen &ndash; Lernen &ndash; Testen) durch. Innerhalb eines jeden Lernschrittes finden Sie immer unterschiedliche M&ouml;glichkeiten, sich mit dem Lernstoff auseinanderzusetzen. "+
+"<br>&nbsp;<br> "+
+"Bitte probieren Sie zu Beginn alle M&ouml;glichkeiten einmal aus. Sie werden schnell herausfinden, wie Sie schnell, effektiv und mit Spa&szlig; am Arbeiten lernen k&ouml;nnen. Hier haben wir einen Vorschlag ausgearbeitet, wie Sie sich die Vokabeln einer Lektion schnell merken k&ouml;nnen. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>Die Vokabeln lesen &amp; anh&ouml;ren:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lesen <img src=../../../grafik/pfeilsymbol.gif> Vokabelliste<br>&nbsp;<br> "+
+" "+
+"<b>Karteikarten ausdrucken &amp; unterwegs lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Lernen <img src=../../../grafik/pfeilsymbol.gif> Karteikarten<br>&nbsp;<br> "+
+" "+
+"<b>&Uuml;bersetzen &uuml;ben &amp; die Fremdsprache schreiben lernen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Test!<br>&nbsp;<br> "+
+"<b> "+
+"Zum Schluss alles nochmal schnell durchgehen:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Testen <img src=../../../grafik/pfeilsymbol.gif> Blitzwiederholung "+
+" "+
+"<br>&nbsp;<br> "+
+"Sie haben auch die M&ouml;glichkeit, das Gelernte in Ihrem Langzeitged&auml;chtnis zu speichern und Ihr Wissen mit unserer Software st&auml;ndig zu &uuml;berpr&uuml;fen und aufzustocken. Mit den beiden Lernmethoden \"Langzeitmethode\" und \"Ultralangzeitmethode\" lernen Sie alle Vokabeln dieses Sprachkurses. Jeden Tag wird dabei eine (w&auml;hlbare) Anzahl an Vokabeln abgefragt. "+
+"<br>&nbsp;<br> "+
+"Sie k&ouml;nnen auch frei entscheiden, auf welche Art die W&ouml;rter abgefragt werden: als Texteingabe, als Multiple-Choice-Test, als Diktat oder als Blitzwiederholung. Am Ende der &Uuml;bung erhalten Sie einen Weiterlern-Code, mit dem Sie beim n&auml;chsten Lernen wieder an der Stelle einsteigen k&ouml;nnen, an der Sie diese &Uuml;bung verlassen haben. "+
+"<br>&nbsp;<br> "+
+" "+
+"<b>&Uuml;ber einen l&auml;ngeren Zeitraum Vokabeln &uuml;bersetzen &amp; schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Langzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Texteingabe "+
+"<br>&nbsp;<br> "+
+"oder "+
+"<br>&nbsp;<br> "+
+"<b>&Uuml;ber einen langen Zeitraum W&ouml;rter schreiben &uuml;ben:</b> "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Vokabeln <img src=../../../grafik/pfeilsymbol.gif> Ultralangzeitmethode <img src=../../../grafik/pfeilsymbol.gif> Diktat "+
+"<br>&nbsp;<br> "+
+"Wenn Sie die Vokabeln beherrschen, gehen Sie weiter zu den Phrasen einer Lektion. Auch hier arbeiten Sie die Sammlung der S&auml;tze wieder in drei Schritten durch: zuerst lesen und h&ouml;ren Sie alle Phrasen, danach lernen Sie Phrase für Phrase. Zum Schluss pr&uuml;fen Sie Ihr Wissen und &uuml;ben das &Uuml;bersetzen mit den verschiedenen Testm&ouml;glichkeiten. "+
+
+"";
+document.write (x);
+}
+</script>
+
+
+
+<script language="JavaScript">
+//Grammatikkurs
+if ( sprachkuerzel.indexOf("6") > 0 ) {
+var x=""+ 
+"Unsere Software ist so aufgebaut, dass Sie den Lernstoff in drei aufeinanderfolgenden logischen Schritten durcharbeiten: "+
+"<br>&nbsp;<br> "+
+"<b>Schritt 1: Arbeit mit dem Lehrwerk </b> "+
+"<br>"+
+"Beginnen Sie Ihre Arbeit an diesem Kurs, indem Sie zuerst ein Kapitel im Lehrwerk durchlesen. "+
+"Zum Beispiel: "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk <img src=../../../grafik/pfeilsymbol.gif> 1. Zur Sprache <img src=../../../grafik/pfeilsymbol.gif> Einf&uuml;hrung<br>&nbsp;<br> "+
+
+"<b>Schritt 2: Lehrwerk &uuml;ben </b> "+
+"<br>"+
+"Nun klappen Sie das Men&uuml; \"Lehrwerk &uuml;ben\" aus. "+
+"<br>"+
+"Dort finden Sie eine Liste mit allen Beispielen, die Sie im Lehrwerk kennengelernt haben. "+
+"Alle Beispiele dieser Liste werden Ihnen von Muttersprachlern vorgesprochen und Sie können auf vielf&auml;ltige Weise &uuml;ben."+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Lehrwerk &uuml;ben <img src=../../../grafik/pfeilsymbol.gif> Vertonte &Uuml;bungss&auml;tze "+
+"<br>&nbsp;<br> "+
+
+"<b>Schritt 3: Vertiefung eines Themas mit einem Grammatiktrainer </b> "+
+"<br>"+
+"Nun klappen Sie das Men&uuml; \"Grammatiktrainer\" aus. "+
+"<br>"+
+"Dort w&auml;hlen Sie nun den Grammatiktrainer zu dem Thema aus, mit dem Sie sich n&auml;her beschäftigen m&ouml;chten. <br>"+
+"Wenn Sie zum Beispiel die Pluralbildung wiederholen und vertiefen m&ouml;chten, so steuern Sie den Grammatiktrainer mit Schwerpunkt Plural an: "+
+"<br>&nbsp;&nbsp;<img src=../../../grafik/pfeilsymbol.gif> Grammatiktrainer <img src=../../../grafik/pfeilsymbol.gif> Pluraltrainer <img src=../../../grafik/pfeilsymbol.gif> Vertonte &Uuml;bungss&auml;tze "+
+"<br>&nbsp;<br> "+
+
+"";
+document.write (x);
+}
+</script>
+
+
+
+
+
+<div id=linie_topgelb><div align=center>| <a href=../../lektionsauswahl_de.html>&Uuml;bersicht</a> |<br>&nbsp;</div></div>
+
+</div>
+</BODY></HTML>
+

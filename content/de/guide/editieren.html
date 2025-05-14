@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<link rel="stylesheet" type="text/css" href="../../langues.css">
+<TITLE></TITLE>
+<script language="JavaScript">
+
+</script>
+</HEAD>
+<BODY><center><div id="container2">
+
+<script language="JavaScript" src="../../../text/daten.js"></script>
+<script language="JavaScript" src="../../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../../menu/lektionen.js"></script>
+
+
+
+<script language="JavaScript" src="../../../omwid.js"></script>
+
+
+
+
+
+<script language="JavaScript">
+
+  if (sprache2=="franzoesisch") sprache2="französisch";
+  if (sprache2=="niederlaendisch") sprache2="niederländisch";
+  if (sprache2=="rumaenisch") sprache2="rumänisch";
+  if (sprache2=="tuerkisch") sprache2="türkisch";
+  if (sprache2=="daenisch") sprache2="dänisch";
+  if (sprache2=="hebraeisch") sprache2="hebräisch";
+  if (sprache2=="islaendisch") sprache2="isländisch";
+  if (sprache2=="aegyptisch") sprache2="ägyptisch";
+  if (sprache2=="suedamerika") sprache2="Spanisch (Südamerika)";
+  if (sprache2=="weissrussisch") sprache2="weißrussisch";
+  
+  var titletext=sprache2+spracheintrag_menu[42];
+  if (sprachkuerzel.indexOf("2")>-1) var titletext=sprache2+spracheintrag_menu[43];
+  if (sprachkuerzel.indexOf("3")>-1) var titletext=sprache2+spracheintrag_menu[44];
+  var sprache3=sprache2.substring(0,1).toUpperCase()+sprache2.substring(1);
+  //var titletext="<img src=../grafik3/"+sprache2+"_fahne30.gif><br>"+sprache3;
+
+  titletext=titletext.substring(0,1).toUpperCase()+titletext.substring(1);
+
+
+if (sprache == "latein") { self.location="symbole_lat.html";}
+
+
+</script>
+
+<div id="prozent80"><div id="normaltext">
+
+<img src=../../../grafik/d0.gif width=2 height=10><br><table border=0 width=490 cellspacing=0 cellpadding=0><tr><TD width=137><img src=../../../grafik/sprachenlernen24.gif></td><TD width=409>&nbsp;</td><TD width=44 align=right><script language="JavaScript">
+document.write("<img src=../../../grafik3/"+sprache+"_fahne100.gif align=left border=1 valign=top width=42 height=28>");
+
+</script></td></tr></table>
+
+<h1><div id="bg_gelb"><div id="ueberschrift03">Wie kann ich die Inhalte editieren?</div></div></h1>
+| <a href=../../lektionsauswahl_de.html>&Uuml;bersicht</a> |
+<br>&nbsp;<br>
+
+Falls Sie einzelne Vokabeln oder Textzeilen ändern möchten,
+so öffnen Sie dazu bitte die folgenden Dateien mit einem Editor
+(bitte legen Sie sich von diesen Dateien vorher zur Sicherheit eine Kopie an):
+
+<ul>
+<li>Im Expresskurs:
+<br>/express/daten.js<br>&nbsp;
+ 
+<li>Im Basiskurs:
+<br>Vokabeln: /vocabular/daten.js
+<br>Texte: /text/daten.js
+<br>Übungssätze: /praktika/daten.js<br>&nbsp;
+ 
+<li>Im Aufbaukurs:
+<br>Vokabeln: /vocabular/daten.js
+<br>Texte: /text/daten.js<br>&nbsp;
+
+<li>Im Fachwortschatz-Vokabeltrainer:
+<br>Vokabeln: /vocabular/daten.js<br>&nbsp;
+
+<li>Im Grammatikkurs:
+<br>&Uuml;bungss&auml;tze: /vocabular/daten.js
+<br>Grammatiktrainer: /text/daten.js
+
+</ul>
+
+In diesen Dateien sind alle Texte und Vokabeln der Kurse
+gespeichert. Sie können diese Dateien beliebig editieren,
+ergänzen und Zeilen herauslöschen. 
+
+
+
+
+
+<div id=linie_topgelb><div align=center>| <a href=../../lektionsauswahl_de.html>Übersicht</a> |<br>&nbsp;</div></div>
+</div>
+</BODY>
+</HTML>

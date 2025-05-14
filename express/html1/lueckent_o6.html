@@ -1,0 +1,129 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=6;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<script language="JavaScript" src="../../programme/praktika.js"></script>
+</HEAD>
+
+<script language="JavaScript">
+var lektion=6;
+
+var id3=lektion;
+if (eingabeart == "Übungen") {
+	tagesaufgabe_start();
+	id3=""+ gr_uebung_kap(ta_lerntagnr+ 6*1 -1)+"";
+}
+</script>
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" 
+background="../../grafik/bg_a01.jpg"><font size=1><div align=center><table height=100% align=top 
+valign=top cellspacing=0 cellpadding=0 border=0><tr align=top valign=top>
+<td><img src=../../grafik/bg_h01.gif></td>
+<td><table width=100% height=100% align=top valign=top bgcolor="FAC832" background=../../grafik/bg_h02.gif cellspacing=1 cellpadding=0 border=0><tr align=top valign=top><td>
+<table width=100% cellspacing=1 cellpadding=2 border=0><tr><td>
+
+
+<table align=center valign=middle cellspacing=1 cellpadding=0 border=0><tr><td>
+<form method="post" name="lueckentextfunktion"></td><td>
+<table width=100% cellspacing=0 cellpadding=0 border=0><tr><td>
+<table width=100% cellspacing=0 cellpadding=2 border=0><tr valign=middle>
+
+<td><font face="verdana,arial,helvetica" size=2>
+<input type=button id=bestellbutton value="  +  " onClick="javascript:wort_hinzu()" style="font-size:12px; font-family:verdana,arial,helvetica; font-weight:bold;">
+</td>
+
+<td><font face="verdana,arial,helvetica" size=2>
+<select NAME="lueckentextbox" onChange="lueckentextstart()" style="font-size:12px; font-family:verdana,arial,helvetica; ">
+<OPTION value="4" selected>_ X X X X
+<OPTION value="3">X _ X X X
+<OPTION value="2">X X _ X X
+<OPTION value="1">X X X _ X
+<OPTION value="0">X X X X _
+<OPTION value="4">----------
+<OPTION value="9">Easy 1
+<OPTION value="7">Easy 2
+</select></td>
+
+<td><font face="verdana,arial,helvetica" size=2>
+<select NAME="deutschtext" onChange="lueckentextstart(id3)" style="font-size:12px; font-family:verdana,arial,helvetica; ">
+<OPTION value="1" selected>1: &#149; &#149;
+<OPTION value="0">1: &#149;
+<OPTION value="2">2: &#149; &#149;
+<OPTION value="3">2: &#149;
+</select></td><td >&nbsp;</td><td >&nbsp;</form></td>
+
+<td colspan=2 valign=middle><font face="verdana,arial,helvetica" size=2>
+<form method="post" name="automatisch">
+<script language="JavaScript">
+document.write("<select NAME=automatischbox style=\"font-size:10px; font-family:verdana,arial,helvetica; \"><OPTION value=\"\" selected>"+spracheintrag_menu[49]+"<OPTION value=\"1\">"+spracheintrag_menu[48]+"</select>");
+
+if (unterrichtssprache =="deutsch" && lateinmachen>0) {
+	document.write("</td><td><font face=\"verdana,arial,helvetica\" size=2></form> <form method=\"post\" name=\"romanisierungform\">");
+	document.write("<select NAME=\"romanisierung\" onChange=\"lueckentext(id3,2);\" style=\"font-size:12px; font-family:arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Mit Romanisierung</option>");
+	if (sprache=="russisch" || sprache=="weissrussisch" || sprache=="ukrainisch" || sprache=="serbisch" || sprache=="bulgarisch") {
+		document.write("<OPTION value=\"1\">Nur Kyrillisch</option>");
+	}
+	else {
+		if (lateinmachen==1) { document.write("<OPTION value=\"1\">Ohne Romanisierung</option>"); }
+	}
+	document.write("<OPTION value=\"2\">Nur Romanisierung</option>");
+	document.write("</select></form></td>");
+}
+
+</script></td><td>&nbsp;</form></td><td><input type=hidden NAME="automatischmachen" value="1"></td></tr></table></td><td><font face="verdana,arial,helvetica" size=2><script language="JavaScript">
+<!--
+if (unterrichtssprache =="deutsch") { document.write("<a href=\"../../content/de/info/lueckentext1.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>"); }
+-->
+</script>&nbsp;<script language="JavaScript">
+
+if (lektion>1) document.write ("<a href=lueckent"+((lektion-1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].location.href='../../menu/lektion"+((lektion-1)*1)+".html'\"><img src=../../grafik/pfeil_l4.jpg border=1></a>&nbsp;");
+
+if (lektion<maxlektion) document.write ("<a href=lueckent"+((lektion+1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].location.href='../../menu/lektion"+((lektion+1)*1)+".html'\"><img src=../../grafik/pfeil_r4.jpg border=1></a> &nbsp;");
+</script>
+
+</td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+</td><td><img src=../../grafik/bg_i01.gif></td></tr></table></td></tr></table></form>
+
+<script language="JavaScript">
+var lueckencounter=0; var lmax=5; var schwer=0; schwerwert=0; var wortstart=0; var wortstartwert=0; var lueckenzeile=0;
+lueckentextstart();
+
+function lueckentextstart() {
+	lueckencounter=document.lueckentextfunktion.lueckentextbox.options[document.lueckentextfunktion.lueckentextbox.selectedIndex].value
+	if (lueckencounter>5) { lmax=3; schwer=lueckencounter-6; schwerwert=1; lueckencounter=2; }
+	//if (lueckencounter==0)  {lmax=20000; }
+	wortstart=0; wortstartwert=0; 
+	lueckentext(id3);
+}
+function wort_hinzu() {
+	wortstartwert++;
+	wortstart=wortstartwert;
+	lueckencounter=document.lueckentextfunktion.lueckentextbox.options[document.lueckentextfunktion.lueckentextbox.selectedIndex].value
+	if (lueckencounter>5) { lmax=3; schwer=lueckencounter-6; schwerwert=1; lueckencounter=2; }
+	//if (lueckencounter==0)  {lmax=20000; }
+	lueckentext(id3);
+}
+
+</script>
+
+</BODY>
+</HTML>

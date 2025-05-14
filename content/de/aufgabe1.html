@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<link rel="stylesheet" type="text/css" href="../langues.css">
+<script language="JavaScript" src="../../text/daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen8.js"></script>
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<TITLE></TITLE>
+<script language="JavaScript">
+
+</script>
+</HEAD>
+<BODY><center><div id="container2">&nbsp;<br>
+
+
+
+<h1><div id="bg_gelb"><div id="ueberschrift03">Vokabelaufgabe</div></div></h1>
+<div id="normaltext">
+
+
+<div id="gelbbox"><div id="normaltext">
+
+<script language="JavaScript">
+
+//Matrix des Sonderbonuses: (TAGE%108):
+
+ta_aufgabe=1;
+tagesaufgabe_start();
+
+
+// Zusatzmeilen:
+if (ta_lerntagnr>2) { 
+	//document.write("<br>ta_tageinfolgegelernt: "+ta_tageinfolgegelernt+" "+tageinfolgezusatzmeilen); // NUR ZUM TEST LASSEN!
+	document.write("<div id=\"ueberschrift01\"><h5 class=\"schwarz\">Zusatzmeilen:</h5></div><br>Wenn Sie täglich lernen, erhalten Sie attraktive Zusatzmeilen:<br><table border=0 cellpadding=1 cellspacing=0 bgcolor=000000><tr><td><table border=0 cellpadding=1 cellspacing=1 bgcolor=FFFFFF><tr><td><div id=\"normaltext\">Tage in Folge gelernt:</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">3-4</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">5-6</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">7-9</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">10-13</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">14-9999</td></tr><tr><td><div id=\"normaltext\">Tägliche Zusatzpunkte:</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">5</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">10</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">20</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">30</td><td>&nbsp; &nbsp; </td><td><div id=\"normaltext\">50</td></tr></table></td></tr></table><br>");
+
+	if (tageinfolgetext.length>2) { document.write("<b>"+tageinfolgetext+"</b>"); } else { document.write("(Wenn Sie z.B. bereits 9 Tage in Folge gelernt haben, erhalten Sie täglich 20 Zusatzmeilen.)"); }
+}
+
+// Sondermeilen:
+if (ta_lerntagnr>4) { 
+	//ta_lerntagnr=123;
+	//alert(ta_lerntagnr+" "+    sonderbonus[(ta_lerntagnr-5)%108])//    +    // ZUM TESTEN
+	document.write("<div id=\"ueberschrift01\"><h5 class=\"schwarz\">Sondermeilen:</h5></div><br>Heute erhalten Sie folgenden Sonderbonus:<br><b>"+sonderbonustexte[sonderbonus[(ta_lerntagnr-5)%108]-1]+"</b>");
+
+}
+
+
+
+var ta_s="s"; 
+if (ta_spitzname.substr(ta_spitzname.length-1,1) == "s") ta_s="'";
+if (ta_spitzname.substr(ta_spitzname.length-1,1) == "z") ta_s="'";
+document.write("<div id=\"ueberschrift01\"><h5 class=\"schwarz\">"+ta_spitzname+ta_s+" Lerntag Nr. "+ta_lerntagnr+"</h5></div><br>");
+
+</script>
+Ihre heutige Vokabelaufgabe:<br>
+Starten Sie heute die Ultra-Langzeitgedächtnis-Lernmethode mit 
+<ul>
+<script language="JavaScript">
+if (ta_lerntagnr>3) { document.write("<li><a href=\"../../vocabular/html2/langzeit_start4.html\">Texteingabe</a> oder ");  }
+if (ta_lerntagnr>6) { document.write("<li><a href=\"../../vocabular/html2/langzeit_start5.html\">Multiple Choice</a> oder "); }
+if (ta_lerntagnr>10) { document.write("<li><a href=\"../../vocabular/html2/langzeit_startd2.html\">Diktat</a> oder "); }
+</script>
+<li><a href="../../vocabular/html2/langzeit_start6.html">Blitzwiederholung</a>
+</ul>
+mit mindestens 7 neuen Vokabeln.<br>
+
+<script language="JavaScript">
+
+if (ta_lerntagnr<11) { 
+	var ta_neutag=0;
+	if (ta_lerntagnr<11) ta_neutag=11-ta_lerntagnr;
+	if (ta_lerntagnr<7) ta_neutag=7-ta_lerntagnr;
+	if (ta_lerntagnr<4) ta_neutag=4-ta_lerntagnr;
+	if (ta_neutag==1) document.write("(Morgen kommen neue Lernmethoden hinzu.)<br>");  
+	else document.write("(In "+ta_neutag+" Tagen kommen neue Lernmethoden hinzu.)<br>");  
+}
+
+</script>
+
+
+
+&nbsp;<br>
+Sie werden damit kontinuiertlich jeden Tag neue Vokabeln lernen.<br>
+Diese Lernmethode ist <b>lektionsübergreifend</b>, d.h. Sie lernen damit sämtliche
+Vokabeln dieses Sprachkurses durch. Sie können jeden Tag die Lernmethode
+(z.B. Texteingabe, Blitzwiederholung) frei wählen.<br>
+&nbsp;<br>
+Der Lernstand wird in Form eines Cookies auf Ihren PC gespeichert. Sperren Sie dabei bitte 
+nicht die Cookies und löschen Sie sie nicht. (Klicken Sie daher nicht auf "private Daten löschen".)
+
+
+
+
+
+
+
+</div></div>
+
+
+
+<br>&nbsp;<br>
+
+
+
+
+
+
+<script language="JavaScript">
+tagesaufgabe_start();
+
+tagesaufgabe_cookieschreiben ();
+tagesaufgabe_erreichtes();
+
+document.write(ta_ausgabe);
+
+//alert(ta_punkte);
+</script>
+
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<hr size=1 noshade><span style="font-size:9px; font-family:verdana,tahoma,arial">&nbsp;<br>
+Falls Sie möchten, können Sie hier Ihren Spitznamen ändern:<br><form method="post" name="spitznameneingabe2" onSubmit="javascript:tagesaufgabe_namensaenderung();">
+<input type=text size=12 maxlength=12 name="spitzname2" onSubmit="javascript:tagesaufgabe_namensaenderung();" style="font-size:9px; font-family:verdana,tahoma,arial">
+<input type=button value=" OK " onClick="javascript:tagesaufgabe_namensaenderung();" style="font-size:9px; font-family:verdana,arial,helvetica; font-weight:bold;">
+</form></span>
+
+
+
+<div id="normaltext">
+<h3>Online übertragen</h3>
+Nach Abschluss eines Lerntages haben Sie die Möglichkeit, Ihren Punktestand
+online zu übertragen. Sie sehen dabei auch, wie gut andere Anwender lernen.
+<br>&nbsp;<br>
+
+
+
+
+
+<h3>Cookies gelöscht oder auf einem anderen Computer weiterlernen?</h3>
+
+
+Wenn Sie Ihre Cookies gelöscht oder den Computer
+gewechselt haben, dann können Sie folgendermaßen vorgehen:
+<ol start=1>
+<li>Suchen Sie in Ihren <a href="http://www.sprachenlernen24-download.de/lerngruppen/suchen.php" target="ext2">online übermittelten Daten</a> nach dem letzten Cookie.
+Kopieren Sie diesen.
+<li>Fügen Sie den Cookie hier ein:<br>
+
+<form method="post" name="cookiewiederherstellen" onSubmit="tagesaufgabe_cookiewiederherstellen();">
+<input type=text size=20 name="cookiewiederherstellen1" onSubmit="tagesaufgabe_cookiewiederherstellen();">
+<input type=button id=bestellbutton value=" OK " onClick="tagesaufgabe_cookiewiederherstellen();" style="font-size:9px; font-family:verdana,arial,helvetica; font-weight:bold;">
+</form>
+</ol>
+Sie können im Anschluss sofort mit Ihren bisher angesammelten Lernmeilen sowie Ihrem Stand bei der Langzeitgedächtnismethode weiterlernen.
+</div>
+
+
+</table></table></table></table></table></table></table></table>&nbsp;<br>&nbsp;
+</BODY></HTML>

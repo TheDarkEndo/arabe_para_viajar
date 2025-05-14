@@ -1,0 +1,96 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../../extras/oben.css">
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=34;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+</HEAD>
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" 
+background="../../grafik/bg_a01.jpg"><font size=1><div align=center><table height=100% align=top 
+valign=top cellspacing=0 cellpadding=0 border=0><tr align=top valign=top>
+<td><img src=../../grafik/bg_e01.gif></td>
+<td><table width=100% height=100% align=top valign=top bgcolor="FAC832" background=../../grafik/bg_e03.gif cellspacing=1 cellpadding=0 border=0><tr align=top valign=top><td>
+<table align=top 
+valign=top cellspacing=1 cellpadding=0 border=0><tr align=top valign=top>
+<td width=140><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:neuevok(1,0,0,1)"><img src=../../grafik/pfeil_r4.jpg border=0></a> 
+<a href="javascript:neuevok(0,1)"><img src=../../grafik/loesung3.jpg border=0></a>
+<script language="JavaScript">
+<!--
+  if (unterrichtssprache =="deutsch") { document.write("<a href=\"../../content/de/info/diktat.html\" target=\"neuesfenster_info\"><img src=\"../../grafik/fragezeichen30.jpg\" border=\"1\"></a>"); }
+-->
+</script>
+
+
+
+</td>
+
+<td align=center><font face="verdana,arial,helvetica" size=2>
+<form method="post" name="automatisch">
+<script language="JavaScript">
+document.write("<select NAME=automatischbox style=\"font-size:12px; font-family:arial,helvetica; \"><OPTION value=\"\" selected>"+spracheintrag_menu[49]+"<OPTION value=\"1\">"+spracheintrag_menu[48]+"</select>");
+</script><input type=hidden NAME="automatischmachen" value="1"> 
+</td><td><font size=1></form></td>
+<script language="JavaScript">
+if (unterrichtssprache =="deutsch" && lateinmachen>0) {
+	document.write("<td><font face=\"verdana,arial,helvetica\" size=2></form> <form method=\"post\" name=\"romanisierungform\">");
+	document.write("<select NAME=\"romanisierung\" onChange=\"anzahlaendern();\" style=\"font-size:12px; font-family:arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Mit Romanisierung</option>");
+	if (sprache=="russisch" || sprache=="weissrussisch" || sprache=="ukrainisch" || sprache=="serbisch" || sprache=="bulgarisch") {
+		document.write("<OPTION value=\"1\">Nur Kyrillisch</option>");
+	}
+	else {
+		document.write("<OPTION value=\"1\">Ohne Romanisierung</option>");
+	}
+	document.write("<OPTION value=\"2\">Nur Romanisierung</option>");
+	document.write("</select></form></td>");
+}
+</script>
+
+</tr>
+
+<tr align=top valign=top><td colspan=4><table border=0 cellpadding=0 cellspacing=0><tr><td><font face="verdana,arial,helvetica" size=2>
+
+<style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style>
+
+<form method="post" name="testit" action="javascript:test_it(1,0,1)">
+<input type=text autocomplete=off size=50  name="testvokabel" onKeyup="umlaute(1)" onSubmit="test_it(1,0,1);" style="font-family:verdana,tahoma,arial"><font size=2>
+<input type="button" id="bestellbutton" value="Test!" onClick="test_it(1,0,1)" style="font-family:verdana,tahoma,arial"><br>
+<script language="JavaScript">
+sonderzeichen_hinschreiben();
+</script>
+
+
+</td></tr></table></td></tr></table></td></tr></table>
+</td><td><img src=../../grafik/bg_f01.gif></td></tr></table></td></tr></table></form>
+
+<script language="JavaScript">
+
+mischen(1);
+if (sprache2.indexOf("Deutsch")>-1) { sprachwechsel=1; }
+neuevok(1,0,1,1);
+</script>
+
+</BODY>
+</HTML>

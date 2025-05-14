@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<link rel="stylesheet" type="text/css" href="../langues.css">
+<script language="JavaScript" src="../../express/daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen8.js"></script>
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<TITLE></TITLE>
+<script language="JavaScript">
+
+</script>
+</HEAD>
+<BODY><center><div id="container2">&nbsp;<br>
+
+
+
+<h1><div id="bg_gelb"><div id="ueberschrift03">Textaufgabe</div></div></h1>
+<div id="normaltext">
+
+
+<div id="gelbbox"><div id="normaltext">
+<script language="JavaScript">
+ta_aufgabe=6;
+tagesaufgabe_start();
+var ta_s="s"; 
+if (ta_spitzname.substr(ta_spitzname.length-1,1) == "s") ta_s="'";
+if (ta_spitzname.substr(ta_spitzname.length-1,1) == "z") ta_s="'";
+document.write("<div id=\"ueberschrift01\"><h5 class=\"schwarz\">"+ta_spitzname+ta_s+" Lerntag Nr. "+ta_lerntagnr+"</h5></div><br>");
+
+</script>
+Ihre heutige Textaufgabe:<br>&nbsp;<br>
+
+<script language="JavaScript">
+
+
+var ta_txtanzahl=0; var prolk=1; var ta_maxtxt=2;
+prolk = 20;
+ta_txtanzahl = Math.round ( ta_vokabelnr / prolk) +1;
+if (ta_txtanzahl>21) ta_txtanzahl=21;
+
+
+var ta_txtfeld= new Array(
+"Lesen Sie die Vokabeln und Redewendungen durch","<a href=\"../../express/html1/liste",
+"Lesen Sie den versteckten Text (bei dem die Fremdsprache versteckt ist)","<a href=\"../../express/html1/anklicken_b",
+"Lesen Sie den versteckten Text (bei dem die deutsche Übersetzung versteckt ist)","<a href=\"../../express/html1/anklicken_a",
+"Lösen Sie den Lückentext-Test (bei dem die Endsilben fehlen)","<a href=\"../../express/html1/lueckenendung"
+
+);
+
+document.write( "<b>"+ta_txtfeld[ ((ta_lerntagnr-1) % 4)*2 ]+" von einem der folgenden Texte:<ul>" );
+for (x=1; x< ta_txtanzahl+1;x+=1) document.write("<li>"+ta_txtfeld[ ((ta_lerntagnr-1) % 4)*2+1 ]+x+".html\">Text "+x+"</a></li>");
+
+
+</script>
+</ul></b></div></div>&nbsp;<br>
+
+
+Der Lernstand wird in Form eines Cookies auf Ihren PC gespeichert. Sperren Sie dabei bitte 
+nicht die Cookies und löschen Sie sie nicht. (Klicken Sie daher nicht auf "private Daten löschen".)
+
+
+
+
+
+
+<br>&nbsp;<br>
+
+
+
+
+
+
+<script language="JavaScript">
+tagesaufgabe_start();
+if (ta_aufg[6]==0) ta_punkte +=5;
+ta_aufg[6]=1;
+tagesaufgabe_cookieschreiben (1);
+tagesaufgabe_erreichtes();
+
+document.write(ta_ausgabe);
+top.frames[0].location.reload();
+
+</script>
+
+
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<hr size=1 noshade><span style="font-size:9px; font-family:verdana,tahoma,arial">&nbsp;<br>
+Falls Sie möchten, können Sie hier Ihren Spitznamen ändern:<br><form method="post" name="spitznameneingabe2" onSubmit="javascript:tagesaufgabe_namensaenderung();">
+<input type=text size=12 maxlength=12 name="spitzname2" onSubmit="javascript:tagesaufgabe_namensaenderung();" style="font-size:9px; font-family:verdana,tahoma,arial">
+<input type=button value=" OK " onClick="javascript:tagesaufgabe_namensaenderung();" style="font-size:9px; font-family:verdana,arial,helvetica; font-weight:bold;">
+</form></span>
+
+
+
+<div id="normaltext">
+<h3>Online übertragen</h3>
+Nach Abschluss eines Lerntages haben Sie die Möglichkeit, Ihren Punktestand
+online zu übertragen. Sie sehen dabei auch, wie gut andere Anwender lernen.
+<br>&nbsp;<br>
+
+
+
+
+
+<h3>Cookies gelöscht oder auf einem anderen Computer weiterlernen?</h3>
+
+
+Wenn Sie Ihre Cookies gelöscht oder den Computer
+gewechselt haben, dann können Sie folgendermaßen vorgehen:
+<ol start=1>
+<li>Suchen Sie in Ihren <a href="http://www.sprachenlernen24-download.de/lerngruppen/suchen.php" target="ext2">online übermittelten Daten</a> nach dem letzten Cookie.
+Kopieren Sie diesen.
+<li>Fügen Sie den Cookie hier ein:<br>
+
+<form method="post" name="cookiewiederherstellen" onSubmit="tagesaufgabe_cookiewiederherstellen();">
+<input type=text size=20 name="cookiewiederherstellen1" onSubmit="tagesaufgabe_cookiewiederherstellen();">
+<input type=button id=bestellbutton value=" OK " onClick="tagesaufgabe_cookiewiederherstellen();" style="font-size:9px; font-family:verdana,arial,helvetica; font-weight:bold;">
+</form>
+</ol>
+Sie können im Anschluss sofort mit Ihren bisher angesammelten Lernmeilen sowie Ihrem Stand bei der Langzeitgedächtnismethode weiterlernen.
+</div>
+
+
+</table></table></table></table></table></table></table></table>&nbsp;<br>&nbsp;
+</BODY></HTML>

@@ -1,0 +1,92 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#333333 }
+a:visited { text-decoration:none; color:#333333; }
+a:hover { text-decoration:underline; color:#992233;  }
+a:active { text-decoration:none; color:#333333}
+a:focus { text-decoration:underline; color:#992233;  }
+</style>
+<TITLE>Tagesaufgabe: Text-Übungen</TITLE>
+
+<script language="JavaScript">
+var lektion=1;
+</script>
+
+<script language="JavaScript" src="../vocabular/daten.js"></script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../programme/tagesaufgabe.js"></script>
+
+
+
+<script language="JavaScript">
+var i=0; var keks="";
+while(i < document.cookie.length)
+{
+	var cookiename1=sprache+"x"+sprachkuerzel+"x"+eingabeart;
+	var j = i + cookiename1.length;
+	if(document.cookie.substring(i, j) == cookiename1)
+	{
+		var endstr = document.cookie.indexOf(";", j);
+		if(endstr == -1) endstr = document.cookie.length;
+	keks=document.cookie.substring(j+1, endstr);
+	}
+	i = document.cookie.indexOf(" ", i) + 1;
+	if(!i) break;
+}
+keks=keks.substr(0,keks.indexOf(","));
+var ta_vokabelnr = keks;
+
+var lerntagnr=v[ta_vokabelnr*6+1]; 
+if (lerntagnr<1) { lerntagnr=1; }
+//alert (keks+ " "+lerntagnr);
+
+</script>
+
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/funktionen2.js"></script>
+</HEAD>
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#FFFFFF">
+<font face="verdana,tahoma,arial unicode ms,arial,helvetica" size=2>
+
+
+
+<script language="JavaScript">
+
+var id3=lerntagnr;
+
+var weitertext="<br><div style=\"background: #DDDDDD;\"><i>Weiter zur nächsten Tagesaufgabe:</i><br><a href=\"uebung_grammatik.html\">Grammatik-Übungen</a></div><br>";
+
+
+
+document.write("<b>Ihre heutige Text-Übung<br>(Nr. "+lerntagnr+"):</b><br>&nbsp;<br>");
+
+
+
+darstellen_mobil(id3);
+
+document.write(weitertext);
+
+if (lerntagnr>2) {
+	var min_lerntag=lerntagnr-5; if (min_lerntag<1) { min_lerntag=0; }
+	for (var x=lerntagnr-1; x> min_lerntag; x=x-1) {
+		document.write("<br>&nbsp;<br><b>Wiederholung: <br>Ihre Text-Übung Nr. "+x+":</b><br>&nbsp;<br>");
+		darstellen_mobil(x);
+		document.write(weitertext);
+	}
+}
+
+</script>
+
+
+
+
+</BODY>
+</HTML>
+

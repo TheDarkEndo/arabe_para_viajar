@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<LINK REL="shortcut icon" HREF="../grafik/favicon.ico" type="image/ico">
+<style type="text/css">
+a:link { text-decoration:none; color:#0000A0 }
+a:visited { text-decoration:none; color:#0000A0; }
+a:hover { text-decoration:underline; color:#0000FF;  }
+a:active { text-decoration:underline; color:#0000FF}
+a:focus { text-decoration:underline; color:#0000FF;  }
+</style>
+<TITLE></TITLE>
+
+</HEAD>
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#13185c" background="../grafik/bg_b02.jpg">
+<font face="verdana,arial,helvetica" size=2>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+
+<script language="JavaScript" src="../menu/lektionen.js"></script>
+
+
+</font><script language="JavaScript">
+
+
+document.write("<center><img src=../grafik3/"+sprache+"150.jpg style=\"border:1pt solid white\"><p><table width=90% border=0 cellspacing=0 cellpadding=2>");
+
+var a=0;
+var c=0;
+
+var maxlektion=42; var langzeitordner="vocabular";
+var text_an=0; var gr_an=1;
+
+
+if (sprachkuerzel.indexOf("2")>1)  { maxlektion=21; langzeitordner="express"; gr_an=0; }
+if (sprachkuerzel.indexOf("4b")>1) maxlektion=40;
+if (sprachkuerzel.indexOf("4e")>1) maxlektion=16;
+if (sprachkuerzel.indexOf("4g")>1) maxlektion=32;
+if (sprachkuerzel.indexOf("4h")>1) maxlektion=39;
+if (sprachkuerzel.indexOf("4i")>1) maxlektion=20;
+if (sprachkuerzel.indexOf("4j")>1) maxlektion=38;
+if (sprachkuerzel.indexOf("4k")>1) maxlektion=18;
+if (sprachkuerzel.indexOf("5a")>1) maxlektion=18;
+if (sprachkuerzel.indexOf("5b")>1) maxlektion=11;
+if (sprachkuerzel.indexOf("5c")>1) maxlektion=13;
+
+if (sprachkuerzel.indexOf("3")>1)  { text_an=1; }
+if (sprachkuerzel.indexOf("7")>1)  { text_an=1; }
+if (sprachkuerzel.length <3) { text_an=1; } // Basis
+
+
+var text_an1=""; 
+if (gr_an>0) { text_an1="<br>Im Anschluss an das Vokabellernen können Sie noch die Grammatik üben.";  }
+if (text_an>0) { text_an1="<br>Im Anschluss an das Vokabellernen können Sie noch die Grammatik und Texte üben.";  }
+
+if (unterrichtssprache == "deutsch") {
+	var ausgabehier="<tr><td bgcolor=FFFFFF><font face=\"verdana,arial,helvetica\" size=2 color=000000><b>Mobile Tagesaufgaben:</b><br>&nbsp;<br>"+
+"An dieser Stelle lernen Sie alle Vokabeln mit der Ultra-Langzeitgedächtnis-Lernmethode."+text_an1+
+"<ul type=disc>"+
+"<li>Blitzwiederholung</a>:<ul type=disc>"+
+"<li><a href=320a.html>Bildschirmbreite: 320 Pixel</a></li>"+
+"<li><a href=480a.html>Bildschirmbreite: 480 Pixel</a></li>"+
+"<li><a href=600a.html>Bildschirmbreite: 600 Pixel</a></li>"+
+"<li><a href=640a.html>Bildschirmbreite: 640 Pixel</a></li>"+
+"<li><a href=800a.html>Bildschirmbreite: 800 Pixel</a></li>"+
+"<li><a href=1000a.html>Bildschirmbreite: 1000 Pixel</a></li></ul>&nbsp;</li>"+
+"<li>Texteingabe:<ul type=disc>"+
+"<li><a href=320b.html>Bildschirmbreite: 320 Pixel</a></li>"+
+"<li><a href=480b.html>Bildschirmbreite: 480 Pixel</a></li>"+
+"<li><a href=600b.html>Bildschirmbreite: 600 Pixel</a></li>"+
+"<li><a href=640b.html>Bildschirmbreite: 640 Pixel</a></li>"+
+"<li><a href=800b.html>Bildschirmbreite: 800 Pixel</a></li>"+
+"<li><a href=1000b.html>Bildschirmbreite: 1000 Pixel</a></li></ul>&nbsp;"+
+"</li>"+
+"<li><a href=anleitung.html>Anleitungen:</a><br>Einstellungen und Anleitungen zur mobilen Version<br>&nbsp;</li>"+
+"<li><a href=wiederherstellung.html>Wiederherstellungsseite:</a><br>Wiederherstellung eines alten Lernstandes (gelöschte Cookies wiederherstellen oder auf anderem Gerät weiterlernen)</li></ul></td></tr><tr><td bgcolor=FFFFFF><font face=\"verdana,arial,helvetica\" size=2 color=000000><hr size=1 noshade><b>Klassische Lernmethoden:</b><br>&nbsp;</td></tr>";
+	document.write(ausgabehier);
+}
+
+
+while (a<maxlektion)
+{
+	if (sprachkuerzel.indexOf("2")>0)  { lektionennamen[c+1] = expresskurs_ueberschrift[a+1]; }
+	if (sprachkuerzel.indexOf("4a")>0) { lektionennamen[c+1] = spezial_ueberschrift_a[a+1]; }
+	if (sprachkuerzel.indexOf("4b")>0) { lektionennamen[c+1] = spezial_ueberschrift_b[a+1]; }
+	if (sprachkuerzel.indexOf("4c")>0) { lektionennamen[c+1] = spezial_ueberschrift_c[a+1]; }
+	if (sprachkuerzel.indexOf("4d")>0) { lektionennamen[c+1] = spezial_ueberschrift_d[a+1]; }
+	if (sprachkuerzel.indexOf("4e")>0) { lektionennamen[c+1] = spezial_ueberschrift_e[a+1]; }
+	if (sprachkuerzel.indexOf("4f")>0) { lektionennamen[c+1] = spezial_ueberschrift_f[a+1]; }
+	if (sprachkuerzel.indexOf("4g")>0) { lektionennamen[c+1] = spezial_ueberschrift_g[a+1]; }
+	if (sprachkuerzel.indexOf("4h")>0) { lektionennamen[c+1] = spezial_ueberschrift_h[a+1]; }
+	if (sprachkuerzel.indexOf("4i")>0) { lektionennamen[c+1] = spezial_ueberschrift_i[a+1]; }
+	if (sprachkuerzel.indexOf("4j")>0) { lektionennamen[c+1] = spezial_ueberschrift_j[a+1]; }
+	if (sprachkuerzel.indexOf("4k")>0) { lektionennamen[c+1] = spezial_ueberschrift_k[a+1]; }
+	if (sprachkuerzel.indexOf("5a")>0) { lektionennamen[c+1] = business_ueberschrift_a[a+1]; }
+	if (sprachkuerzel.indexOf("5b")>0) { lektionennamen[c+1] = business_ueberschrift_b[a+1]; }
+	if (sprachkuerzel.indexOf("5c")>0) { lektionennamen[c+1] = business_ueberschrift_c[a+1]; }
+	if (sprachkuerzel.indexOf("6")>0)  { lektionennamen[c+1] = grammatiktrainer_kapitelueberschrift[a+1]; }
+
+	document.write("<tr><td bgcolor=FFFFFF><font face=\"verdana,arial,helvetica\" size=2><a href=\"mobile_unite"+((a+1)*1)+".html\">"+spracheintrag_hinweis[14]+" "+(a+1)+": "+lektionennamen[c+1]+"</a></td></tr>");
+
+	c=c+2;
+	a+=1;
+}
+document.write("</table><p><img src=../grafik3/"+sprache+"_fahne100.gif style=\"border:1pt solid white\">");
+
+
+</script>
+</table>
+
+
+
+</BODY></HTML>
+

@@ -1,0 +1,291 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<link rel="stylesheet" type="text/css" href="../extras/oben.css">
+<TITLE></TITLE>
+
+
+<script language="JavaScript">
+var lektion=0;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript">
+langzeitmobil=1;
+</script>
+<script language="JavaScript" src="../../programme/tagesaufgabe.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../../index.html"; }
+</script>
+</HEAD>
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../grafik/bg_a01.jpg">
+<font size=1>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../../programme/funktionen4.js"></script>
+
+<div id="spielbox" style="position:absolute; left:0px; top:0px; width:100%; visibility: hidden;">
+<table align=center height=100% cellspacing=0 cellpadding=0 border=0><tr>
+<td><table width=100% height=100% bgcolor="FAC832" background=../../grafik/bg_e03.gif cellspacing=1 cellpadding=2 border=0><tr>
+
+<td><font face="verdana,arial,helvetica" size=2><a href="javascript:neuevok(1,0)"><img src=../../grafik/pfeil_r4.jpg border=0></a>&nbsp;<a href="javascript:neuevok(0,1)"><img src=../../grafik/loesung3.jpg border=0></a>&nbsp;<a href="javascript:test_it(0,0,0,0,1)"><img src=../../grafik/loeschen01.jpg border=0></a></td>
+
+<script language="JavaScript">
+if (unterrichtssprache =="deutsch" && lateinmachen>0) {
+	document.write("<td><font face=\"verdana,arial,helvetica\" size=2></form> <form method=\"post\" name=\"romanisierungform\">");
+	document.write("<select NAME=\"romanisierung\" onChange=\"anzahlaendern();\" style=\"font-size:12px; font-family:arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Mit Romanisierung</option>");
+	if (sprache=="russisch" || sprache=="weissrussisch" || sprache=="ukrainisch" || sprache=="serbisch" || sprache=="bulgarisch") {
+		document.write("<OPTION value=\"1\">Nur Kyrillisch</option>");
+	}
+	else {
+		document.write("<OPTION value=\"1\">Ohne Romanisierung</option>");
+	}
+	document.write("<OPTION value=\"2\">Nur Romanisierung</option>");
+	document.write("</select></form></td>");
+}
+
+</script>
+
+
+
+
+<td width=30><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:sprachwechseln()"><img src=../../grafik/tausch2.jpg border=0></a></td>
+
+<td width=30><font face="verdana,arial,helvetica" size=2>
+<a href="javascript:test_ende(1)"><img src=../../grafik/p4.jpg border=0></a></td>
+
+<td width=30><font face="verdana,arial,helvetica" size=2>
+<script language="JavaScript">document.write ("<a href=../../content/"+unterrichtskuerzel+"/langzeit_ultra.html target=neuesfenster_lz2>");</script><img src=../../grafik/fragezeichen30.jpg border=0></a></td>
+
+</tr>
+<tr><td colspan=5><table border=0 cellpadding=0 cellspacing=0><tr><td width=2></form></td><td><font face="verdana,arial,helvetica" size=2>
+
+<style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style>
+
+</form><form method="post" name="testit" action="javascript:test_it(1,0,0,0,0,0,1)">
+<input type=text autocomplete=off size=20 name="testvokabel" onKeyup="umlaute()" onSubmit="test_it(1,0,0,0,0,0,1);" style="font-family:verdana,tahoma,arial"><font size=2>
+<input type="button" id="bestellbutton" value="Test!" onClick="test_it(1,0,0,0,0,0,1)" style="font-family:verdana,tahoma,arial">
+<br><script language="JavaScript">
+sonderzeichen_hinschreiben();
+</script><font size=1></form></td></tr></table></tr></table>
+</td></tr></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--ab hier für alle gleich-->
+<div id="startbox" style="position:absolute; left:0px; top:0px; width:100%; visibility: hidden;">
+
+<table width="100%" height="100%" border=0 cellpadding=0 cellspacing=0 id="startfeld">
+<tr><td><center><table height="100%" border=0 cellspacing=0 cellpadding=0><tr><td><table height="100%" bgcolor="FAC832" background=../../grafik/bg_e03.gif border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td><script language="JavaScript">document.write ("<a href=../../content/"+unterrichtskuerzel+"/langzeit_ultra.html target=neuesfenster_lz>");</script><img src=../../grafik/fragezeichen30.jpg border=1></a><br><img src=../../grafik/nichts.gif border=0 width=30 height=30></td>
+
+<td width="100%" id="dragtext" align=center><form method="post" name="testit3">
+<table><tr>
+
+
+
+<td>
+<font face="verdana,arial,helvetica" size=1 color="333333">
+<script language="JavaScript">
+var i=0; var keks="";
+while(i < document.cookie.length)
+{
+	var cookiename1=sprache+"x"+sprachkuerzel+"x"+eingabeart;
+	var j = i + cookiename1.length;
+	if(document.cookie.substring(i, j) == cookiename1)
+	{
+		var endstr = document.cookie.indexOf(";", j);
+		if(endstr == -1) endstr = document.cookie.length;
+	keks=document.cookie.substring(j+1, endstr);
+	}
+	i = document.cookie.indexOf(" ", i) + 1;
+	if(!i) break;
+}
+var i=0; var keksspitzname="";
+while(i < document.cookie.length)
+{
+	var cookiename1="Spitzname-"+sprache+"_"+sprachkuerzel;
+	var j = i + cookiename1.length;
+	if(document.cookie.substring(i, j) == cookiename1)
+	{
+		var endstr = document.cookie.indexOf(";", j);
+		if(endstr == -1) endstr = document.cookie.length;
+	keksspitzname=document.cookie.substring(j+1, endstr);
+	}
+	i = document.cookie.indexOf(" ", i) + 1;
+	if(!i) break;
+}
+
+
+document.write("Ihr Spitzname: <input type=text value=\""+keksspitzname+"\" size=10 name=startcodespitzname style=\"font-family:arial narrow,arial,verdana,tahoma,arial; font-size:10px; \"><br>");
+document.write(spracheintrag_hinweis[55]+"<br>");
+document.write(spracheintrag_hinweis[69]+": <input type=text autocomplete=off value=\""+keks+"\" size=20 name=startcode style=\"font-family:arial narrow,arial,verdana,tahoma,arial; font-size:10px; \">");
+</script>
+<input type="button" id="bestellbutton" value="Start!" onClick="schliessen(0,1)" style="font-family:verdana,tahoma,arial; font-size:10px;">
+
+</td></tr><tr><td><font face="verdana,arial,helvetica" size=1 color="333333"><script language="JavaScript"> document.write(spracheintrag_hinweis[56]);</script>
+<select NAME="anzahlauswahl" onChange="schliessen(1,1)" style="font-size:8px; font-family:verdana,arial,helvetica; ">
+<OPTION value=""><script language="JavaScript"> document.write(spracheintrag_hinweis[57]);</script>
+<OPTION value="2">2
+<OPTION value="5">5
+<OPTION value="7">7
+<OPTION value="10">10
+<OPTION value="12">12
+<OPTION value="15">15
+<OPTION value="20">20
+<OPTION value="25">25
+<OPTION value="30">30
+<OPTION value="35">35
+<OPTION value="40">40
+<OPTION value="45">45
+<OPTION value="50">50
+<OPTION value="60">60
+<OPTION value="70">70
+<OPTION value="80">80
+<OPTION value="90">90
+<OPTION value="100">100
+<OPTION value="120">120
+<OPTION value="150">150
+<OPTION value="200">200
+<OPTION value="250">250
+</select>
+
+</td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+<script language="JavaScript">
+if (eingabeart!="Texte" && eingabeart!="Vokabeln" && eingabeart!="Express") {  
+var menuezusatz="";
+menuezusatz="</form><form method=post name=automatisch>"+
+"<input type=hidden name=automatischmachen value=\"\"><input type=hidden name=automatischbox value=\"\"></form>";
+document.write(menuezusatz);
+}
+</script></div></form>
+
+
+
+
+
+
+
+
+
+
+
+<div id="startbox2" style="position:absolute; left:0px; top:0px; width:100%; visibility: hidden;">
+<table width="100%" height="100%" border=0 cellpadding=0 cellspacing=0 id="startfeld2" bgcolor="#992233" background="../grafik/bg_a01.jpg"><tr><td><center>
+<table height="100%" bgcolor="FAC832" background=../../grafik/bg_e03.gif><tr><td id="dragtext"><form name=testit2>
+<font face="verdana,arial,helvetica" size=1>
+<script language="JavaScript"> document.write(spracheintrag_hinweis[58]);</script><br>
+
+<select NAME="veraenderungcode" onChange="schliessen(2,1)">
+<OPTION value="0" selected><script language="JavaScript"> document.write(spracheintrag_hinweis[57]);</script>
+<OPTION value="0">----------------------------------------
+<OPTION value="0">0
+<OPTION value="1">1
+<OPTION value="2">2
+<OPTION value="3">3
+<OPTION value="4">4
+<OPTION value="5">5
+<OPTION value="7">7
+<OPTION value="10">10
+<OPTION value="12">12
+<OPTION value="15">15
+<OPTION value="20">20
+<OPTION value="25">25
+<OPTION value="30">30
+<OPTION value="35">35
+<OPTION value="40">40
+<OPTION value="50">50
+<OPTION value="60">60
+<OPTION value="70">70
+<OPTION value="80">80
+<OPTION value="100">100
+<OPTION value="120">120
+<OPTION value="150">150
+<OPTION value="200">200
+<OPTION value="250">250
+</select></form><br><img src=../../grafik/nichts.gif height=100 width=100>
+</td></tr></table></td></tr></table></div>
+
+
+
+<div id="endbox3" style="position:absolute; left:0px; top:0px; width:100%; visibility: hidden;">
+<table width="100%" height="100%" border=0 cellpadding=0 cellspacing=0 id="startfeld2" bgcolor="#992233" background="../grafik/bg_a01.jpg"><tr><td><center>
+<table width="100%" height="100%" bgcolor="FAC832" background=../../grafik/bg_e03.gif><tr><td id="dragtext">
+<font face="verdana,arial,helvetica" size=2>
+<script language="JavaScript">
+var text_an=0; var gr_an=1;
+if (sprachkuerzel.indexOf("3")>1)  { text_an=1; }
+if (sprachkuerzel.indexOf("7")>1)  { text_an=1; }
+if (sprachkuerzel.length <3) { text_an=1; } // Basis
+
+var text_an1="Grammatik-Übungen"; var text_an2="uebung_grammatik";
+if (sprachkuerzel.indexOf("2")>0)  { text_an2="uebung_express"; text_an1="Textübungen"; }
+if (text_an>0) { text_an1="Textübungen"; text_an2="uebung_text"; }
+document.write("<div align=\"center\">&nbsp;<br><i>Weiter zur nächsten Tagesaufgabe:</i><br><a href=\"../../mobile/"+text_an2+".html\" target=\"Simulation\">"+text_an1+"</a>");
+</script></div>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+</td></tr></table></td></tr></table></div>
+
+
+<script language="JavaScript">
+var ultralang=1;
+var iexpl=document.all;
+var zwei=document.getElementById;
+var startobjekt;
+var startobjekt2;
+var startobjekt3;
+
+if (zwei) { startobjekt=document.getElementById("startbox").style; }
+else {if (iexpl) { startobjekt=document.all.startbox; } else { startobjekt=document.startbox; }}
+startobjekt.top=0;
+
+if (zwei) { startobjekt2=document.getElementById("startbox2").style; }
+else {if (iexpl) { startobjekt2=document.all.startbox2; } else { startobjekt2=document.startbox2; }}
+startobjekt2.top=0;
+
+if (zwei) { endobjekt3=document.getElementById("endbox3").style; }
+else {if (iexpl) { endobjekt3=document.all.endbox3; } else { endobjekt3=document.endbox3; }}
+endobjekt3.top=0;
+
+
+if (zwei || iexpl) {startobjekt.visibility="visible"; } else {startobjekt.visibility="show"; }
+</script>
+
+
+
+
+
+</BODY>
+</HTML>

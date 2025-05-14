@@ -1,0 +1,51 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../extras/oben.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+
+</HEAD>
+
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" background="../grafik/bg_a01.jpg"><a href=../../mobile/mobile_start.html target=_top><img src=../../grafik/suche01.jpg width=40 align=left hspace=0 vspace=0 border=0><img src=../../grafik/p4.jpg align=left vspace=0 hspace=0 border=0></a>
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../../programme/funktionen7.js"></script>
+
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+
+
+<table align=center height=100% cellspacing=0 cellpadding=0 border=0><tr><td>
+<table width=100% height=100% bgcolor="FAC832" background=../../grafik/bg_e03.gif cellspacing=1 cellpadding=0 border=0>
+<tr><td colspan=4><font face="verdana,arial,helvetica" size=2>
+
+<style type="text/css">
+<!--
+ form
+   { border:2px }
+ input, select, textarea
+   { font-size:12px; font-family:Verdana,tahoma,arial,helvetica;}
+-->
+</style>
+
+<form method="post" name="testit" action="javascript:suchen();">
+<input type=text autocomplete=off name="testvokabel" onKeyup="umlaute()" style="font-family:verdana,tahoma,arial"><font size=2>
+</font><script language="JavaScript">
+document.write("<input type=\"button\" id=\"bestellbutton\" value=\""+spracheintrag_hinweis[54]+"\" onClick=\"javascript:suchen();\" style=\"font-family:verdana,tahoma,arial\">");
+</script>
+
+</form></td></tr></table></td></tr></table>
+
+
+</td></tr></table></td></tr></table><font size=1></form>
+
+
+</font><script language="JavaScript">
+function suchen() {
+  top.frames[1].location.href="mobile_search_u.html?"+document.testit.testvokabel.value;
+}
+</script>
+
+</BODY>
+</HTML>

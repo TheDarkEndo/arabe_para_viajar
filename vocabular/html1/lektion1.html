@@ -1,0 +1,1671 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<TITLE></TITLE>
+<style type="text/css">
+a:link { text-decoration:none; color:#191919 }
+a:visited { text-decoration:none; color:#191919; }
+a:hover { text-decoration:underline; color:#191919 }
+a:active { text-decoration:none; color:#191919}
+a:focus { font-weight:bold; color:#191919;  }
+</style>
+<script language="JavaScript">
+
+dieselektion=1;
+
+</script>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../menu/lektionen.js"></script>
+<script language="JavaScript" src="../grammatik/grammatik.js"></script>
+<script language="JavaScript" src="../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../programme/funktionen8.js"></script>
+<script language="JavaScript" src="../programme/grammatik.js"></script>
+<script language="JavaScript" src="../programme/tagesaufgabe.js"></script>
+<script language="javascript">
+
+
+ 
+var aufbaugrammatik=0; if (sprachkuerzel.indexOf("3")>0) { aufbaugrammatik=1; }
+
+var zusatzname1= new Array();
+var zusatzname2= new Array();
+for (var t=1;t<43;t+=1) { zusatzname1[t]=""; zusatzname2[t]=""; }
+if (sprache2=="latein") {
+var zusatzname1= new Array(
+"","Adjektive I","Adjektive II","Adjektive III","Adjektive IV","Adjektive V","Adjektive VI","Adjektive (Gen.)","Adverbien I","Adverbien II","Adverbien III","Konjunktionen","Zahlwörter","Partikel","Präpositionen","Pronomen","Substantive I","Substantive II","Substantive III","Substantive IV","Substantive V","Substantive VI","Substantive VII","Substantive VIII","Substantive IX","Substantive X","Substantive XI","Substantive XII","Substantive XIII","Verben I","Verben II","Verben III","Verben IV","Verben V","Verben VI","Verben VII","Verben VIII","Verben IX","Verben X","Verben XI","Verben VII","Verben VIII","Verben VIV"
+);
+var zusatzname2= new Array(
+"","Auf der Reise I","Auf der Reise II","Auf der Reise III","Auf der Reise IV","Denken, sagen, meinen","Esskultur","Handel I","Handel II","Haus und Alltag I","Haus und Alltag II","Haus und Alltag III","Haus und Alltag IV","Krieg I","Krieg II","Krieg III","Krieg IV","Kultur I","Kultur II","Kultur III","Kultur IV","Landwirtschaft I","Landwirtschaft II","Leib und Seele I","Leib und Seele II","Leib und Seele III","Leib und Seele IV","Leib und Seele V","Leib und Seele IV","Menschliches Handeln I","Menschliches Handeln II","Menschliches Handeln III","Menschliches Handeln IV","Menschliches Handeln V","Menschliches Handeln VI","Recht I","Recht II","Rhetorik","Sonstiges","Staat und Politik I","Staat und Politik II","Staat und Politik III","Zeit"
+);
+for (var t=1;t<43;t+=1) { zusatzname1[t]=":<br>"+zusatzname1[t]; zusatzname2[t]=":<br>"+zusatzname2[t]; }
+}
+
+var ie = false; 
+if (document.all) ie = true;
+var klappe=new Array();
+
+function browsername(x) { 
+  if (ie) {return document.all[x];} else {return document.getElementById(x);} 
+}
+
+function klappen(fenster) { 
+  if (klappe[fenster]) { browsername(fenster).style.display = 'block'; }
+  else { browsername(fenster).style.display = 'none'; } 
+  klappe[fenster]=1-klappe[fenster];
+}
+</script>
+
+</HEAD>
+<BODY text="#000077" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#000077"  background="../grafik/bg_b01.jpg">
+<center><img src=../grafik/nichts.gif width=3 height=5><br>
+<font face="arial,helvetica" size=1>
+
+
+
+
+
+
+
+
+
+<!--Lektionsname-->
+<table width=180 cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td width=4><img src=../grafik/tab_r1.gif width=4 height=4></td>
+<td width=* background=../grafik/tab_r2.gif></td>
+<td width=4><img src=../grafik/tab_r3.gif width=4 height=4></td>
+</tr><tr>
+<td background=../grafik/tab_r4.gif></td>
+<td background=../grafik/tab_r5.gif><font size=2 face="verdana,arial,helvetica" color="#FFFFFF"><b><script language="JavaScript">
+//ueberschriftname(dieselektion);
+
+ if (sprachkuerzel.indexOf("2")>0)  { lektionennamen[(dieselektion-1)*2 + 1] = expresskurs_ueberschrift[dieselektion]; }
+ if (sprachkuerzel.indexOf("4a")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_a[dieselektion]; }
+ if (sprachkuerzel.indexOf("4b")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_b[dieselektion]; }
+ if (sprachkuerzel.indexOf("4c")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_c[dieselektion]; }
+ if (sprachkuerzel.indexOf("4d")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_d[dieselektion]; }
+ if (sprachkuerzel.indexOf("4e")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_e[dieselektion]; }
+ if (sprachkuerzel.indexOf("4f")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_f[dieselektion]; }
+ if (sprachkuerzel.indexOf("4g")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_g[dieselektion]; }
+ if (sprachkuerzel.indexOf("4h")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_h[dieselektion]; }
+ if (sprachkuerzel.indexOf("4i")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_i[dieselektion]; }
+ if (sprachkuerzel.indexOf("4j")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_j[dieselektion]; }
+ if (sprachkuerzel.indexOf("4k")>0) { lektionennamen[(dieselektion-1)*2 + 1] = spezial_ueberschrift_k[dieselektion]; }
+ if (sprachkuerzel.indexOf("5a")>0) { lektionennamen[(dieselektion-1)*2 + 1] = business_ueberschrift_a[dieselektion]; }
+ if (sprachkuerzel.indexOf("5b")>0) { lektionennamen[(dieselektion-1)*2 + 1] = business_ueberschrift_b[dieselektion]; }
+ if (sprachkuerzel.indexOf("5c")>0) { lektionennamen[(dieselektion-1)*2 + 1] = business_ueberschrift_c[dieselektion]; }
+ if (sprachkuerzel.indexOf("6")>0) { lektionennamen[(dieselektion-1)*2 + 1] = grammatiktrainer_kapitelueberschrift[dieselektion]; }
+
+
+document.write (spracheintrag_hinweis[14]+" "+dieselektion+":<br>"+lektionennamen[(dieselektion-1)*2 + 1]);
+
+</script></b></td>
+<td background=../grafik/tab_r6.gif></td>
+</tr><tr>
+<td width=4><img src=../grafik/tab_r7.gif width=4 height=4></td>
+<td width=* background=../grafik/tab_r8.gif></td>
+<td width=4><img src=../grafik/tab_r9.gif width=4 height=4></td>
+</tr></table><img src=../grafik/nichts.gif width=3 height=18><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Hauptmenü-->
+<script language="JavaScript">
+
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=100% cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('haupt');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b>"+spracheintrag_menu[28]+"</a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+</script>
+
+<!--Hauptmenü versteckt-->
+<script language="JavaScript">
+ document.write("<div id=\"haupt\"><table cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+</script>
+
+<script language="JavaScript">
+
+var glossareintrag="";
+if (sprachkuerzel.indexOf("2")<1 && sprachkuerzel.indexOf("3")<1 && glossarindex>0 &&  unterrichtssprache=="deutsch")
+{
+  glossareintrag="<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../glossar/index.html target=glossar>Grammatik-Glossar</a></td></tr>";
+}
+
+var menueintrag=""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=selection.html>"+spracheintrag_menu[1]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/"+unterrichtskuerzel+"/copyright_impressum.html target=rahmen1>"+spracheintrag_menu[2]+"</a></td></tr>"+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[3]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>";
+
+if (unterrichtskuerzel!="de") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/"+unterrichtskuerzel+"/anleitungen.html target=anleit>"+spracheintrag_menu[4]+"</a></td></tr>";
+}
+
+if (richtiglernenindex>0 && unterrichtskuerzel=="de") {
+
+menueintrag=menueintrag+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/lektionsauswahl_de.html target=rahmen1>Anleitungen</a></td></tr>"; 
+
+//menueintrag=menueintrag+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/sprachenlernen.html target=anleit>"+spracheintrag_menu[5]+"</a></td></tr>"; 
+}
+
+menueintrag=menueintrag+""+glossareintrag;
+
+if (unterrichtskuerzel!="de") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/"+unterrichtskuerzel+"/fragen1.html target=rahmen1>"+spracheintrag_menu[6]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/"+unterrichtskuerzel+"/fragen2.html target=rahmen1>"+spracheintrag_menu[7]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/"+unterrichtskuerzel+"/fragen3.html target=rahmen1>"+spracheintrag_menu[8]+"</a></td></tr>";
+}
+menueintrag=menueintrag+""+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!--Tagesaufgaben-->
+<script language="JavaScript">
+
+tagesaufgabe_start(1);
+var x=""+
+"<table cellspacing=0 cellpadding=0 border=0><tr>"+
+"<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>"+
+"<td width=* background=../grafik/tab_w2.gif></td>"+
+"<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>"+
+"</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td bgcolor=#FFFFFF><span style=\"font-face:verdana,arial,helvetica;font-size:8pt;\">"+ta_ausgabe+
+"</td></tr></table></td><td background=../grafik/tab_w6.gif></td></tr>"+
+"<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>"+
+"<td width=* background=../grafik/tab_w8.gif></td>"+
+"<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>"+
+"</table></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>";
+if (unterrichtssprache=="deutsch" && sprache2!="latein") {  document.write(x); }
+
+</script>
+
+
+
+
+
+
+
+
+<!--Express-->
+<script language="JavaScript">
+if ( sprachkuerzel.indexOf("2") > 0 ) { 
+
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('express');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b>"+spracheintrag_menu[9]+"</a> &nbsp; <img src=\"../grafik/sound04.gif\" border=0></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Express versteckt-->
+ document.write("<div id=\"express\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[10]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/liste"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[11]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/vorspiel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[12]+"</a></span></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/search1.html target=rahmen1>"+spracheintrag_menu[13]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[14]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/anklicken"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[36]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/einzel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[16]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/karteidruck"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[17]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr> "+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[18]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/test"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[19]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/multiplechoice"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/blitz"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/schreibenlernen"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[26]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[23]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start2.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_startd1.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start3.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[24]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start4.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start5.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_startd2.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../express/html2/langzeit_start6.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+</script>
+
+
+
+
+
+
+
+
+<!--Grammatik nur im Grammatiktrainer-->
+<script language="JavaScript">
+if (sprachkuerzel.indexOf("6") >0 ) { 
+ document.write("</tr></table></td></tr></table><img src=../grafik/nichts.gif width=3 height=18><br>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('grammatik6');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b>Lehrwerk</a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Grammatik6 versteckt-->
+ document.write("<div id=\"grammatik6\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+if (grammatikversion<2006) {
+  grammar(dieselektion);
+  var menueintrag="<tr><td bgcolor=CCCCCC onMouseout=\"this.style.backgroundColor='#CCCCCC'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <i><a href=../extras/grammatik.html>"+spracheintrag_menu[32]+"</a></td></tr>";
+  document.write(menueintrag);
+} 
+else { grammatikfunktion(); }
+
+var menueintrag="<tr><td bgcolor=CCCCCC onMouseout=\"this.style.backgroundColor='#CCCCCC'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <i><a href=../glossar/index.html target=glossar2>Grammatik-Glossar</a></td></tr>";
+if (glossarindex>0) { document.write(menueintrag); }
+
+ document.write("</table></td><td background=../grafik/tab_w6.gif></td></tr>");
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!--Vokabeln-->
+<script language="JavaScript">
+if ( sprachkuerzel.indexOf("2") < 1 ) { 
+ document.write("<img src=../grafik/nichts.gif width=3 height=12><br>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('vokabeln');\"><img src=../grafik/menu1.gif border=0>");
+ if (sprachkuerzel.indexOf("6")>0) { spracheintrag_menu[29] = "Lehrwerk üben"; spracheintrag_menu[35]="Vertonte Übungssätze"; }
+ document.write("<b>"+spracheintrag_menu[29]+zusatzname1[dieselektion]+"</a> &nbsp; <img src=\"../grafik/sound04.gif\" border=0></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Vokabeln versteckt-->
+ document.write("<div id=\"vokabeln\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[10]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/liste"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[35]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/vorspiel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[12]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/search1.html target=rahmen1>"+spracheintrag_menu[33]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[14]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/anklicken"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[34]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/einzel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[16]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/karteidruck"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[17]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr> "+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[18]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/test"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[19]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/multiplechoice"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/blitz"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/schreibenlernen"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"";
+
+if (sprache2!="latein") { 
+menueintrag=menueintrag+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[26]+"</a></td></tr>"+
+"";
+}
+
+if (sprache2=="latein") { 
+menueintrag=menueintrag+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/lueckenzeile"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[39]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[40]+"</a></td></tr>";
+}
+
+menueintrag=menueintrag+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[23]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start2.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_startd1.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start3.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[24]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start4.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start5.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_startd2.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start6.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Vokabeln2: Nur bei Grammatiktrainer; bezieht sich auf /text-->
+<script language="JavaScript">
+if ( sprachkuerzel.indexOf("6") > 0) {
+if ( 1<=maxlektion_verbtrainer) {
+ document.write("<img src=../grafik/nichts.gif width=3 height=12><br>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('vokabeln2');\"><img src=../grafik/menu1.gif border=0>");
+ if (sprachkuerzel.indexOf("6")>0) { spracheintrag_menu[29] = "Grammatiktrainer"; spracheintrag_menu[35]="Vertonte Übungssätze"; }
+ document.write("<b>"+spracheintrag_menu[29]+zusatzname1[dieselektion]+"</a> &nbsp; <img src=\"../grafik/sound04.gif\" border=0></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Vokabeln versteckt-->
+ document.write("<div id=\"vokabeln2\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[10]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/liste"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[35]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/vorspiel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[12]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/search1.html target=rahmen1>"+spracheintrag_menu[33]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[14]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/anklicken"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[34]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/einzel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[16]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/karteidruck"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[17]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr> "+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[18]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/test"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[19]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/multiplechoice"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/blitz"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/schreibenlernen"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[26]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[23]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start2.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_startd1.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start3.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[24]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start4.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start5.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_startd2.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start6.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+<!--Text-->
+<script language="JavaScript">
+
+if ( (sprachkuerzel.indexOf("2") < 1) &&  (sprachkuerzel.indexOf("4") < 1) &&  (sprachkuerzel.indexOf("6") < 1) && (sprachkuerzel.length<4 || sprachkuerzel.indexOf("5") > 0) &&  (unterrichtssprache=="deutsch" || unterrichtssprache=="spanisch" || unterrichtssprache=="tschechisch")) { 
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('texte');\"><img src=../grafik/menu1.gif border=0>");
+
+ if (sprachkuerzel.indexOf("5")>0) { spracheintrag_menu[27] = spracheintrag_menu[60]; }
+ if (sprachkuerzel.indexOf("6")>0) { spracheintrag_menu[27] = "Grammatiktrainer"; }
+ document.write("<b>"+spracheintrag_menu[27]+zusatzname2[dieselektion]+"</a> &nbsp; <img src=\"../grafik/sound04.gif\" border=0></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Text versteckt-->
+ document.write("<div id=\"texte\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+if (sprache2=="latein") { spracheintrag_menu[27]="Wortliste"; }
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[10]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/liste"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[27]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/vorspiel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[12]+"</a></span></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/search1.html target=rahmen1>"+spracheintrag_menu[13]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[14]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/anklicken"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[36]+"</a></td></tr> "+
+"";
+
+if (sprache2!="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/lueckent"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[37]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/lueckensilbe"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[38]+"</a></td></tr> "+
+"";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/einzel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[16]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/karteidruck"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[17]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr> "+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[18]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>";
+
+
+// Textverständnis: [Basis- und Aufbaukurse]
+if ( (sprachkuerzel.indexOf("3")>0 || sprachkuerzel.length==2 )  && sprache2!="latein" && unterrichtssprache=="deutsch") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/tverstaendnis"+dieselektion+".html target=rahmen1>Textverständnis</a></td></tr>";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/test"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[19]+"</a></td></tr>"+
+"";
+
+if (sprache2=="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/multiplechoice"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/blitz"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/schreibenlernen"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>";
+
+
+if (sprache2!="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/lueckenzeile"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[39]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[40]+"</a></td></tr>"+
+"";
+}
+
+
+
+
+if (sprache2!="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html1/wortsalat"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[41]+"</a></td></tr>";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[23]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"";
+
+if (sprache2=="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start2.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_startd1.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start3.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[24]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start4.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"";
+
+if (sprache2=="latein") {
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../vocabular/html2/langzeit_start5.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_startd2.html target=rahmen1>"+spracheintrag_menu[22]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../text/html2/langzeit_start6.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Grammatik-->
+<script language="JavaScript">
+if ( ((sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1  && sprachkuerzel.indexOf("5") < 1 && sprachkuerzel.indexOf("6") < 1) || aufbaugrammatik>0 ) && unterrichtssprache=="deutsch" && sprachkuerzel.length<4) { 
+ document.write("</tr></table></td></tr></table><img src=../grafik/nichts.gif width=3 height=18><br>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('grammatik');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b>"+spracheintrag_menu[30]+"</a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Grammatik versteckt-->
+ document.write("<div id=\"grammatik\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+if (grammatikversion<2006) {
+  grammar(dieselektion);
+  var menueintrag="<tr><td bgcolor=CCCCCC onMouseout=\"this.style.backgroundColor='#CCCCCC'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <i><a href=../extras/grammatik.html>"+spracheintrag_menu[32]+"</a></td></tr>";
+  document.write(menueintrag);
+} 
+else { grammatikfunktion(); }
+
+var menueintrag="<tr><td bgcolor=CCCCCC onMouseout=\"this.style.backgroundColor='#CCCCCC'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <i><a href=../glossar/index.html target=glossar2>Grammatik-Glossar</a></td></tr>";
+if (glossarindex>0) { document.write(menueintrag); }
+
+ document.write("</table></div></td><td background=../grafik/tab_w6.gif></td></tr>");
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Übungen-->
+<script language="JavaScript">
+if ( ((sprachkuerzel.indexOf("2") < 1 && sprachkuerzel.indexOf("3") < 1 && sprachkuerzel.indexOf("4") < 1 && sprachkuerzel.indexOf("5") < 1) || aufbaugrammatik>0) && unterrichtssprache=="deutsch" && sprachkuerzel.indexOf("6") < 1 && sprachkuerzel.length<4) { 
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('uebungen');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b>"+spracheintrag_menu[31]+"</a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Übungen versteckt-->
+ document.write("<div id=\"uebungen\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0>");
+
+
+if (grammatikversion<2006) {
+
+menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[10]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/liste"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[11]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/vorspiel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[12]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/search1.html target=rahmen1>"+spracheintrag_menu[13]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=#FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[14]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/anklicken"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[15]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/einzel"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[16]+"</a></td></tr> "+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/karteidruck"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[17]+"</a> <img src=\"../grafik/drucker.gif\" width=14 height=15 border=0></td></tr> "+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[18]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/test"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[19]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/multiplechoice"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/blitz"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html1/lueckenendung"+dieselektion+".html target=rahmen1>"+spracheintrag_menu[26]+"</a></td></tr>"+
+"";
+}
+
+menueintrag=menueintrag+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[23]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start2.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start3.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+""+
+"<tr><td bgcolor=FFFFFF><img src=../grafik/nichts.gif height=4 width=100%></td></tr>"+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; "+spracheintrag_menu[24]+"</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start4.html target=rahmen1>"+spracheintrag_menu[25]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start5.html target=rahmen1>"+spracheintrag_menu[20]+"</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../praktika/html2/langzeit_start6.html target=rahmen1>"+spracheintrag_menu[21]+"</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+</script>
+
+
+
+
+
+
+
+
+<!--Länderinfos-->
+<script language="JavaScript">
+var laenderinfoja=0;
+if (unterrichtssprache=="deutsch") { 
+if (sprache.indexOf("deutsch")>-1 || sprache=="aegyptisch"  || sprache=="afrikaans"  || sprache=="amerikanisch" || sprache=="albanisch" || sprache=="amharisch"  || sprache=="arabisch" || sprache=="armenisch"  || sprache=="bosnisch" || sprache=="brasilianisch"  || sprache=="bulgarisch" || sprache=="chinesisch" || sprache=="daenisch" || sprache=="deutsch" || sprache=="englisch" || sprache=="estnisch" || sprache=="finnisch"   || sprache=="franzoesisch"  || sprache=="georgisch"  || sprache=="griechisch" || sprache=="hebraeisch" || sprache=="hindi" || sprache=="indonesisch" || sprache=="islaendisch" || sprache=="italienisch" || sprache=="japanisch" || sprache=="kasachisch" || sprache=="katalanisch" || sprache=="kantonesisch" || sprache=="koreanisch" || sprache=="kroatisch"  || sprache=="kurdisch" || sprache=="lettisch" || sprache=="libanesisch" || sprache=="litauisch" || sprache=="madagassisch" || sprache=="malaysisch" || sprache=="mallorquinisch" || sprache=="marokkanisch" || sprache=="mazedonisch" || sprache=="mongolisch" || sprache=="niederlaendisch" || sprache=="norwegisch" || sprache=="persisch" || sprache=="polnisch"  || sprache=="portugiesisch"  || sprache=="punjabi" || sprache=="rumaenisch" || sprache=="russisch" ||  sprache=="schwedisch" || sprache=="serbisch" || sprache=="singhalesisch" ||sprache=="slowakisch" || sprache=="slowenisch" || sprache=="spanisch" || sprache=="suedamerika" || sprache=="suaheli"  || sprache=="syrisch" || sprache=="thai" || sprache=="tschechisch" || sprache=="tuerkisch" || sprache=="tunesisch" || sprache=="ungarisch" || sprache=="ukrainisch"|| sprache=="urdu" || sprache=="vietnamesisch" || sprache=="wolof") {
+
+
+ var sprachelaenderinfo=sprache;
+ if (sprache2.indexOf("Deutsch")>-1) { sprachelaenderinfo="deutsch"; }
+
+ laenderinfoja=1;
+ document.write("<img src=../grafik/nichts.gif width=3 height=12><br>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_o1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_o4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_o5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('express2');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=191919>Länderinfos</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_o6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_o7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_o8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_o9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Express versteckt-->
+ document.write("<div id=\"express2\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"FFFFFF\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/wissen.html target=rahmen1>Wissenswertes</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/sehen.html target=rahmen1>Sehenswertes</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/politik.html target=rahmen1>Politik&amp;Gesellschaft</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/schmecken.html target=rahmen1>Schmeckenswertes</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/medien.html target=rahmen1>Medien</a></td></tr>"+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\">&nbsp; <a href=../content/de/land/"+sprachelaenderinfo+"/reisetipps.html target=rahmen1>Reisetipps</a></td></tr>"+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Lerntipps-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br><div align=\"center\">"); }
+
+
+
+
+// Alles klappen:
+
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gy1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gy2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gy3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gy4.gif></td>");
+
+ document.write("<td bgcolor=b6b6b6 background=../grafik/tab_gy5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntippsgesamt');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Lerntipps</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gy6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gy7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gy8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gy9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=6><br></td></tr></table></td></tr></table>");
+document.write("<div id=\"lerntippsgesamt\">");
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 0: Assoziation-->
+
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps0');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Assoziations-</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps0');\"><font color=FFFFFF>lernmethode</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps0\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Assoziationslernmethode</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation1.html target=rahmen1>"+
+"Wie Sie durch die Assoziationslernmethode Ihre Lernzeit um zwei Drittel verkürzen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_zusammen.html target=rahmen1>"+
+"Zusammenfassung</a></td></tr>"+
+
+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Grammatik lernen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_grammatik1.html target=rahmen1>"+
+"Geschlecht von Substantiven</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_grammatik2.html target=rahmen1>"+
+"Adjektive</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_grammatik3.html target=rahmen1>"+
+"Verben</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_grammatik4.html target=rahmen1>"+
+"Konjugierte Verben</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_grammatik5.html target=rahmen1>"+
+"Fragewörter</a></td></tr>"+
+
+""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Erfahrungsberichte zu verschiedenen Sprachen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_cn.html target=rahmen1>"+
+"Chinesische Zahlen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_ar.html target=rahmen1>"+
+"Arabische Zahlen und Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_br.html target=rahmen1>"+
+"Brasilianisch-Vokabeln</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_se.html target=rahmen1>"+
+"Schwedisch-Vokabeln</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_cz.html target=rahmen1>"+
+"Tschechische Zahlen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_gr.html target=rahmen1>"+
+"Griechisch-Vokabeln</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" "+
+"color=\"#191919\"><a href=../content/de/besserlernen/assoziation/assoziation_sh.html target=rahmen1>"+
+"Suaheli-Vokabeln</a></td></tr>"+
+""+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 1: Sprachenlernen leicht gemacht-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br>"); }
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps1');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Sprachen lernen</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps1');\"><font color=FFFFFF>leicht gemacht</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps1\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">So lernt das menschliche Gehirn</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/gehirn_sprachenlernen.html target=rahmen1>"+
+"Sprachen lernen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/gehirn_lernen.html target=rahmen1>"+
+"Das Gehirn </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/gehirn_lerntheorien.html target=rahmen1>"+
+"Lerntheorien </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/gehirn_voraussetzungen.html target=rahmen1>"+
+"Lernvoraussetzungen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/gehirn_erfolgsfaktoren.html target=rahmen1>"+
+"Lernerfolg Faktoren</a></td></tr>"+
+""+
+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Das Lernen lernen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_selbststudium.html target=rahmen1>"+
+"Selbststudium </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_selbstmotivation.html target=rahmen1>"+
+"Selbstmotivation </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_hoch_motiviert.html target=rahmen1>"+
+"Motiviert lernen! </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_beste_zeit.html target=rahmen1>"+
+"Beste Lernzeit </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_bester_ort.html target=rahmen1>"+
+"Idealer Lernort </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_lerngeschichte.html target=rahmen1>"+
+"Lerngeschichte </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_erfahrungen.html target=rahmen1>"+
+"Erfahrungen nutzen! </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_trainingsplan.html target=rahmen1>"+
+"Ihr Trainingsplan </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_aeltere.html target=rahmen1>"+
+"Ältere Lerner </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_gehirnjogging.html target=rahmen1>"+
+"Gehirnjogging </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_auffrischen.html target=rahmen1>"+
+"Kenntnisse auffrischen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_im_schlaf.html target=rahmen1>"+
+"Lernen im Schlaf? </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lernen_superlearning.html target=rahmen1>"+
+"Superlearning </a></td></tr>"+
+""+
+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Welcher Lerntyp sind Sie?</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lerntyp_arten.html target=rahmen1>"+
+"Arten von Lerntypen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/sprachen_lernen/lerntyp_moeglichkeiten.html target=rahmen1>"+
+"Ihr Lerntyp </a></td></tr>"+
+""+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 2 / Tipps zum Vokabellernen-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br>"); }
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps2');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Vokabeln lernen</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps2');\"><font color=FFFFFF>leicht gemacht</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps2\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Vokabeln richtig lernen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_allgemein.html target=rahmen1>"+
+"Allgemeine Tipps </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_aktiver_wortschatz.html target=rahmen1>"+
+"Wortschatz </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_nie_vergessen.html target=rahmen1>"+
+"Nie mehr vergessen! </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_einheit_sieben.html target=rahmen1>"+
+"Vokabeleinheiten</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_woerterbuch.html target=rahmen1>"+
+"Wörterbuch </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_karteikarten.html target=rahmen1>"+
+"Karteikarten </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_karteikasten.html target=rahmen1>"+
+"Digitaler Karteikasten </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_antonyme.html target=rahmen1>"+
+"Lernen mit Antonymen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_kreuzwortraetsel.html target=rahmen1>"+
+"Kreuzworträtsel </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_notizzettel.html target=rahmen1>"+
+"Notizzettel</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_assoziogramm.html target=rahmen1>"+
+"Assoziogramme </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_wortfelder.html target=rahmen1>"+
+"Lernen über Wortfelder </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_loci_methode.html target=rahmen1>"+
+"Die Loci-Methode </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_rhythmisch_sprechen.html target=rahmen1>"+
+"Rhythmisches Sprechen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_wortfamilie.html target=rahmen1>"+
+"Wortfamilien </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_internationalismen.html target=rahmen1>"+
+"Internationalismen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_logische_reihen.html target=rahmen1>"+
+"Logische Reihen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_hierarchien.html target=rahmen1>"+
+"Lernen über Hierarchien </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_falsche_freunde.html target=rahmen1>"+
+"Falsche Freunde </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_emotionen.html target=rahmen1>"+
+"Lernen über Emotionen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/vokabeln_lernen/tipps_vok_wiederholen.html target=rahmen1>"+
+"Richtig Wiederholen </a></td></tr>"+
+""+
+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 3: Grammatik lernen leicht gemacht-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br>"); }
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps3');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Grammatik lernen</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps3');\"><font color=FFFFFF>leicht gemacht</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps3\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Hintergrundwissen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_einfuehrung.html target=rahmen1>"+
+"Was ist Grammatik? </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_teilbereiche.html target=rahmen1>"+
+"Teilbereiche </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_arten.html target=rahmen1>"+
+"Arten </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_fremdsprache.html target=rahmen1>"+
+"Fremdsprache & Grammatik </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_grundlagen.html target=rahmen1>"+
+"Grundlagen </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_ueben.html target=rahmen1>"+
+"Richtig üben </a></td></tr>"+
+""+
+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Tipps & Techniken</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_lehrbuch.html target=rahmen1>"+
+"Lehrbuch schreiben </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_wichtig.html target=rahmen1>"+
+"Was ist wichtig?</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_lernposter.html target=rahmen1>"+
+"Lernposter </a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_karteikarten.html target=rahmen1>"+
+"Grammatik-Karteikarten</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_landeskunde.html target=rahmen1>"+
+"Grammatik & Landeskunde</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_assoziation.html target=rahmen1>"+
+"Assoziationslernen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_notizzettel.html target=rahmen1>"+
+"Notizzettelmethode</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_bilder.html target=rahmen1>"+
+"Grammatik in Bildern</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/grammatik_lernen/grammatik_textarbeit.html target=rahmen1>"+
+"Grammatik & Textarbeit</a></td></tr>"+
+""+
+"</table></div></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 4: Textarbeit leicht gemacht-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br>"); }
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps4');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Texte lesen</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps4');\"><font color=FFFFFF>leicht gemacht</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps4\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Hintergrundwissen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_lesen_01.html target=rahmen1>"+
+"Wie funktioniert lesen?</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_lesen_02.html target=rahmen1>"+
+"Lesen in der Fremdsprache</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_lesen_03.html target=rahmen1>"+
+"Welcher Lesertyp sind Sie?</a></td></tr>"+
+""+
+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Tipps & Techniken</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_01.html target=rahmen1>"+
+"Fremde Schriften lesen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_02.html target=rahmen1>"+
+"Leseempfehlungen für Lernstufen</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_03.html target=rahmen1>"+
+"W-Fragen beantworten</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_04.html target=rahmen1>"+
+"Leseprotokolle schreiben</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_05.html target=rahmen1>"+
+"Lückentexte</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_06.html target=rahmen1>"+
+"Strukturmarker</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_07.html target=rahmen1>"+
+"Methoden der Textanalyse</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_08.html target=rahmen1>"+
+"Wortsalat</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_09.html target=rahmen1>"+
+"Schneller lesen!</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/texte_lesen/textarbeit_tipps_10.html target=rahmen1>"+
+"Tipps zum Übersetzen</a></td></tr>"+
+""+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br>");
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+<!--Lerntipps ABSCHNITT 5 / Schriften der Welt-->
+<script language="JavaScript">
+if (unterrichtssprache=="deutsch") { 
+ if (laenderinfoja<1) { document.write("<img src=../grafik/nichts.gif width=3 height=12><br>"); }
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr><td>");
+ document.write("<table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4 height=4><img src=../grafik/tab_gx1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_gx4.gif></td>");
+
+ document.write("<td bgcolor=F08428 background=../grafik/tab_gx5.gif onMouseout=\"this.style.backgroundColor='#F08428'\" onMouseover=\"this.style.backgroundColor='#e43e12'\"><font size=2 face=\"verdana,arial,helvetica\" color=191919>");
+ document.write("<a href=\"javascript: klappen('lerntipps5');\"><img src=../grafik/menu1.gif border=0>");
+ document.write("<b><font color=FFFFFF>Schriften der Welt</font></a><br>&nbsp; &nbsp; <a href=\"javascript: klappen('lerntipps5');\"><font color=FFFFFF>lernen</font></a></td>");
+ document.write("<td width=4 height=4 background=../grafik/tab_gx6.gif></td></tr><tr>");
+ document.write("<td width=4><img src=../grafik/tab_gx7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_gx8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_gx9.gif width=4 height=4></td></tr><tr><td height=2 colspan=3><img src=../grafik/nichts.gif width=3 height=2></td></tr></table>");
+
+<!--Lerntipps versteckt-->
+ document.write("<div id=\"lerntipps5\"><table width=180 cellspacing=0 cellpadding=0 border=0><tr>");
+ document.write("<td width=4><img src=../grafik/tab_w1.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w2.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w3.gif width=4 height=4></td>");
+ document.write("</tr><tr><td background=../grafik/tab_w4.gif></td><td><table width=172 bgcolor=\"F6E9A0\" cellspacing=0 cellpadding=1 border=0><tr><td>");
+
+var menueintrag=""+
+"<tr><td bgcolor=FAC832 background=../grafik/line_jaune.gif><font size=1 face=\"verdana,arial,helvetica\" color=\"#191919\">Schriften richtig lernen</td></tr>"+
+"<tr><td><img src=../grafik/line_gris3.gif height=1 width=100%></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_01.html target=rahmen1>"+
+"Schriften der Welt</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_02.html target=rahmen1>"+
+"Arabische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_03.html target=rahmen1>"+
+"Armenische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_04.html target=rahmen1>"+
+"Chinesische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_05.html target=rahmen1>"+
+"Devanagari Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_06.html target=rahmen1>"+
+"Georgische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_07.html target=rahmen1>"+
+"Griechische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_08.html target=rahmen1>"+
+"Gurmukhi Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_09.html target=rahmen1>"+
+"Hebräische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_10.html target=rahmen1>"+
+"Japanische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_11.html target=rahmen1>"+
+"Koreanische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_12.html target=rahmen1>"+
+"Kyrillische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_13.html target=rahmen1>"+
+"Lateinische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/besserlernen/schriften_lernen/schrift_14.html target=rahmen1>"+
+"Singhalesische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/schrift_15.html target=rahmen1>"+
+"Tamilische Schrift</a></td></tr>"+
+""+
+"<tr><td bgcolor=#FFFFFF onMouseout=\"this.style.backgroundColor='#FFFFFF'\" onMouseover=\"this.style.backgroundColor='#F6E9A0'\"><font size=2 face=\"verdana,arial,helvetica\" color=\"#191919\"><a href=../content/de/schrift_16.html target=rahmen1>"+
+"Thailändische Schrift</a></td></tr>"+
+""+
+
+"</table></td><td background=../grafik/tab_w6.gif></td></tr>";
+
+ document.write(menueintrag);
+ document.write("<tr><td width=4><img src=../grafik/tab_w7.gif width=4 height=4></td>");
+ document.write("<td width=* background=../grafik/tab_w8.gif></td>");
+ document.write("<td width=4><img src=../grafik/tab_w9.gif width=4 height=4></td>");
+ document.write("</table></div></td></tr></table><img src=../grafik/nichts.gif width=3 height=6><br></div>");
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<div align="center">
+<!--Pfeile zum Lektionen auswählen-->
+<script language="javascript">
+document.write ("&nbsp; ");
+if (dieselektion>1) document.write ("<a href=lektion"+((dieselektion-1)*1)+".html onClick=\"javascript:top.rahmen1.location.href='../grafik/startseite"+((dieselektion-1)*1)+".html'\"><img src=../grafik/pfeil_l4.jpg border=0></a> &nbsp;");
+
+if (dieselektion < maxlektion) document.write ("<a href=lektion"+((dieselektion+1)*1)+".html onClick=\"javascript:top.rahmen1.location.href='../grafik/startseite"+((dieselektion+1)*1)+".html'\"><img src=../grafik/pfeil_r4.jpg border=0></a> &nbsp;");
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Auswahlmenü-->
+<form name="vorschau">
+<select name="Auswahl" size=1 onChange= "Go_x(this.form.Auswahl.options[this.form.Auswahl.options.selectedIndex].value)" style="background-color:#FFFFFF; font-size:7pt; font:'arial narrow,arial,helvetica,sans-serif';">
+
+<script language="JavaScript">
+
+var c=0;
+if (sprache2=="latein") {
+ for (var t=0;t<42;t+=1) { lektionennamen[t*2]="lektion"+(t+1)*1+".html"; }
+}
+
+document.write("<option value=nichts>"+spracheintrag_menu[0]+"</option>");
+while(c/2 < maxlektion)
+{
+ if (sprachkuerzel.indexOf("2")>0)  { lektionennamen[c+1] = expresskurs_ueberschrift[c/2+1]; }
+ if (sprachkuerzel.indexOf("4a")>0) { lektionennamen[c+1] = spezial_ueberschrift_a[c/2+1]; }
+ if (sprachkuerzel.indexOf("4b")>0) { lektionennamen[c+1] = spezial_ueberschrift_b[c/2+1]; }
+ if (sprachkuerzel.indexOf("4c")>0) { lektionennamen[c+1] = spezial_ueberschrift_c[c/2+1]; }
+ if (sprachkuerzel.indexOf("4d")>0) { lektionennamen[c+1] = spezial_ueberschrift_d[c/2+1]; }
+ if (sprachkuerzel.indexOf("4e")>0) { lektionennamen[c+1] = spezial_ueberschrift_e[c/2+1]; }
+ if (sprachkuerzel.indexOf("4f")>0) { lektionennamen[c+1] = spezial_ueberschrift_f[c/2+1]; }
+ if (sprachkuerzel.indexOf("4g")>0) { lektionennamen[c+1] = spezial_ueberschrift_g[c/2+1]; }
+ if (sprachkuerzel.indexOf("4h")>0) { lektionennamen[c+1] = spezial_ueberschrift_h[c/2+1]; }
+ if (sprachkuerzel.indexOf("4i")>0) { lektionennamen[c+1] = spezial_ueberschrift_i[c/2+1]; }
+ if (sprachkuerzel.indexOf("4j")>0) { lektionennamen[c+1] = spezial_ueberschrift_j[c/2+1]; }
+ if (sprachkuerzel.indexOf("4k")>0) { lektionennamen[c+1] = spezial_ueberschrift_k[c/2+1]; }
+ if (sprachkuerzel.indexOf("5a")>0) { lektionennamen[c+1] = business_ueberschrift_a[c/2+1]; }
+ if (sprachkuerzel.indexOf("5b")>0) { lektionennamen[c+1] = business_ueberschrift_b[c/2+1]; }
+ if (sprachkuerzel.indexOf("5c")>0) { lektionennamen[c+1] = business_ueberschrift_c[c/2+1]; }
+ if (sprachkuerzel.indexOf("6")>0)  { lektionennamen[c+1] = grammatiktrainer_kapitelueberschrift[c/2+1]; }
+ document.write("<option value="+lektionennamen[c]+">"+(c/2+1)+". "+lektionennamen[c+1]+"</option>\n");
+ c=c+2;
+}
+
+</script>
+</select>
+
+</form></div>
+<p>
+
+
+
+
+
+
+
+<script language="javascript">
+
+if (browsername("texte")) {browsername("texte").style.display = 'none'; klappe["texte"]=1;}
+if (browsername("vokabeln")) {browsername("vokabeln").style.display = 'none'; klappe["vokabeln"]=1;}
+if (browsername("vokabeln2")) {browsername("vokabeln2").style.display = 'none'; klappe["vokabeln2"]=1;}
+if (browsername("grammatik")) {browsername("grammatik").style.display = 'none'; klappe["grammatik"]=1;}
+if (browsername("grammatik6")) {browsername("grammatik6").style.display = 'none'; klappe["grammatik6"]=1;}
+if (browsername("uebungen")) {browsername("uebungen").style.display = 'none'; klappe["uebungen"]=1;}
+if (browsername("lerntipps0")) {browsername("lerntipps0").style.display = 'none'; klappe["lerntipps0"]=1;}
+if (browsername("lerntipps1")) {browsername("lerntipps1").style.display = 'none'; klappe["lerntipps1"]=1;}
+if (browsername("lerntipps2")) {browsername("lerntipps2").style.display = 'none'; klappe["lerntipps2"]=1;}
+if (browsername("lerntipps3")) {browsername("lerntipps3").style.display = 'none'; klappe["lerntipps3"]=1;}
+if (browsername("lerntipps4")) {browsername("lerntipps4").style.display = 'none'; klappe["lerntipps4"]=1;}
+if (browsername("lerntipps5")) {browsername("lerntipps5").style.display = 'none'; klappe["lerntipps5"]=1;}
+if (browsername("lerntippsgesamt2")) {browsername("lerntippsgesamt").style.display = 'block'; klappe["lerntippsgesamt"]=0;}
+if (browsername("lerntippsgesamt")) {browsername("lerntippsgesamt").style.display = 'none'; klappe["lerntippsgesamt"]=1;}
+
+
+if (dieselektion>1) {
+   if (browsername("express")) {browsername("express").style.display = 'block'; klappe["express"]=0;}
+   if (browsername("express2")) {browsername("express2").style.display = 'none'; klappe["express2"]=1;}
+   if (browsername("haupt"))   {browsername("haupt").style.display = 'none'; klappe["haupt"]=1;}
+}
+else {
+if (browsername("express")) {browsername("express").style.display = 'none'; klappe["express"]=1;}
+if (browsername("express2")) {browsername("express2").style.display = 'none'; klappe["express2"]=1;}
+if (browsername("haupt"))   {browsername("haupt").style.display = 'block'; klappe["haupt"]=0;}
+
+}
+
+
+function Go_x(ziel,rueckzug)
+{
+if(ziel == "nichts")
+{
+  document.forms[0].reset();
+  document.forms[0].elements[0].blur();
+  return;
+}
+else
+{
+  var ziellektion=ziel.substring(ziel.indexOf("ktion",0)+5);
+  ziellektion=ziellektion.substring(0,ziellektion.indexOf(".",0));
+
+  top.rahmen1.location.href="../grafik/startseite"+ziellektion+".html";
+ 
+  self.location.href = ziel;
+  document.forms[0].reset();
+  document.forms[0].elements[0].blur();
+
+}
+}
+
+
+
+</script>
+
+
+</BODY>
+</HTML>

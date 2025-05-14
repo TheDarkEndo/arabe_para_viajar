@@ -1,0 +1,106 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<style type="text/css">
+a:link { text-decoration:none; color:#333333 }
+a:visited { text-decoration:none; color:#333333; }
+a:hover { text-decoration:underline; color:#992233;  }
+a:active { text-decoration:none; color:#333333}
+a:focus { text-decoration:underline; color:#992233;  }
+</style>
+<TITLE></TITLE>
+
+<script language="JavaScript">
+var lektion=41;
+</script>
+
+<script language="JavaScript" src="../daten.js"></script>
+<script language="JavaScript" src="../../programme/funktionen2.js"></script>
+<script language="JavaScript" src="../../programme/sprachmodule.js"></script>
+<script language="JavaScript" src="../../programme/sonderzeichen.js"></script>
+<script language="JavaScript" src="../../programme/audioausgabe.js"></script>
+<script language="JavaScript" src="../../programme/funktionen1.js"></script>
+<script language="JavaScript" src="../../programme/wortarten.js"></script>
+<script language="JavaScript">
+if(top.frames.length==0) { top.location.href="../index.html"; }
+</script>
+</HEAD>
+
+
+
+<BODY text="#333333" link="#0000AA" vlink="#0000AA" alink="#0000AA" bgcolor="#992233" 
+background="../../grafik/bg_a01.jpg"><font size=1><div align=center><table height=100% align=top 
+valign=top cellspacing=0 cellpadding=0 border=0><tr align=top valign=top>
+<td><img src=../../grafik/bg_h01.gif></td>
+<td><table width=100% height=100% align=top valign=top bgcolor="FAC832" background=../../grafik/bg_h02.gif cellspacing=1 cellpadding=0 border=0><tr align=top valign=top><td>
+<table width=100% cellspacing=1 cellpadding=2 border=0><tr><td>
+
+
+
+
+<img src=../../grafik/nichts.gif width=3 height=8><br>
+<table align=center cellspacing=0 cellpadding=0 border=0><tr><td>
+<table width=100% cellspacing=1 cellpadding=3 border=0>
+
+<tr><td><font face="verdana,arial,helvetica" size=3><center>
+
+<script language="JavaScript">
+
+var menuezusatz="";
+
+var menuezusatz2="vokabeln";
+if (eingabeart=="Texte")  menuezusatz2="vokabeln";
+if (eingabeart=="Vokabeln")  menuezusatz2="texte";
+if (eingabeart=="Übungen")  menuezusatz2="vokabeln";
+if (eingabeart=="Express")  menuezusatz2="express_";
+
+var menuezusatz3="vokabeln";
+if (eingabeart=="Texte")  menuezusatz3="vocabular";
+if (eingabeart=="Vokabeln")  menuezusatz3="text";
+if (eingabeart=="Übungen")  menuezusatz3="vocabular";
+
+document.write ("&nbsp; ");
+if (lektion>1) document.write ("<a href=druck"+((lektion-1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/lektion"+((lektion-1)*1)+".html'\"><img src=../../grafik/pfeil_l4.jpg border=0></a> &nbsp;");
+
+if (lektion < maxlektion) document.write ("<a href=druck"+((lektion+1)*1)+".html target=rahmen1 onClick=\"javascript:top.parent[0].parent[0].location.href='../../menu/"+menuezusatz+"lektion"+((lektion+1)*1)+".html'\"><img src=../../grafik/pfeil_r4.jpg border=0></a> &nbsp;");
+
+document.write ("</td><td align=center>&nbsp; <a href=\"javascript:var x=0;\" onClick=\"javascript:untereseite2(1)\" target=rahmen1><img src=../../grafik/alle2.jpg border=0></a> &nbsp;");
+
+if (unterrichtssprache =="deutsch" && eingabeart=="Vokabeln" && sprachkuerzel.indexOf("2")<1 && sprachkuerzel.indexOf("6")<1) { 
+	document.write("</td><td><form method=\"post\" name=\"wortartenform\">");
+	document.write("<select NAME=\"wortartenauswahl\" onChange=\"untereseite2(0);\" style=\"font-size:12px; font-family:verdana,arial,helvetica; \"></option>");
+	document.write("<OPTION value=\"\" selected>Alle Wörter</option>");
+	document.write("<OPTION value=\"1\">Nur Substantive</option>");
+	document.write("<OPTION value=\"2\">Nur Verben</option>");
+	document.write("<OPTION value=\"3\">Nur Adj./Adv.</option>");
+	document.write("</select></form>");
+}
+
+
+</script></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+</td><td><img src=../../grafik/bg_i01.gif></td></tr></table></td></tr></table></form>
+
+
+
+<script language="JavaScript">
+untereseite2(0);
+
+function untereseite2(alletemp){
+	top.parent[0].parent[0].document.close();
+	var id=top.parent[0].parent[0].location.href;
+	var id2=id.substring(id.indexOf("ektion",0)+6);
+	id2=id2.substring(0,id2.indexOf(".",0));
+	var id3=id2*1;
+
+	if (alletemp==0) { darstellen(2,id3,1); }
+	else { darstellen(2,0,1); }
+}
+
+</script>
+
+
+</BODY>
+</HTML>
+
+
+

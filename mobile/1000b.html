@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<LINK REL="shortcut icon" HREF="../grafik/favicon.ico" type="image/ico">
+<style type="text/css">
+a:link { text-decoration:none; color:#0000A0 }
+a:visited { text-decoration:none; color:#0000A0; }
+a:hover { text-decoration:underline; color:#0000FF;  }
+a:active { text-decoration:underline; color:#0000FF}
+a:focus { text-decoration:underline; color:#0000FF;  }
+</style>
+<script language="JavaScript" src="../text/daten.js"></script>
+<script language="JavaScript" src="../programme/sprachmodule.js"></script>
+<script language="JavaScript">
+if (sprache2=="franzoesisch") sprache2="französisch";
+if (sprache2=="niederlaendisch") sprache2="niederländisch";
+if (sprache2=="rumaenisch") sprache2="rumänisch";
+if (sprache2=="tuerkisch") sprache2="türkisch";
+if (sprache2=="daenisch") sprache2="dänisch";
+if (sprache2=="hebraeisch") sprache2="hebräisch";
+if (sprache2=="islaendisch") sprache2="isländisch";
+if (sprache2=="aegyptisch") sprache2="ägyptisch";
+if (sprache2=="suedamerika") sprache2="Spanisch-Südamerika";
+if (sprache2=="weissrussisch") sprache2="weißrussisch";
+  
+var titletext=sprache2+spracheintrag_menu[42];
+if (sprachkuerzel.indexOf("2")>-1) var titletext=sprache2+spracheintrag_menu[43];
+if (sprachkuerzel.indexOf("3")>-1) var titletext=sprache2+spracheintrag_menu[44];
+if (sprachkuerzel.indexOf("4")>-1) var titletext=sprache2+spracheintrag_menu[61];
+if (sprachkuerzel.indexOf("4a")>-1) var titletext=sprache2+"-Ausbildungs-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4b")>-1) var titletext=sprache2+"-Spezialwortschatz-Vokabeltrainer \"Gastronomie und Tourismus\"";
+if (sprachkuerzel.indexOf("4e")>-1) var titletext=sprache2+"-Spezialwortschatz-Vokabeltrainer Auto";
+if (sprachkuerzel.indexOf("4g")>-1) var titletext=sprache2+"-Flirten-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4h")>-1) var titletext=sprache2+"-Auswandern-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4i")>-1) var titletext=sprache2+"-Spezialwortschatz-Vokabeltrainer \"Natur und Geographie\"";
+if (sprachkuerzel.indexOf("4j")>-1) var titletext=sprache2+"-Spezialwortschatz-Vokabeltrainer \"Au Pair\"";
+if (sprachkuerzel.indexOf("4k")>-1) var titletext=sprache2+"-Spezialwortschatz-Vokabeltrainer \"Sport und Fitness\"";
+if (sprachkuerzel.indexOf("4l")>-1) var titletext=sprache2+"-Städtereise-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4m")>-1) var titletext=sprache2+"-Marketing-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4r")>-1) var titletext=sprache2+"-Verhandeln-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4s")>-1) var titletext=sprache2+"-Smalltalk-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4t")>-1) var titletext=sprache2+"-Telefonieren-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4v")>-1) var titletext=sprache2+"-Vertrieb-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4w")>-1) var titletext=sprache2+"-Wirtschaft-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("4z")>-1) var titletext=sprache2+"-Korrespondenz-Spezialwortschatz-Vokabeltrainer";
+if (sprachkuerzel.indexOf("5a")>-1) var titletext=sprache2+spracheintrag_menu[45]+" I";
+if (sprachkuerzel.indexOf("5b")>-1) var titletext=sprache2+spracheintrag_menu[45]+" II";
+if (sprachkuerzel.indexOf("5c")>-1) var titletext=sprache2+spracheintrag_menu[45]+" III";
+if (sprachkuerzel.indexOf("6")>-1) var titletext=sprache2+"-Grammatikkurs & Grammatik-Trainer";
+if (sprachkuerzel.indexOf("7")>-1) var titletext="Perfektes "+sprache2.substring(0,1).toUpperCase() + sprache2.substring(1)+" in 365 Tagen"; // 7a=Biz etc
+if (sprachkuerzel.indexOf("7a")>-1) var titletext="Perfekte "+sprache2.substring(0,1).toUpperCase() + sprache2.substring(1)+"-Reisevorbereitung in 30 Tagen"; 
+if (sprachkuerzel.indexOf("7b")>-1) var titletext="Perfektes Business-"+sprache2.substring(0,1).toUpperCase() + sprache2.substring(1)+" in 365 Tagen"; 
+  
+titletext=titletext.substring(0,1).toUpperCase()+titletext.substring(1);
+if (sprache2=="latein") titletext="Latein-Vokabeltrainer";
+document.write("<TITLE>Langzeitlernen: "+titletext+"</TITLE>");
+</script>
+
+</HEAD>
+<body bgcolor=#999999><div align=center><script language="JavaScript">
+var langzeitordner="vocabular";
+if (sprachkuerzel.indexOf("2")>1)  { maxlektion=21; langzeitordner="express"; }
+document.write ("<iframe src=\"../"+langzeitordner+"/html2/langzeit_startm2.html\" width=\"1000\" height=\"1500\" name=\"Simulation\" align=\"center\" scrolling=\"auto\" marginheight=\"0\" marginwidth=\"0\" frameborder=\"0\">");
+</script></iframe>
+</div>
+</body></html>
+
